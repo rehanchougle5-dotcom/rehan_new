@@ -602,11 +602,29 @@
     <Compile Include="Reports\TEST\XtraReport2.Designer.cs">
       <DependentUpon>XtraReport2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\UserTask\MonthlyUserTask.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\UserTask\MonthlyUserTask.Designer.cs">
+      <DependentUpon>MonthlyUserTask.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\UserTask\Related User.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reports\UserTask\Related User.Designer.cs">
       <DependentUpon>Related User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\UserTask\submarryByProject.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\UserTask\submarryByProject.Designer.cs">
+      <DependentUpon>submarryByProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\UserTask\UserSummary.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\UserTask\UserSummary.Designer.cs">
+      <DependentUpon>UserSummary.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\UserTask\UserTask.cs">
       <SubType>Component</SubType>
@@ -898,8 +916,17 @@
     <EmbeddedResource Include="Reports\TEST\XtraReport2.resx">
       <DependentUpon>XtraReport2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\UserTask\MonthlyUserTask.resx">
+      <DependentUpon>MonthlyUserTask.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\UserTask\Related User.resx">
       <DependentUpon>Related User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\UserTask\submarryByProject.resx">
+      <DependentUpon>submarryByProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\UserTask\UserSummary.resx">
+      <DependentUpon>UserSummary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\UserTask\UserTask.resx">
       <DependentUpon>UserTask.cs</DependentUpon>
