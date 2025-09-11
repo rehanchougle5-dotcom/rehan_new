@@ -117,38 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="customSqlQuery1.Sql" xml:space="preserve">
-    <value>SELECT 
-    COALESCE(NULLIF(UT."assignTo", ''), 'Un-Assigned') AS "UserName",
-    D."depId"       AS "DepartmentId",
-    D."depName"     AS "DepartmentName",
-    UT."taskDate"   AS "TaskDates",
-    UT."assignTo"   AS "assignTo",
-    COUNT(*)        AS "TotalTask",
-    -- Pending should also include Assigned
-    SUM(CASE WHEN TS."taskStatusName" IN ('Pending', 'Assigned') THEN 1 ELSE 0 END) AS "Pending",
-    SUM(CASE WHEN TS."taskStatusName" = 'In-Process' THEN 1 ELSE 0 END) AS "InProcess",
-    -- Force Assigned = 0 (or remove this column if not needed)
-    0 AS "Assigned",
-    SUM(CASE WHEN TS."taskStatusName" = 'Completed'  THEN 1 ELSE 0 END) AS "Completed",
-    SUM(CASE WHEN TS."taskStatusName" = 'Closed'     THEN 1 ELSE 0 END) AS "Closed",
-    SUM(CASE WHEN TS."taskStatusName" = 'Hold'       THEN 1 ELSE 0 END) AS "Hold"
-FROM "AD"."UserTask" UT
-LEFT JOIN "AD"."TaskStatus" TS 
-       ON TS."taskStatusId" = UT."taskStatusId"
-LEFT JOIN "AD"."Department" D
-       ON D."depId" = UT."depId"
-GROUP BY 
-    COALESCE(NULLIF(UT."assignTo", ''), 'Un-Assigned'),
-    D."depId", 
-    D."depName",
-    UT."taskDate",
-    UT."assignTo"
-ORDER BY 
-    "UserName", 
-    D."depName";</value>
-  </data>
   <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
-    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlF1ZXJ5Ij48RmllbGQgTmFtZT0iVXNlck5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRGVwYXJ0bWVudElkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iRGVwYXJ0bWVudE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVGFza0RhdGVzIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iYXNzaWduVG8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVG90YWxUYXNrIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iUGVuZGluZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkluUHJvY2VzcyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkFzc2lnbmVkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ29tcGxldGVkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iQ2xvc2VkIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSG9sZCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlJQVF9HZXRVc2VyVGFza1N1bW1hcnkiPjxGaWVsZCBOYW1lPSJVc2VyTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJEZXBhcnRtZW50SWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJEZXBhcnRtZW50TmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUYXNrRGF0ZSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkFzc2lnblRvIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRvdGFsVGFzayIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNsb3NlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IkNvbXBsZXRlZCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlBlbmRpbmciIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJJblByb2Nlc3MiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJIb2xkIiBUeXBlPSJJbnQzMiIgLz48L1ZpZXc+PC9EYXRhU2V0Pg==</value>
   </data>
 </root>

@@ -614,6 +614,12 @@
     <Compile Include="Reports\UserTask\Related User.Designer.cs">
       <DependentUpon>Related User.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\UserTask\SPMonthlyUserTaskcs.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\UserTask\SPMonthlyUserTaskcs.Designer.cs">
+      <DependentUpon>SPMonthlyUserTaskcs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\UserTask\submarryByProject.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -921,6 +927,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\UserTask\Related User.resx">
       <DependentUpon>Related User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\UserTask\SPMonthlyUserTaskcs.resx">
+      <DependentUpon>SPMonthlyUserTaskcs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\UserTask\submarryByProject.resx">
       <DependentUpon>submarryByProject.cs</DependentUpon>
