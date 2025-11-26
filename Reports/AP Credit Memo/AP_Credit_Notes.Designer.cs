@@ -888,7 +888,7 @@
             this.xrLabel50,
             this.xrShape7,
             this.xrLabel49});
-            this.SubBand5.HeightF = 36.49893F;
+            this.SubBand5.HeightF = 24.34063F;
             this.SubBand5.Name = "SubBand5";
             // 
             // xrLine4
@@ -1099,7 +1099,7 @@
             this.xrLine5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(63)))), ((int)(((byte)(88)))));
             this.xrLine5.LocationFloat = new DevExpress.Utils.PointFloat(0.2638563F, 18.09803F);
             this.xrLine5.Name = "xrLine5";
-            this.xrLine5.SizeF = new System.Drawing.SizeF(471.9255F, 11.19046F);
+            this.xrLine5.SizeF = new System.Drawing.SizeF(471.9255F, 6.242596F);
             this.xrLine5.StylePriority.UseBorderColor = false;
             this.xrLine5.StylePriority.UseForeColor = false;
             // 

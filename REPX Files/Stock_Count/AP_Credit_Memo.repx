@@ -257,11 +257,11 @@
               </Rows>
               <StylePriority Ref="137" UseBorders="false" UseBorderDashStyle="false" />
             </Item1>
-            <Item2 Ref="138" ControlType="XRTable" Name="xrTable7" SizeF="240.666229,17.3300247" LocationFloat="493.333832,58.7085228" Font="calibri, 8pt" Padding="2,2,0,0,96" Borders="Bottom" BorderDashStyle="Dot">
+            <Item2 Ref="138" ControlType="XRTable" Name="xrTable7" SizeF="240.930145,17.3300247" LocationFloat="493.069916,58.7085228" Font="calibri, 8pt" Padding="2,2,0,0,96" Borders="Bottom" BorderDashStyle="Dot">
               <Rows>
                 <Item1 Ref="139" ControlType="XRTableRow" Name="xrTableRow7" Weight="1">
                   <Cells>
-                    <Item1 Ref="140" ControlType="XRTableCell" Name="xrTableCell23" Weight="0.93322813626064227" Multiline="true" Text="Total Tax Amount" Font="calibri, 8pt" ForeColor="255,19,63,88">
+                    <Item1 Ref="140" ControlType="XRTableCell" Name="xrTableCell23" Weight="0.93542134813294853" Multiline="true" Text="Total Tax Amount" Font="calibri, 8pt" ForeColor="255,19,63,88">
                       <StylePriority Ref="141" UseFont="false" UseForeColor="false" />
                     </Item1>
                     <Item2 Ref="142" ControlType="XRTableCell" Name="xrTableCell24" Weight="1.0667718637393577" TextFormatString="{0:N}" Multiline="true" Text="xrTableCell20" TextAlignment="TopRight" Font="calibri, 8pt">
@@ -311,9 +311,9 @@
               </Rows>
               <StylePriority Ref="161" UseBorders="false" UseBorderDashStyle="false" />
             </Item4>
-            <Item5 Ref="162" ControlType="XRTable" Name="xrTable4" SizeF="471.6618,17.3304558" LocationFloat="0.2638563,57.0418663" Font="calibri, 8pt" Padding="2,2,0,0,96">
+            <Item5 Ref="162" ControlType="XRTable" Name="xrTable4" SizeF="471.6618,18.119606" LocationFloat="0.2638563,56.2527" Font="calibri, 8pt" Padding="2,2,0,0,96">
               <Rows>
-                <Item1 Ref="163" ControlType="XRTableRow" Name="xrTableRow4" Weight="1">
+                <Item1 Ref="163" ControlType="XRTableRow" Name="xrTableRow4" Weight="0.99999955976953936">
                   <Cells>
                     <Item1 Ref="164" ControlType="XRTableCell" Name="xrTableCell15" Weight="0.81661659240722662" TextFormatString="{0:0}%" Multiline="true" Text="xrTableCell15">
                       <ExpressionBindings>
@@ -343,7 +343,7 @@
               </Rows>
               <StylePriority Ref="175" UseFont="false" />
             </Item5>
-            <Item6 Ref="176" ControlType="XRLine" Name="xrLine4" SizeF="471.9256,11.19046" LocationFloat="0.2638563,76.03896" ForeColor="255,19,63,88" BorderColor="Black">
+            <Item6 Ref="176" ControlType="XRLine" Name="xrLine4" SizeF="471.6615,17.330452" LocationFloat="0.2638563,74.37231" ForeColor="255,19,63,88" BorderColor="Black">
               <StylePriority Ref="177" UseForeColor="false" UseBorderColor="false" />
             </Item6>
             <Item7 Ref="178" ControlType="XRTable" Name="xrTable2" SizeF="471.6617,25" LocationFloat="0.263715237,31.2526913" Font="calibri, 8pt" ForeColor="255,19,63,88" BackColor="255,239,244,247" Padding="2,2,0,0,96" BorderColor="255,19,63,88" Borders="Top, Bottom">
@@ -377,7 +377,7 @@
               <Shape Ref="194" ShapeName="Rectangle" />
               <StylePriority Ref="195" UseForeColor="false" UseBackColor="false" UseBorderColor="false" UseBorders="false" />
             </Item10>
-            <Item11 Ref="196" ControlType="XRShape" Name="xrShape4" Angle="291" FillColor="255,239,164,31" SizeF="6.773224,15.6638" LocationFloat="486.296722,58.70851" ForeColor="0,0,0,0" BackColor="255,239,164,31" BorderColor="0,0,0,0" Borders="Bottom">
+            <Item11 Ref="196" ControlType="XRShape" Name="xrShape4" Angle="291" FillColor="255,239,164,31" SizeF="6.773224,15.6638" LocationFloat="486.296661,58.7085228" ForeColor="0,0,0,0" BackColor="255,239,164,31" BorderColor="0,0,0,0" Borders="Bottom">
               <Shape Ref="197" ShapeName="Rectangle" />
               <StylePriority Ref="198" UseForeColor="false" UseBackColor="false" UseBorderColor="false" UseBorders="false" />
             </Item11>
@@ -394,9 +394,9 @@
             </Item14>
           </Controls>
         </Item1>
-        <Item2 Ref="207" ControlType="SubBand" Name="SubBand5" HeightF="36.49893">
+        <Item2 Ref="207" ControlType="SubBand" Name="SubBand5" HeightF="24.34063">
           <Controls>
-            <Item1 Ref="208" ControlType="XRLine" Name="xrLine5" SizeF="471.925537,11.19046" LocationFloat="0.2638563,18.0980339" ForeColor="255,19,63,88" BorderColor="Black">
+            <Item1 Ref="208" ControlType="XRLine" Name="xrLine5" SizeF="471.925537,6.24259567" LocationFloat="0.2638563,18.0980339" ForeColor="255,19,63,88" BorderColor="Black">
               <StylePriority Ref="209" UseForeColor="false" UseBorderColor="false" />
             </Item1>
             <Item2 Ref="210" ControlType="XRLabel" Name="xrLabel51" Multiline="true" Text="Shipping Type:" TextAlignment="MiddleRight" SizeF="100,18.09804" LocationFloat="298.690125,0" Font="calibri, 8pt" ForeColor="255,19,66,88" Padding="2,2,0,0,100">

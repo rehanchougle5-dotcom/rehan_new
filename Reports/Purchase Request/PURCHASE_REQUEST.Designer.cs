@@ -329,7 +329,7 @@ namespace dxReports.Reports.Purchase_Request
             this.xrTableCell44.StylePriority.UseTextAlignment = false;
             this.xrTableCell44.Text = "xrTableCell44";
             this.xrTableCell44.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell44.TextFormatString = "{0:#,##0.00;-#,##0.00;\'-\'}";
+            this.xrTableCell44.TextFormatString = "{0:#,##;-#,##0.00;\'-\'}";
             this.xrTableCell44.Weight = 0.10172919289949153D;
             // 
             // xrTableCell57

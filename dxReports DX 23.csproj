@@ -121,12 +121,6 @@
     <Compile Include="Reports\Actual Vs Target\Actual_VS_Target.Designer.cs">
       <DependentUpon>Actual_VS_Target.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\AP Credit Memo\AP_Credit_Memo_2.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\AP Credit Memo\AP_Credit_Memo_2.Designer.cs">
-      <DependentUpon>AP_Credit_Memo_2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Reports\AP Credit Memo\AP_Credit_Notes.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -771,9 +765,6 @@
     </Compile>
     <EmbeddedResource Include="Reports\Actual Vs Target\Actual_VS_Target.resx">
       <DependentUpon>Actual_VS_Target.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\AP Credit Memo\AP_Credit_Memo_2.resx">
-      <DependentUpon>AP_Credit_Memo_2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\AP Credit Memo\AP_Credit_Notes.resx">
       <DependentUpon>AP_Credit_Notes.cs</DependentUpon>
