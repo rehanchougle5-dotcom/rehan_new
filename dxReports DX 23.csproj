@@ -151,6 +151,12 @@
     <Compile Include="Reports\AP Invoice\AP_INVOICE.Designer.cs">
       <DependentUpon>AP_INVOICE.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\AP Invoice\AP_INVOICE_DRAFT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\AP Invoice\AP_INVOICE_DRAFT.Designer.cs">
+      <DependentUpon>AP_INVOICE_DRAFT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\AP Invoice\AR_Invoice_Barcode.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -786,6 +792,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\AP Invoice\AP_INVOICE.resx">
       <DependentUpon>AP_INVOICE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AP Invoice\AP_INVOICE_DRAFT.resx">
+      <DependentUpon>AP_INVOICE_DRAFT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\AP Invoice\AR_Invoice_Barcode.resx">
       <DependentUpon>AR_Invoice_Barcode.cs</DependentUpon>
