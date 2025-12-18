@@ -108,7 +108,7 @@ namespace dxReports.Reports
             this.crossTabHeaderStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabDataStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabTotalStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
-            this.sr_StockCountId = new DevExpress.XtraReports.Parameters.Parameter();
+            this.auditNo = new DevExpress.XtraReports.Parameters.Parameter();
             this.PageHeader = new DevExpress.XtraReports.UI.PageHeaderBand();
             this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
             this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
@@ -197,16 +197,16 @@ namespace dxReports.Reports
             this.crossTabTotalCell13,
             this.crossTabTotalCell15});
             this.xrCrossTab1.ColumnDefinitions.AddRange(new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition[] {
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(69.70978F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(69.70978F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(159.1806F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(166.9931F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(40.58963F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(48.47697F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(48.47697F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(56.28949F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(63.77875F),
-            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(80.79493F)});
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(52.39815F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(71.35325F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(162.9334F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(170.9301F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(41.54656F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(49.61986F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(49.61986F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(57.61657F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(65.28239F),
+            new DevExpress.XtraReports.UI.CrossTab.CrossTabColumnDefinition(82.69974F)});
             this.xrCrossTab1.DataAreaStyleName = "crossTabDataStyle1";
             crossTabDataField1.FieldName = "qty";
             crossTabDataField2.FieldName = "qtyOnHand";
@@ -219,7 +219,7 @@ namespace dxReports.Reports
             crossTabDataField3,
             crossTabDataField4,
             crossTabDataField5});
-            this.xrCrossTab1.DataMember = "RPT_STOCK_COUNT.Result1";
+            this.xrCrossTab1.DataMember = "RPT_STOCK_COUNT_II.Result1";
             this.xrCrossTab1.DataSource = this.sqlDataSource1;
             this.xrCrossTab1.FilterString = "[qtyDiff] <> 0.0m";
             this.xrCrossTab1.GeneralStyleName = "crossTabGeneralStyle1";
@@ -251,7 +251,7 @@ namespace dxReports.Reports
             crossTabRowField3,
             crossTabRowField4,
             crossTabRowField5});
-            this.xrCrossTab1.SizeF = new System.Drawing.SizeF(804F, 180.7634F);
+            this.xrCrossTab1.SizeF = new System.Drawing.SizeF(803.9999F, 180.7634F);
             this.xrCrossTab1.TotalAreaStyleName = "crossTabTotalStyle1";
             this.xrCrossTab1.BeforePrint += new DevExpress.XtraReports.UI.BeforePrintEventHandler(this.xrCrossTab1_BeforePrint);
             // 
@@ -707,8 +707,9 @@ namespace dxReports.Reports
             this.crossTabDataCell1.ColumnIndex = 9;
             this.crossTabDataCell1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif([qtyDiff] = 0, 0 , [retailDifference])"),
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "ForeColor", "/*Iif([retailDifference]<0,\'Red\',\'Black\')*/\nIif([qtyDiffStatus] = \'Shortage\',\'Red" +
-                    "\',\'Black\')\n\n\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "ForeColor", "/*Iif([retailDifference]<0,\'Red\',\'Black\')*/\n/*Iif([qtyDiffStatus] = \'Shortage\',\'R" +
+                    "ed\',\'Green\')*/\n\nIif(\n\t[qtyDiffStatus] = \'Shortage\',\'Red\'\n\t,Iif([qtyDiffStatus] =" +
+                    " \'Excess\',\'Green\',\'Black\')\n)\n\n\n")});
             this.crossTabDataCell1.Font = new DevExpress.Drawing.DXFont("calibri", 7.5F);
             this.crossTabDataCell1.ForeColor = System.Drawing.Color.Black;
             this.crossTabDataCell1.Name = "crossTabDataCell1";
@@ -794,6 +795,7 @@ namespace dxReports.Reports
             this.crossTabTotalCell4.BorderWidth = 1F;
             this.crossTabTotalCell4.ColumnIndex = 5;
             this.crossTabTotalCell4.Font = new DevExpress.Drawing.DXFont("calibri", 7.5F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.crossTabTotalCell4.ForeColor = System.Drawing.Color.Transparent;
             this.crossTabTotalCell4.Name = "crossTabTotalCell4";
             this.crossTabTotalCell4.RowIndex = 7;
             this.crossTabTotalCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -807,6 +809,7 @@ namespace dxReports.Reports
             this.crossTabTotalCell6.BorderWidth = 1F;
             this.crossTabTotalCell6.ColumnIndex = 6;
             this.crossTabTotalCell6.Font = new DevExpress.Drawing.DXFont("calibri", 7.5F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.crossTabTotalCell6.ForeColor = System.Drawing.Color.Transparent;
             this.crossTabTotalCell6.Name = "crossTabTotalCell6";
             this.crossTabTotalCell6.RowIndex = 7;
             this.crossTabTotalCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -820,8 +823,9 @@ namespace dxReports.Reports
             this.crossTabTotalCell7.BorderWidth = 1F;
             this.crossTabTotalCell7.ColumnIndex = 7;
             this.crossTabTotalCell7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "ForeColor", "Iif([qtyDiff] < 0, \'Red\' , \'Black\' )")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "ForeColor", "/*Iif([qtyDiff] < 0, \'Red\' , \'Black\' )*/")});
             this.crossTabTotalCell7.Font = new DevExpress.Drawing.DXFont("calibri", 7.5F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.crossTabTotalCell7.ForeColor = System.Drawing.Color.Transparent;
             this.crossTabTotalCell7.Name = "crossTabTotalCell7";
             this.crossTabTotalCell7.RowIndex = 7;
             this.crossTabTotalCell7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -835,6 +839,7 @@ namespace dxReports.Reports
             this.crossTabTotalCell8.BorderWidth = 1F;
             this.crossTabTotalCell8.ColumnIndex = 8;
             this.crossTabTotalCell8.Font = new DevExpress.Drawing.DXFont("calibri", 7.5F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.crossTabTotalCell8.ForeColor = System.Drawing.Color.Transparent;
             this.crossTabTotalCell8.Name = "crossTabTotalCell8";
             this.crossTabTotalCell8.RowIndex = 7;
             this.crossTabTotalCell8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
@@ -859,14 +864,18 @@ namespace dxReports.Reports
             // 
             this.crossTabHeaderCell4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(122)))), ((int)(((byte)(160)))));
             this.crossTabHeaderCell4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(122)))), ((int)(((byte)(160)))));
+            this.crossTabHeaderCell4.Borders = ((DevExpress.XtraPrinting.BorderSide)((DevExpress.XtraPrinting.BorderSide.Top | DevExpress.XtraPrinting.BorderSide.Bottom)));
+            this.crossTabHeaderCell4.BorderWidth = 1F;
             this.crossTabHeaderCell4.ColumnIndex = 3;
+            this.crossTabHeaderCell4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'Salesperson Remarks\'")});
             this.crossTabHeaderCell4.Font = new DevExpress.Drawing.DXFont("calibri", 7.5F, DevExpress.Drawing.DXFontStyle.Bold);
             this.crossTabHeaderCell4.ForeColor = System.Drawing.Color.White;
             this.crossTabHeaderCell4.Name = "crossTabHeaderCell4";
             this.crossTabHeaderCell4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 2, 0, 100F);
             this.crossTabHeaderCell4.RowIndex = 0;
             this.crossTabHeaderCell4.RowSpan = 2;
-            this.crossTabHeaderCell4.Text = "Salesperson \r\nRemarks";
+            this.crossTabHeaderCell4.Text = "Salesperson Remarks";
             this.crossTabHeaderCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
             // 
             // crossTabHeaderCell6
@@ -928,13 +937,13 @@ namespace dxReports.Reports
             // 
             this.sqlDataSource1.ConnectionName = "PowerBI";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            storedProcQuery1.Name = "RPT_STOCK_COUNT";
-            queryParameter1.Name = "@stockCountId";
+            storedProcQuery1.Name = "RPT_STOCK_COUNT_II";
+            queryParameter1.Name = "@auditNo";
             queryParameter1.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter1.Value = new DevExpress.DataAccess.Expression("?sr_StockCountId", typeof(string));
+            queryParameter1.Value = new DevExpress.DataAccess.Expression("?auditNo", typeof(string));
             storedProcQuery1.Parameters.AddRange(new DevExpress.DataAccess.Sql.QueryParameter[] {
             queryParameter1});
-            storedProcQuery1.StoredProcName = "RPT_STOCK_COUNT";
+            storedProcQuery1.StoredProcName = "RPT_STOCK_COUNT_II";
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
             storedProcQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
@@ -972,10 +981,10 @@ namespace dxReports.Reports
             this.crossTabTotalStyle1.Name = "crossTabTotalStyle1";
             this.crossTabTotalStyle1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
-            // sr_StockCountId
+            // auditNo
             // 
-            this.sr_StockCountId.Name = "sr_StockCountId";
-            this.sr_StockCountId.Visible = false;
+            this.auditNo.Name = "auditNo";
+            this.auditNo.Visible = false;
             // 
             // PageHeader
             // 
@@ -1001,9 +1010,9 @@ namespace dxReports.Reports
             this.xrLine1.BorderWidth = 0F;
             this.xrLine1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(102)))), ((int)(((byte)(122)))));
             this.xrLine1.LineWidth = 1.5F;
-            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(179.0763F, 10.41864F);
+            this.xrLine1.LocationFloat = new DevExpress.Utils.PointFloat(179.0763F, 10.41866F);
             this.xrLine1.Name = "xrLine1";
-            this.xrLine1.SizeF = new System.Drawing.SizeF(624.9237F, 16.87405F);
+            this.xrLine1.SizeF = new System.Drawing.SizeF(614.9238F, 16.87405F);
             this.xrLine1.StylePriority.UseBorderWidth = false;
             this.xrLine1.StylePriority.UseForeColor = false;
             // 
@@ -1100,13 +1109,15 @@ namespace dxReports.Reports
             // 
             // xrLabel1
             // 
+            this.xrLabel1.BackColor = System.Drawing.Color.Transparent;
             this.xrLabel1.Font = new DevExpress.Drawing.DXFont("calibri", 7.5F);
             this.xrLabel1.ForeColor = System.Drawing.Color.Gray;
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(1.059638E-05F, 0F);
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel1.SizeF = new System.Drawing.SizeF(804F, 25.15543F);
+            this.xrLabel1.StylePriority.UseBackColor = false;
             this.xrLabel1.StylePriority.UseFont = false;
             this.xrLabel1.StylePriority.UseForeColor = false;
             this.xrLabel1.StylePriority.UseTextAlignment = false;
@@ -1134,14 +1145,14 @@ namespace dxReports.Reports
             this.rpt_QtyDiff});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.sqlDataSource1});
-            this.DataMember = "RPT_STOCK_COUNT";
+            this.DataMember = "RPT_STOCK_COUNT_II";
             this.DataSource = this.sqlDataSource1;
             this.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
             this.Margins = new DevExpress.Drawing.DXMargins(35F, 11F, 24.82F, 20.02F);
             this.ParameterPanelLayoutItems.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.sr_StockCountId, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.auditNo, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
-            this.sr_StockCountId});
+            this.auditNo});
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.crossTabGeneralStyle1,
             this.crossTabHeaderStyle1,
@@ -1165,7 +1176,7 @@ namespace dxReports.Reports
         private DevExpress.XtraReports.UI.XRControlStyle crossTabHeaderStyle1;
         private DevExpress.XtraReports.UI.XRControlStyle crossTabDataStyle1;
         private DevExpress.XtraReports.UI.XRControlStyle crossTabTotalStyle1;
-        private DevExpress.XtraReports.Parameters.Parameter sr_StockCountId;
+        private DevExpress.XtraReports.Parameters.Parameter auditNo;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabHeaderCell7;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabHeaderCell8;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabHeaderCell9;
@@ -1201,7 +1212,6 @@ namespace dxReports.Reports
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell2;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell3;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell5;
-        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private DevExpress.XtraReports.UI.CalculatedField CostDifference;
         private DevExpress.XtraReports.UI.CalculatedField RetailDifference;
         private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
@@ -1229,5 +1239,6 @@ namespace dxReports.Reports
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell12;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell13;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell15;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
     }
 }
