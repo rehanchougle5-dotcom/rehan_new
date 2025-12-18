@@ -29,7 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+<<<<<<< HEAD:Reports/Stock_Count/STOCK_COUNT.Designer.cs
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(STOCK_COUNT));
+=======
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Stock12Count));
+>>>>>>> 12ae4155533e4eb391ec2bf12d273ef33288aa1e:Reports/Stock_Count/Stock12Count.Designer.cs
             DevExpress.XtraReports.UI.CrossTab.CrossTabDataField crossTabDataField1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabDataField();
             DevExpress.XtraReports.UI.CrossTab.CrossTabDataField crossTabDataField2 = new DevExpress.XtraReports.UI.CrossTab.CrossTabDataField();
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition crossTabRowDefinition1 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowDefinition(14.53488F);
@@ -153,6 +157,16 @@
             this.FRRetailDifferenc = new DevExpress.XtraReports.UI.CalculatedField();
             this.auditNo = new DevExpress.XtraReports.Parameters.Parameter();
             this.cf_PriceVariance = new DevExpress.XtraReports.UI.CalculatedField();
+<<<<<<< HEAD:Reports/Stock_Count/STOCK_COUNT.Designer.cs
+=======
+            this.xrSubreport2 = new DevExpress.XtraReports.UI.XRSubreport();
+            this.subReportRetailAuditSummary = new DevExpress.XtraReports.UI.XRSubreport();
+            this.subReportStockOnHand = new DevExpress.XtraReports.UI.XRSubreport();
+            this.xrSubreport4 = new DevExpress.XtraReports.UI.XRSubreport();
+            this.subReport_Auditors = new DevExpress.XtraReports.UI.XRSubreport();
+            this.xrSubreport1 = new DevExpress.XtraReports.UI.XRSubreport();
+            this.xrSubreport3 = new DevExpress.XtraReports.UI.XRSubreport();
+>>>>>>> 12ae4155533e4eb391ec2bf12d273ef33288aa1e:Reports/Stock_Count/Stock12Count.Designer.cs
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
@@ -1727,7 +1741,66 @@
     "IsNull([Result2].[retailDifference]), 0, [Result2].[retailDifference])\n";
             this.cf_PriceVariance.Name = "cf_PriceVariance";
             // 
+<<<<<<< HEAD:Reports/Stock_Count/STOCK_COUNT.Designer.cs
             // STOCK_COUNT
+=======
+            // xrSubreport2
+            // 
+            this.xrSubreport2.LocationFloat = new DevExpress.Utils.PointFloat(0.0002034505F, 0F);
+            this.xrSubreport2.Name = "xrSubreport2";
+            this.xrSubreport2.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("sr_StockCountId", null, "RPT_STOCK_COUNT.Result1.stockCountId"));
+            this.xrSubreport2.ReportSource = new dxReports.Reports.Stock_Count_Detail_Sub_Report();
+            this.xrSubreport2.SizeF = new System.Drawing.SizeF(802.8695F, 23.52521F);
+            // 
+            // subReportRetailAuditSummary
+            // 
+            this.subReportRetailAuditSummary.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.subReportRetailAuditSummary.Name = "subReportRetailAuditSummary";
+            this.subReportRetailAuditSummary.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("auditNo", null, "RPT_STOCK_COUNT_II.Result1.auditNo"));
+            this.subReportRetailAuditSummary.ReportSource = new dxReports.Reports.Stock_Count_Sub_Report_CrossTab();
+            this.subReportRetailAuditSummary.SizeF = new System.Drawing.SizeF(804.0004F, 147.9167F);
+            // 
+            // subReportStockOnHand
+            // 
+            this.subReportStockOnHand.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.subReportStockOnHand.Name = "subReportStockOnHand";
+            this.subReportStockOnHand.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("sr_auditNo", null, "RPT_STOCK_COUNT_II.Result1.auditNo"));
+            this.subReportStockOnHand.ReportSource = new dxReports.Reports.Stock_Count_On_Hand_Sub_Report_CrossTab();
+            this.subReportStockOnHand.SizeF = new System.Drawing.SizeF(804.0004F, 150F);
+            // 
+            // xrSubreport4
+            // 
+            this.xrSubreport4.LocationFloat = new DevExpress.Utils.PointFloat(403.5224F, 41.29069F);
+            this.xrSubreport4.Name = "xrSubreport4";
+            this.xrSubreport4.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("sr_StockCountId", null, "RPT_STOCK_COUNT_II.Result1.auditNo"));
+            this.xrSubreport4.ReportSource = new dxReports.Reports.Stock_Count.sr_Stock_Count_Salespersons();
+            this.xrSubreport4.SizeF = new System.Drawing.SizeF(396.7593F, 90F);
+            // 
+            // subReport_Auditors
+            // 
+            this.subReport_Auditors.LocationFloat = new DevExpress.Utils.PointFloat(6.166867F, 41.29069F);
+            this.subReport_Auditors.Name = "subReport_Auditors";
+            this.subReport_Auditors.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("sr_StockCountId", null, "RPT_STOCK_COUNT_II.Result1.auditNo"));
+            this.subReport_Auditors.ReportSource = new dxReports.Reports.Stock_Count.sr_Stock_Count_Auditors();
+            this.subReport_Auditors.SizeF = new System.Drawing.SizeF(387.963F, 90F);
+            // 
+            // xrSubreport1
+            // 
+            this.xrSubreport1.LocationFloat = new DevExpress.Utils.PointFloat(0.0001956255F, 0F);
+            this.xrSubreport1.Name = "xrSubreport1";
+            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("sr_AuditNumber", null, "RPT_STOCK_COUNT_II.Result1.auditNo"));
+            this.xrSubreport1.ReportSource = new dxReports.Reports.Stock_Count.sr_Stock_Count_Denomination();
+            this.xrSubreport1.SizeF = new System.Drawing.SizeF(804.0004F, 90F);
+            // 
+            // xrSubreport3
+            // 
+            this.xrSubreport3.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrSubreport3.Name = "xrSubreport3";
+            this.xrSubreport3.ReportSource = new dxReports.Reports.Stock_Count_Sub_Report_Signatures();
+            this.xrSubreport3.SizeF = new System.Drawing.SizeF(803.9999F, 150F);
+            // 
+            // Stock12Count
+>>>>>>> 12ae4155533e4eb391ec2bf12d273ef33288aa1e:Reports/Stock_Count/Stock12Count.Designer.cs
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.TopMargin,
