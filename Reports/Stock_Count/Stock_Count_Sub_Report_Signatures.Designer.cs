@@ -526,11 +526,11 @@ namespace dxReports.Reports
             this.xrLabel2.BorderWidth = 1.2F;
             this.xrLabel2.Font = new DevExpress.Drawing.DXFont("calibri", 12F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(102)))), ((int)(((byte)(122)))));
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(96.0404F, 0F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(84.23486F, 0F);
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel2.SizeF = new System.Drawing.SizeF(149.0861F, 28F);
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(135.8916F, 28F);
             this.xrLabel2.StylePriority.UseBackColor = false;
             this.xrLabel2.StylePriority.UseBorderColor = false;
             this.xrLabel2.StylePriority.UseBorders = false;
@@ -549,7 +549,7 @@ namespace dxReports.Reports
             this.xrLabel3.BorderWidth = 1.2F;
             this.xrLabel3.Font = new DevExpress.Drawing.DXFont("neotech", 12F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(102)))), ((int)(((byte)(122)))));
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(80.06241F, 0F);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(68.25685F, 0F);
             this.xrLabel3.Multiline = true;
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
@@ -586,7 +586,7 @@ namespace dxReports.Reports
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(61.25043F, 28F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(49.44488F, 28F);
             this.xrLabel1.StylePriority.UseBackColor = false;
             this.xrLabel1.StylePriority.UseBorderColor = false;
             this.xrLabel1.StylePriority.UseBorders = false;
@@ -594,7 +594,7 @@ namespace dxReports.Reports
             this.xrLabel1.StylePriority.UseFont = false;
             this.xrLabel1.StylePriority.UseForeColor = false;
             this.xrLabel1.StylePriority.UseTextAlignment = false;
-            this.xrLabel1.Text = "Access ";
+            this.xrLabel1.Text = "Excess";
             this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.BottomLeft;
             // 
             // xrLine2
@@ -603,9 +603,9 @@ namespace dxReports.Reports
             this.xrLine2.BorderWidth = 1.5F;
             this.xrLine2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(102)))), ((int)(((byte)(122)))));
             this.xrLine2.LineWidth = 1.5F;
-            this.xrLine2.LocationFloat = new DevExpress.Utils.PointFloat(245.1265F, 10.41667F);
+            this.xrLine2.LocationFloat = new DevExpress.Utils.PointFloat(220.1265F, 10.41667F);
             this.xrLine2.Name = "xrLine2";
-            this.xrLine2.SizeF = new System.Drawing.SizeF(558.8734F, 16.87405F);
+            this.xrLine2.SizeF = new System.Drawing.SizeF(583.8733F, 16.87405F);
             this.xrLine2.StylePriority.UseBorders = false;
             this.xrLine2.StylePriority.UseBorderWidth = false;
             this.xrLine2.StylePriority.UseForeColor = false;

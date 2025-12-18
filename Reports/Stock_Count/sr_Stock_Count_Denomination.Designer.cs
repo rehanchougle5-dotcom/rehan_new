@@ -107,7 +107,7 @@ namespace dxReports.Reports.Stock_Count
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(785.1899F, 18F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(772.6031F, 18F);
             this.xrTable1.StylePriority.UseTextAlignment = false;
             this.xrTable1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
@@ -193,7 +193,7 @@ namespace dxReports.Reports.Stock_Count
             this.xrLabel6,
             this.xrPictureBox2,
             this.xrTable2});
-            this.PageHeader.HeightF = 72.56945F;
+            this.PageHeader.HeightF = 58.2907F;
             this.PageHeader.Name = "PageHeader";
             // 
             // xrLine1
@@ -245,12 +245,12 @@ namespace dxReports.Reports.Stock_Count
             this.xrTable2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(122)))), ((int)(((byte)(160)))));
             this.xrTable2.Font = new DevExpress.Drawing.DXFont("calibri", 7.5F);
             this.xrTable2.ForeColor = System.Drawing.Color.White;
-            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(18.81008F, 47.56945F);
+            this.xrTable2.LocationFloat = new DevExpress.Utils.PointFloat(18.81007F, 33.2907F);
             this.xrTable2.Name = "xrTable2";
             this.xrTable2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable2.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow2});
-            this.xrTable2.SizeF = new System.Drawing.SizeF(785.1901F, 25F);
+            this.xrTable2.SizeF = new System.Drawing.SizeF(772.6033F, 25F);
             this.xrTable2.StylePriority.UseBackColor = false;
             this.xrTable2.StylePriority.UseFont = false;
             this.xrTable2.StylePriority.UseForeColor = false;
@@ -343,7 +343,7 @@ namespace dxReports.Reports.Stock_Count
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow3});
-            this.xrTable3.SizeF = new System.Drawing.SizeF(785.19F, 18F);
+            this.xrTable3.SizeF = new System.Drawing.SizeF(772.6031F, 18F);
             this.xrTable3.StylePriority.UseBackColor = false;
             this.xrTable3.StylePriority.UseBorderColor = false;
             this.xrTable3.StylePriority.UseBorders = false;
@@ -427,7 +427,7 @@ namespace dxReports.Reports.Stock_Count
             this.xrTable4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable4.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow4});
-            this.xrTable4.SizeF = new System.Drawing.SizeF(785.1901F, 18F);
+            this.xrTable4.SizeF = new System.Drawing.SizeF(772.6033F, 18F);
             this.xrTable4.StylePriority.UseBorderColor = false;
             this.xrTable4.StylePriority.UseBorders = false;
             this.xrTable4.StylePriority.UseFont = false;
