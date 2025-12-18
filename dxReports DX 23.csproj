@@ -578,11 +578,11 @@
     <Compile Include="Reports\Stock_Count\sr_Stock_Count_Salespersons.Designer.cs">
       <DependentUpon>sr_Stock_Count_Salespersons.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Stock_Count\Stock12Count.cs">
+    <Compile Include="Reports\Stock_Count\STOCK_COUNT.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Reports\Stock_Count\Stock12Count.Designer.cs">
-      <DependentUpon>Stock12Count.cs</DependentUpon>
+    <Compile Include="Reports\Stock_Count\STOCK_COUNT.Designer.cs">
+      <DependentUpon>STOCK_COUNT.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\Stock_Count\Stock_Count_Detail_Sub_Report.cs">
       <SubType>Component</SubType>
@@ -602,12 +602,6 @@
     <Compile Include="Reports\Stock_Count\Stock_Count_On_Hand_Sub_Report_CrossTab.Designer.cs">
       <DependentUpon>Stock_Count_On_Hand_Sub_Report_CrossTab.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Stock_Count\STOCK_COUNT_SQL_4.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\Stock_Count\STOCK_COUNT_SQL_4.Designer.cs">
-      <DependentUpon>STOCK_COUNT_SQL_4.cs</DependentUpon>
-    </Compile>
     <Compile Include="Reports\Stock_Count\Stock_Count_Sub_Report_CrossTab.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -619,12 +613,6 @@
     </Compile>
     <Compile Include="Reports\Stock_Count\Stock_Count_Sub_Report_Signatures.Designer.cs">
       <DependentUpon>Stock_Count_Sub_Report_Signatures.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reports\Stock_Count\XtraReport8.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\Stock_Count\XtraReport8.Designer.cs">
-      <DependentUpon>XtraReport8.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\Support Ticket\Support_Ticket_1.cs">
       <SubType>Component</SubType>
@@ -995,8 +983,8 @@
     <EmbeddedResource Include="Reports\Stock_Count\sr_Stock_Count_Salespersons.resx">
       <DependentUpon>sr_Stock_Count_Salespersons.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Stock_Count\Stock12Count.resx">
-      <DependentUpon>Stock12Count.cs</DependentUpon>
+    <EmbeddedResource Include="Reports\Stock_Count\STOCK_COUNT.resx">
+      <DependentUpon>STOCK_COUNT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Stock_Count\Stock_Count_Detail_Sub_Report.resx">
       <DependentUpon>Stock_Count_Detail_Sub_Report.cs</DependentUpon>
@@ -1007,17 +995,11 @@
     <EmbeddedResource Include="Reports\Stock_Count\Stock_Count_On_Hand_Sub_Report_CrossTab.resx">
       <DependentUpon>Stock_Count_On_Hand_Sub_Report_CrossTab.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Stock_Count\STOCK_COUNT_SQL_4.resx">
-      <DependentUpon>STOCK_COUNT_SQL_4.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Stock_Count\Stock_Count_Sub_Report_CrossTab.resx">
       <DependentUpon>Stock_Count_Sub_Report_CrossTab.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Stock_Count\Stock_Count_Sub_Report_Signatures.resx">
       <DependentUpon>Stock_Count_Sub_Report_Signatures.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Stock_Count\XtraReport8.resx">
-      <DependentUpon>XtraReport8.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Support Ticket\Support_Ticket_1.resx">
       <DependentUpon>Support_Ticket_1.cs</DependentUpon>

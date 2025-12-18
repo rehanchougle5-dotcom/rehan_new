@@ -45,9 +45,9 @@ namespace dxReports.Reports
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowField crossTabRowField3 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField();
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowField crossTabRowField4 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField();
             DevExpress.XtraReports.UI.CrossTab.CrossTabRowField crossTabRowField5 = new DevExpress.XtraReports.UI.CrossTab.CrossTabRowField();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Stock_Count_Sub_Report_CrossTab));
             DevExpress.DataAccess.Sql.StoredProcQuery storedProcQuery1 = new DevExpress.DataAccess.Sql.StoredProcQuery();
             DevExpress.DataAccess.Sql.QueryParameter queryParameter1 = new DevExpress.DataAccess.Sql.QueryParameter();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Stock_Count_Sub_Report_CrossTab));
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
@@ -103,7 +103,6 @@ namespace dxReports.Reports
             this.crossTabTotalCell12 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabTotalCell13 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
             this.crossTabTotalCell15 = new DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell();
-            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.crossTabGeneralStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabHeaderStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
             this.crossTabDataStyle1 = new DevExpress.XtraReports.UI.XRControlStyle();
@@ -122,6 +121,7 @@ namespace dxReports.Reports
             this.ReportFooter = new DevExpress.XtraReports.UI.ReportFooterBand();
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.rpt_QtyDiff = new DevExpress.XtraReports.UI.CalculatedField();
+            this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
@@ -219,8 +219,6 @@ namespace dxReports.Reports
             crossTabDataField3,
             crossTabDataField4,
             crossTabDataField5});
-            this.xrCrossTab1.DataMember = "RPT_STOCK_COUNT.Result1";
-            this.xrCrossTab1.DataSource = this.sqlDataSource1;
             this.xrCrossTab1.FilterString = "[qtyDiff] <> 0.0m";
             this.xrCrossTab1.GeneralStyleName = "crossTabGeneralStyle1";
             this.xrCrossTab1.HeaderAreaStyleName = "crossTabHeaderStyle1";
@@ -924,21 +922,6 @@ namespace dxReports.Reports
             this.crossTabTotalCell15.RowIndex = 3;
             this.crossTabTotalCell15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             // 
-            // sqlDataSource1
-            // 
-            this.sqlDataSource1.ConnectionName = "PowerBI";
-            this.sqlDataSource1.Name = "sqlDataSource1";
-            storedProcQuery1.Name = "RPT_STOCK_COUNT";
-            queryParameter1.Name = "@stockCountId";
-            queryParameter1.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter1.Value = new DevExpress.DataAccess.Expression("?sr_StockCountId", typeof(string));
-            storedProcQuery1.Parameters.AddRange(new DevExpress.DataAccess.Sql.QueryParameter[] {
-            queryParameter1});
-            storedProcQuery1.StoredProcName = "RPT_STOCK_COUNT";
-            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            storedProcQuery1});
-            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
-            // 
             // crossTabGeneralStyle1
             // 
             this.crossTabGeneralStyle1.BackColor = System.Drawing.Color.White;
@@ -1118,6 +1101,21 @@ namespace dxReports.Reports
             this.rpt_QtyDiff.DataMember = "RPT_STOCK_COUNT.Result1";
             this.rpt_QtyDiff.Name = "rpt_QtyDiff";
             // 
+            // sqlDataSource2
+            // 
+            this.sqlDataSource2.ConnectionName = "PowerBI";
+            this.sqlDataSource2.Name = "sqlDataSource2";
+            storedProcQuery1.Name = "RPT_STOCK_COUNT_II";
+            queryParameter1.Name = "@auditNo";
+            queryParameter1.Type = typeof(DevExpress.DataAccess.Expression);
+            queryParameter1.Value = new DevExpress.DataAccess.Expression("?sr_StockCountId", typeof(string));
+            storedProcQuery1.Parameters.AddRange(new DevExpress.DataAccess.Sql.QueryParameter[] {
+            queryParameter1});
+            storedProcQuery1.StoredProcName = "RPT_STOCK_COUNT_II";
+            this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            storedProcQuery1});
+            this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
+            // 
             // Stock_Count_Sub_Report_CrossTab
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1133,9 +1131,9 @@ namespace dxReports.Reports
             this.itemCodeWithName,
             this.rpt_QtyDiff});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
-            this.sqlDataSource1});
-            this.DataMember = "RPT_STOCK_COUNT";
-            this.DataSource = this.sqlDataSource1;
+            this.sqlDataSource2});
+            this.DataMember = "RPT_STOCK_COUNT_II";
+            this.DataSource = this.sqlDataSource2;
             this.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
             this.Margins = new DevExpress.Drawing.DXMargins(35F, 11F, 24.82F, 20.02F);
             this.ParameterPanelLayoutItems.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
@@ -1201,7 +1199,6 @@ namespace dxReports.Reports
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell2;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell3;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell5;
-        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private DevExpress.XtraReports.UI.CalculatedField CostDifference;
         private DevExpress.XtraReports.UI.CalculatedField RetailDifference;
         private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
@@ -1229,5 +1226,6 @@ namespace dxReports.Reports
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell12;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell13;
         private DevExpress.XtraReports.UI.CrossTab.XRCrossTabCell crossTabTotalCell15;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource2;
     }
 }

@@ -27,7 +27,7 @@ namespace dxReports.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=smartviewdbs.itserver.biz,5003;Initial Catalog=PowerBI;Persist Securi" +
-            "ty Info=True;User ID=dev;Password=AMG@1234;TrustServerCertificate=True")]
+            "ty Info=True;User ID=FAR;Password=M@g#1265;TrustServerCertificate=True")]
         public string PowerBIConnectionString {
             get {
                 return ((string)(this["PowerBIConnectionString"]));

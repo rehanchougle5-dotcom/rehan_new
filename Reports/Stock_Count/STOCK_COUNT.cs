@@ -6,9 +6,9 @@ using System.Drawing;
 
 namespace dxReports.Reports.Stock_Count
 {
-    public partial class Stock12Count : DevExpress.XtraReports.UI.XtraReport
+    public partial class STOCK_COUNT : DevExpress.XtraReports.UI.XtraReport
     {
-        public Stock12Count()
+        public STOCK_COUNT()
         {
             InitializeComponent();
         }

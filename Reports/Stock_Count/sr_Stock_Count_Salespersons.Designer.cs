@@ -46,6 +46,7 @@ namespace dxReports.Reports.Stock_Count
             this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
             this.sr_StockCountId = new DevExpress.XtraReports.Parameters.Parameter();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
@@ -56,26 +57,27 @@ namespace dxReports.Reports.Stock_Count
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 20.02F;
+            this.BottomMargin.HeightF = 42.91041F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // Detail
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel1,
             this.xrTable1});
-            this.Detail.HeightF = 20.9F;
+            this.Detail.HeightF = 23F;
             this.Detail.Name = "Detail";
             // 
             // xrTable1
             // 
             this.xrTable1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(102)))), ((int)(((byte)(122)))));
             this.xrTable1.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
-            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(18.81F, 0F);
+            this.xrTable1.LocationFloat = new DevExpress.Utils.PointFloat(18.80991F, 0F);
             this.xrTable1.Name = "xrTable1";
             this.xrTable1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable1.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow1});
-            this.xrTable1.SizeF = new System.Drawing.SizeF(18.81F, 20.9F);
+            this.xrTable1.SizeF = new System.Drawing.SizeF(368.8672F, 20.9F);
             this.xrTable1.StylePriority.UseBorderColor = false;
             this.xrTable1.StylePriority.UseBorders = false;
             // 
@@ -179,6 +181,23 @@ namespace dxReports.Reports.Stock_Count
             storedProcQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
+            // xrLabel1
+            // 
+            this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[PersonName] +\'-\'+ \'[\'+[PersonId]+\']\'\n")});
+            this.xrLabel1.Font = new DevExpress.Drawing.DXFont("calibri", 8F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.xrLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(102)))), ((int)(((byte)(122)))));
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(50.78204F, 0F);
+            this.xrLabel1.Multiline = true;
+            this.xrLabel1.Name = "xrLabel1";
+            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(336.8949F, 19.84324F);
+            this.xrLabel1.StylePriority.UseFont = false;
+            this.xrLabel1.StylePriority.UseForeColor = false;
+            this.xrLabel1.StylePriority.UseTextAlignment = false;
+            this.xrLabel1.Text = "xrLabel1";
+            this.xrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            // 
             // sr_Stock_Count_Salespersons
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -191,7 +210,7 @@ namespace dxReports.Reports.Stock_Count
             this.DataMember = "RPT_STOCK_COUNT_SALEPERSONS";
             this.DataSource = this.sqlDataSource1;
             this.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
-            this.Margins = new DevExpress.Drawing.DXMargins(35F, 403F, 24.82F, 20.02F);
+            this.Margins = new DevExpress.Drawing.DXMargins(35F, 403F, 24.82F, 42.91041F);
             this.ParameterPanelLayoutItems.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.sr_StockCountId, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
@@ -217,5 +236,6 @@ namespace dxReports.Reports.Stock_Count
         private DevExpress.XtraReports.Parameters.Parameter sr_StockCountId;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox1;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
     }
 }
