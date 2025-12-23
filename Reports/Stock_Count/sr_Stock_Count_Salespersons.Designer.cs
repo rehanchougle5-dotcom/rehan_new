@@ -221,6 +221,7 @@ namespace dxReports.Reports.Stock_Count
             this.xrTable2});
             this.ReportFooter.HeightF = 88.93294F;
             this.ReportFooter.Name = "ReportFooter";
+            this.ReportFooter.Visible = false;
             // 
             // xrTable2
             // 
@@ -297,7 +298,7 @@ namespace dxReports.Reports.Stock_Count
             // 
             // xrTableCell11
             // 
-            this.xrTableCell11.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.xrTableCell11.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell11.BorderWidth = 1.5F;
             this.xrTableCell11.Multiline = true;
             this.xrTableCell11.Name = "xrTableCell11";
@@ -307,7 +308,7 @@ namespace dxReports.Reports.Stock_Count
             // 
             // xrTableCell12
             // 
-            this.xrTableCell12.Borders = DevExpress.XtraPrinting.BorderSide.Bottom;
+            this.xrTableCell12.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrTableCell12.BorderWidth = 1.5F;
             this.xrTableCell12.Font = new DevExpress.Drawing.DXFont("calibri", 7.5F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrTableCell12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(102)))), ((int)(((byte)(122)))));
