@@ -273,6 +273,8 @@
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "ForeColor", "Iif([retailDiff]<0, \'red\',[retailDiff] )")});
             this.xrTableCell21.Multiline = true;
             this.xrTableCell21.Name = "xrTableCell21";
+            this.xrTableCell21.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 0, 0, 100F);
+            this.xrTableCell21.StylePriority.UsePadding = false;
             this.xrTableCell21.StylePriority.UseTextAlignment = false;
             this.xrTableCell21.Text = "Amount";
             this.xrTableCell21.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
@@ -424,7 +426,7 @@
             this.xrLabel8.LocationFloat = new DevExpress.Utils.PointFloat(672.5704F, 10.35582F);
             this.xrLabel8.Multiline = true;
             this.xrLabel8.Name = "xrLabel8";
-            this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 0, 0, 100F);
+            this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(3, 4, 0, 0, 100F);
             this.xrLabel8.SizeF = new System.Drawing.SizeF(131.4297F, 28.90625F);
             this.xrLabel8.StylePriority.UseBorderColor = false;
             this.xrLabel8.StylePriority.UseBorderDashStyle = false;
@@ -504,7 +506,7 @@
             this.xrLabel11,
             this.xrPictureBox6,
             this.xrLabel12});
-            this.xrPanel7.LocationFloat = new DevExpress.Utils.PointFloat(483.3432F, 60.12693F);
+            this.xrPanel7.LocationFloat = new DevExpress.Utils.PointFloat(487.6289F, 58.47813F);
             this.xrPanel7.Name = "xrPanel7";
             this.xrPanel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 5, 5, 100F);
             this.xrPanel7.SizeF = new System.Drawing.SizeF(310.6569F, 48.47572F);
@@ -580,7 +582,7 @@
             this.xrLabel7,
             this.xrPictureBox4,
             this.xrLabel9});
-            this.xrPanel6.LocationFloat = new DevExpress.Utils.PointFloat(483.3432F, 10.57737F);
+            this.xrPanel6.LocationFloat = new DevExpress.Utils.PointFloat(487.6289F, 8.928565F);
             this.xrPanel6.Name = "xrPanel6";
             this.xrPanel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 5, 5, 100F);
             this.xrPanel6.SizeF = new System.Drawing.SizeF(310.6569F, 49.54955F);
@@ -980,6 +982,8 @@
             // 
             this.xrTableCell10.Multiline = true;
             this.xrTableCell10.Name = "xrTableCell10";
+            this.xrTableCell10.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 4, 0, 0, 100F);
+            this.xrTableCell10.StylePriority.UsePadding = false;
             this.xrTableCell10.StylePriority.UseTextAlignment = false;
             this.xrTableCell10.Text = "Value";
             this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
