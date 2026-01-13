@@ -102,6 +102,7 @@
             this.xrTableRow6 = new DevExpress.XtraReports.UI.XRTableRow();
             this.xrTableCell11 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell12 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrSubreport1 = new DevExpress.XtraReports.UI.XRSubreport();
             this.xrSubreport3 = new DevExpress.XtraReports.UI.XRSubreport();
             this.xrPanel1 = new DevExpress.XtraReports.UI.XRPanel();
             this.xrTable6 = new DevExpress.XtraReports.UI.XRTable();
@@ -161,7 +162,6 @@
             this.FRRetailDifferenc = new DevExpress.XtraReports.UI.CalculatedField();
             this.cf_PriceVariance = new DevExpress.XtraReports.UI.CalculatedField();
             this.auditNo = new DevExpress.XtraReports.Parameters.Parameter();
-            this.xrSubreport1 = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.xrCrossTab4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
@@ -1031,6 +1031,14 @@
             this.xrTableCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             this.xrTableCell12.Weight = 2.8952830602703243D;
             // 
+            // xrSubreport1
+            // 
+            this.xrSubreport1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrSubreport1.Name = "xrSubreport1";
+            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("sr_AuditNumber", null, "RPT_STOCK_COUNT_II.Result1.auditNo"));
+            this.xrSubreport1.ReportSource = new dxReports.Reports.Stock_Count.sr_Stock_Count_Denomination();
+            this.xrSubreport1.SizeF = new System.Drawing.SizeF(809.0001F, 83.03744F);
+            // 
             // xrSubreport3
             // 
             this.xrSubreport3.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
@@ -1847,14 +1855,6 @@
             // 
             this.auditNo.Name = "auditNo";
             // 
-            // xrSubreport1
-            // 
-            this.xrSubreport1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
-            this.xrSubreport1.Name = "xrSubreport1";
-            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("sr_AuditNumber", null, "RPT_STOCK_COUNT_II.Result1.auditNo"));
-            this.xrSubreport1.ReportSource = new dxReports.Reports.Stock_Count.sr_Stock_Count_Denomination();
-            this.xrSubreport1.SizeF = new System.Drawing.SizeF(809.0001F, 83.03744F);
-            // 
             // STOCK_COUNT
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1976,6 +1976,7 @@
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell11;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell12;
         private DevExpress.XtraReports.UI.SubBand SubBand10;
+        private DevExpress.XtraReports.UI.XRSubreport xrSubreport1;
         private DevExpress.XtraReports.UI.SubBand SubBand5;
         private DevExpress.XtraReports.UI.XRSubreport xrSubreport3;
         private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
@@ -2040,6 +2041,5 @@
         private DevExpress.XtraReports.UI.CalculatedField FRRetailDifferenc;
         private DevExpress.XtraReports.UI.CalculatedField cf_PriceVariance;
         private DevExpress.XtraReports.Parameters.Parameter auditNo;
-        private DevExpress.XtraReports.UI.XRSubreport xrSubreport1;
     }
 }
