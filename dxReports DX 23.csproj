@@ -211,6 +211,42 @@
     <Compile Include="Reports\Check_List\Checklist_Audit.Designer.cs">
       <DependentUpon>Checklist_Audit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Cheque Blank\ADCB.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\ADCB.Designer.cs">
+      <DependentUpon>ADCB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\CBICheque.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\CBICheque.Designer.cs">
+      <DependentUpon>CBICheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\check_printing.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\check_printing.Designer.cs">
+      <DependentUpon>check_printing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\DIB.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\DIB.Designer.cs">
+      <DependentUpon>DIB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\EmirateIslamic.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\EmirateIslamic.Designer.cs">
+      <DependentUpon>EmirateIslamic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\emiratesNBDCheque.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\emiratesNBDCheque.Designer.cs">
+      <DependentUpon>emiratesNBDCheque.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Commercial_License\Commercial_License.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -841,6 +877,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Check_List\Checklist_Audit.resx">
       <DependentUpon>Checklist_Audit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Cheque Blank\ADCB.resx">
+      <DependentUpon>ADCB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Cheque Blank\CBICheque.resx">
+      <DependentUpon>CBICheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Cheque Blank\check_printing.resx">
+      <DependentUpon>check_printing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Cheque Blank\DIB.resx">
+      <DependentUpon>DIB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Cheque Blank\EmirateIslamic.resx">
+      <DependentUpon>EmirateIslamic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Cheque Blank\emiratesNBDCheque.resx">
+      <DependentUpon>emiratesNBDCheque.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Commercial_License\Commercial_License.resx">
       <DependentUpon>Commercial_License.cs</DependentUpon>
