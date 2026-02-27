@@ -119,8 +119,6 @@
             // checkNo
             // 
             this.checkNo.Name = "checkNo";
-            this.checkNo.Type = typeof(int);
-            this.checkNo.ValueInfo = "0";
             // 
             // checkDate
             // 
@@ -128,7 +126,6 @@
             new DevExpress.XtraReports.Expressions.BasicExpressionBinding("Value", "Today()")});
             this.checkDate.Name = "checkDate";
             this.checkDate.Type = typeof(System.DateTime);
-            this.checkDate.ValueInfo = "0";
             // 
             // bpName
             // 
@@ -356,8 +353,6 @@
             this.company,
             this.userId});
             this.Scripts.OnBeforePrint = "Cheque_BeforePrint";
-            this.ScriptsSource = "\r\nprivate void Cheque_BeforePrint(object sender, System.ComponentModel.CancelEven" +
-    "tArgs e) {\r\n    \r\n}\r\n";
             this.Version = "23.1";
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 

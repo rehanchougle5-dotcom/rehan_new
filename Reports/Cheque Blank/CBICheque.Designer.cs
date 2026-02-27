@@ -85,8 +85,6 @@
             // 
             this.checkNo.Description = "checkNo";
             this.checkNo.Name = "checkNo";
-            this.checkNo.Type = typeof(int);
-            this.checkNo.ValueInfo = "0";
             // 
             // bpName
             // 
