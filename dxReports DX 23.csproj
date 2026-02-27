@@ -668,6 +668,12 @@
     <Compile Include="Reports\Task Status Report\Task_Status_Report_2.Designer.cs">
       <DependentUpon>Task_Status_Report_2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\TEST\test report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\TEST\test report.Designer.cs">
+      <DependentUpon>test report.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\TEST\XtraReport2.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1069,6 +1075,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Task Status Report\Task_Status_Report_2.resx">
       <DependentUpon>Task_Status_Report_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\TEST\test report.resx">
+      <DependentUpon>test report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\TEST\XtraReport2.resx">
       <DependentUpon>XtraReport2.cs</DependentUpon>
