@@ -130,7 +130,6 @@
             // bpName
             // 
             this.bpName.Name = "bpName";
-            this.bpName.ValueInfo = "0";
             // 
             // checkAmount
             // 

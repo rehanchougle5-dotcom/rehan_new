@@ -104,7 +104,6 @@
             // 
             this.bpName.Description = "bpName";
             this.bpName.Name = "bpName";
-            this.bpName.ValueInfo = "0";
             // 
             // checkAmount
             // 
@@ -230,6 +229,7 @@
             this.xrLabel2.StylePriority.UseTextAlignment = false;
             this.xrLabel2.Text = "xrLabel2";
             this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrLabel2.TextFormatString = "{0:N}";
             // 
             // xrLabel1
             // 
