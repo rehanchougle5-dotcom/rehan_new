@@ -141,7 +141,7 @@
             this.xrLabel4.SizeF = new System.Drawing.SizeF(173.77F, 30.02378F);
             this.xrLabel4.StylePriority.UseFont = false;
             this.xrLabel4.Text = "xrLabel4";
-            this.xrLabel4.TextFormatString = "{0:d}";
+            this.xrLabel4.TextFormatString = "{0:dd/MM/yyyy}";
             // 
             // xrLabel2
             // 
