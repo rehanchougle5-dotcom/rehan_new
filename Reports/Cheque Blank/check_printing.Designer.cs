@@ -52,8 +52,8 @@
             this.countryCode = new DevExpress.XtraReports.Parameters.Parameter();
             this.bankCode = new DevExpress.XtraReports.Parameters.Parameter();
             this.remarks = new DevExpress.XtraReports.Parameters.Parameter();
-            this.company = new DevExpress.XtraReports.Parameters.Parameter();
             this.userId = new DevExpress.XtraReports.Parameters.Parameter();
+            this.company = new DevExpress.XtraReports.Parameters.Parameter();
             this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
             this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
             this.SubBand3 = new DevExpress.XtraReports.UI.SubBand();
@@ -64,6 +64,8 @@
             this.xrSubreport3 = new DevExpress.XtraReports.UI.XRSubreport();
             this.xrSubreport4 = new DevExpress.XtraReports.UI.XRSubreport();
             this.xrSubreport5 = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SubBand5 = new DevExpress.XtraReports.UI.SubBand();
+            this.xrSubreport6 = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -86,7 +88,8 @@
             this.SubBand1,
             this.SubBand2,
             this.SubBand3,
-            this.SubBand4});
+            this.SubBand4,
+            this.SubBand5});
             // 
             // checkNo
             // 
@@ -123,13 +126,13 @@
             // 
             this.remarks.Name = "remarks";
             // 
-            // company
-            // 
-            this.company.Name = "company";
-            // 
             // userId
             // 
             this.userId.Name = "userId";
+            // 
+            // company
+            // 
+            this.company.Name = "company";
             // 
             // SubBand1
             // 
@@ -315,6 +318,31 @@
             this.xrSubreport5.ReportSource = new dxReports.Reports.Cheque_Blank.emiratesNBDCheque();
             this.xrSubreport5.SizeF = new System.Drawing.SizeF(810F, 400F);
             // 
+            // SubBand5
+            // 
+            this.SubBand5.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrSubreport6});
+            this.SubBand5.HeightF = 100F;
+            this.SubBand5.Name = "SubBand5";
+            // 
+            // xrSubreport6
+            // 
+            this.xrSubreport6.GenerateOwnPages = true;
+            this.xrSubreport6.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrSubreport6.Name = "xrSubreport6";
+            this.xrSubreport6.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("checkNo", this.checkNo));
+            this.xrSubreport6.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("checkDate", this.checkDate));
+            this.xrSubreport6.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("bpName", this.bpName));
+            this.xrSubreport6.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("checkAmount", this.checkAmount));
+            this.xrSubreport6.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("bankName", this.bankName));
+            this.xrSubreport6.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("countryCode", this.countryCode));
+            this.xrSubreport6.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("bankCode", this.bankCode));
+            this.xrSubreport6.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("remarks", this.remarks));
+            this.xrSubreport6.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("company", this.company));
+            this.xrSubreport6.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("userId", this.userId));
+            this.xrSubreport6.ReportSource = new dxReports.Reports.Cheque_Blank.BMC_OMAN();
+            this.xrSubreport6.SizeF = new System.Drawing.SizeF(810F, 100F);
+            // 
             // check_printing
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -380,5 +408,7 @@
         private DevExpress.XtraReports.UI.SubBand SubBand4;
         private DevExpress.XtraReports.UI.XRSubreport xrSubreport5;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
+        private DevExpress.XtraReports.UI.SubBand SubBand5;
+        private DevExpress.XtraReports.UI.XRSubreport xrSubreport6;
     }
 }

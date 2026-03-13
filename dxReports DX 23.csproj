@@ -217,6 +217,18 @@
     <Compile Include="Reports\Cheque Blank\ADCB.Designer.cs">
       <DependentUpon>ADCB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Cheque Blank\BMC_OMAN.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\BMC_OMAN.Designer.cs">
+      <DependentUpon>BMC_OMAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\BSHR_OMN.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\BSHR_OMN.Designer.cs">
+      <DependentUpon>BSHR_OMN.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Cheque Blank\CBICheque.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -886,6 +898,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Cheque Blank\ADCB.resx">
       <DependentUpon>ADCB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Cheque Blank\BMC_OMAN.resx">
+      <DependentUpon>BMC_OMAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Cheque Blank\BSHR_OMN.resx">
+      <DependentUpon>BSHR_OMN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Cheque Blank\CBICheque.resx">
       <DependentUpon>CBICheque.cs</DependentUpon>
