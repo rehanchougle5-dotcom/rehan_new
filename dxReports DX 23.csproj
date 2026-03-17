@@ -217,6 +217,12 @@
     <Compile Include="Reports\Cheque Blank\ADCB.Designer.cs">
       <DependentUpon>ADCB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Cheque Blank\ASB_BHR.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\ASB_BHR.Designer.cs">
+      <DependentUpon>ASB_BHR.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Cheque Blank\BMC_OMAN.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -234,6 +240,12 @@
     </Compile>
     <Compile Include="Reports\Cheque Blank\CBICheque.Designer.cs">
       <DependentUpon>CBICheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\CB_QTR.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\CB_QTR.Designer.cs">
+      <DependentUpon>CB_QTR.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\Cheque Blank\check_printing.cs">
       <SubType>Component</SubType>
@@ -258,6 +270,18 @@
     </Compile>
     <Compile Include="Reports\Cheque Blank\emiratesNBDCheque.Designer.cs">
       <DependentUpon>emiratesNBDCheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\NBK_KWT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\NBK_KWT.Designer.cs">
+      <DependentUpon>NBK_KWT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\NCB_KSA.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\NCB_KSA.Designer.cs">
+      <DependentUpon>NCB_KSA.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\Commercial_License\Commercial_License.cs">
       <SubType>Component</SubType>
@@ -899,6 +923,9 @@
     <EmbeddedResource Include="Reports\Cheque Blank\ADCB.resx">
       <DependentUpon>ADCB.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Cheque Blank\ASB_BHR.resx">
+      <DependentUpon>ASB_BHR.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Cheque Blank\BMC_OMAN.resx">
       <DependentUpon>BMC_OMAN.cs</DependentUpon>
     </EmbeddedResource>
@@ -907,6 +934,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Cheque Blank\CBICheque.resx">
       <DependentUpon>CBICheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Cheque Blank\CB_QTR.resx">
+      <DependentUpon>CB_QTR.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Cheque Blank\check_printing.resx">
       <DependentUpon>check_printing.cs</DependentUpon>
@@ -919,6 +949,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Cheque Blank\emiratesNBDCheque.resx">
       <DependentUpon>emiratesNBDCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Cheque Blank\NBK_KWT.resx">
+      <DependentUpon>NBK_KWT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Cheque Blank\NCB_KSA.resx">
+      <DependentUpon>NCB_KSA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Commercial_License\Commercial_License.resx">
       <DependentUpon>Commercial_License.cs</DependentUpon>

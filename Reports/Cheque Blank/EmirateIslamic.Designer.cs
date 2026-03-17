@@ -154,7 +154,7 @@
             this.xrLabel5.SizeF = new System.Drawing.SizeF(185.6026F, 28.52259F);
             this.xrLabel5.StylePriority.UseFont = false;
             this.xrLabel5.Text = "xrLabel5";
-            this.xrLabel5.TextFormatString = "{0:d}";
+            this.xrLabel5.TextFormatString = "{0:dd-MM-yyy}";
             // 
             // bankName
             // 
