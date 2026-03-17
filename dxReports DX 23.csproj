@@ -181,6 +181,12 @@
     <Compile Include="Reports\AR_Invoice\AR_INVOICE_4.Designer.cs">
       <DependentUpon>AR_INVOICE_4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Asset_Barcode\Asset_Barcode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Asset_Barcode\Asset_Barcode.Designer.cs">
+      <DependentUpon>Asset_Barcode.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Bank Details\Bank_Details_2.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -192,12 +198,6 @@
     </Compile>
     <Compile Include="Reports\BinPrinting\BinPrinting1.Designer.cs">
       <DependentUpon>BinPrinting1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Reports\BinPrinting\XtraReport4.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\BinPrinting\XtraReport4.Designer.cs">
-      <DependentUpon>XtraReport4.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\BoxPrint01\BoxPrint01.cs">
       <SubType>Component</SubType>
@@ -330,6 +330,30 @@
     </Compile>
     <Compile Include="Reports\Coupon_Printing\Coupon_Printing.Designer.cs">
       <DependentUpon>Coupon_Printing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Coupon_Printing\Coupon_Printing_2_2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Coupon_Printing\Coupon_Printing_2_2.Designer.cs">
+      <DependentUpon>Coupon_Printing_2_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Coupon_Printing\Coupon_Printing_Guid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Coupon_Printing\Coupon_Printing_Guid.Designer.cs">
+      <DependentUpon>Coupon_Printing_Guid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Coupon_Printing\Coupon_Printing_range.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Coupon_Printing\Coupon_Printing_range.Designer.cs">
+      <DependentUpon>Coupon_Printing_range.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Coupon_Printing\Coupon_Tablet_Printing.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Coupon_Printing\Coupon_Tablet_Printing.Designer.cs">
+      <DependentUpon>Coupon_Tablet_Printing.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\Customer Aging\Customer_Aging_1.cs">
       <SubType>Component</SubType>
@@ -904,15 +928,15 @@
     <EmbeddedResource Include="Reports\AR_Invoice\AR_INVOICE_4.resx">
       <DependentUpon>AR_INVOICE_4.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Asset_Barcode\Asset_Barcode.resx">
+      <DependentUpon>Asset_Barcode.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Bank Details\Bank_Details_2.resx">
       <DependentUpon>Bank_Details_2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\BinPrinting\BinPrinting1.resx">
       <DependentUpon>BinPrinting1.cs</DependentUpon>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\BinPrinting\XtraReport4.resx">
-      <DependentUpon>XtraReport4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\BoxPrint01\BoxPrint01.resx">
       <DependentUpon>BoxPrint01.cs</DependentUpon>
@@ -979,6 +1003,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Coupon_Printing\Coupon_Printing.resx">
       <DependentUpon>Coupon_Printing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Coupon_Printing\Coupon_Printing_2_2.resx">
+      <DependentUpon>Coupon_Printing_2_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Coupon_Printing\Coupon_Printing_Guid.resx">
+      <DependentUpon>Coupon_Printing_Guid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Coupon_Printing\Coupon_Printing_range.resx">
+      <DependentUpon>Coupon_Printing_range.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Coupon_Printing\Coupon_Tablet_Printing.resx">
+      <DependentUpon>Coupon_Tablet_Printing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Customer Aging\Customer_Aging_1.resx">
       <DependentUpon>Customer_Aging_1.cs</DependentUpon>
