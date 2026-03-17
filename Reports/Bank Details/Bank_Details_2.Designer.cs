@@ -91,7 +91,6 @@ namespace dxReports.Reports.Bank_Details
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.rpt_ReportLanguage = new DevExpress.XtraReports.UI.CalculatedField();
             this.sr_Currency = new DevExpress.XtraReports.Parameters.Parameter();
-            this.isArabic = new DevExpress.XtraReports.Parameters.Parameter();
             this.sr_ReportCode = new DevExpress.XtraReports.Parameters.Parameter();
             this.sr_ReportLanguage = new DevExpress.XtraReports.Parameters.Parameter();
             this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
@@ -769,14 +768,6 @@ namespace dxReports.Reports.Bank_Details
             this.sr_Currency.Name = "sr_Currency";
             this.sr_Currency.Visible = false;
             // 
-            // isArabic
-            // 
-            this.isArabic.Description = "Display Arabic Preference";
-            this.isArabic.Name = "isArabic";
-            this.isArabic.Type = typeof(bool);
-            this.isArabic.ValueInfo = "False";
-            this.isArabic.Visible = false;
-            // 
             // sr_ReportCode
             // 
             this.sr_ReportCode.Name = "sr_ReportCode";
@@ -845,11 +836,9 @@ namespace dxReports.Reports.Bank_Details
             this.Margins = new DevExpress.Drawing.DXMargins(40F, 25F, 19.16667F, 8.74F);
             this.ParameterPanelLayoutItems.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.sr_Currency, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.isArabic, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.sr_ReportCode, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.sr_Currency,
-            this.isArabic,
             this.sr_ReportCode,
             this.sr_ReportLanguage});
             this.Version = "23.2";
@@ -886,7 +875,6 @@ namespace dxReports.Reports.Bank_Details
         private DevExpress.XtraReports.UI.PageHeaderBand PageHeader;
         private DevExpress.XtraReports.UI.CalculatedField rpt_ReportLanguage;
         private DevExpress.XtraReports.Parameters.Parameter sr_Currency;
-        private DevExpress.XtraReports.Parameters.Parameter isArabic;
         private DevExpress.XtraReports.Parameters.Parameter sr_ReportCode;
         private DevExpress.XtraReports.Parameters.Parameter sr_ReportLanguage;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource2;

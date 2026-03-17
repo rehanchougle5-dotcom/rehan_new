@@ -3731,6 +3731,7 @@
             this.xrSubreport4.Name = "xrSubreport4";
             this.xrSubreport4.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("srDraftEntry", null, "AMG_TRD_UAE_RPT_AP_INVOICE_DRAFT.DocEntry"));
             this.xrSubreport4.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("srObjType", null, "AMG_TRD_UAE_RPT_AP_INVOICE_DRAFT.ObjType"));
+            this.xrSubreport4.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("srDocEntry", null, "AMG_TRD_UAE_RPT_AP_INVOICE_DRAFT.draftKey"));
             this.xrSubreport4.ReportSource = new dxReports.Reports.Standar_Approval___Sub_Report.Standar_Approval_Sub_Report();
             this.xrSubreport4.SizeF = new System.Drawing.SizeF(782.0005F, 32.99999F);
             // 
