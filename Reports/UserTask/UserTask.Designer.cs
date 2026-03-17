@@ -93,6 +93,7 @@
             this.xrLabel24 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel25 = new DevExpress.XtraReports.UI.XRLabel();
             this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
+            this.xrSubreport1 = new DevExpress.XtraReports.UI.XRSubreport();
             this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
             this.SubBand6 = new DevExpress.XtraReports.UI.SubBand();
             this.xrLabel16 = new DevExpress.XtraReports.UI.XRLabel();
@@ -127,6 +128,7 @@
             this.xrShape5 = new DevExpress.XtraReports.UI.XRShape();
             this.SubBand8 = new DevExpress.XtraReports.UI.SubBand();
             this.xrLine3 = new DevExpress.XtraReports.UI.XRLine();
+            this.xrSubreport2 = new DevExpress.XtraReports.UI.XRSubreport();
             this.xrShape6 = new DevExpress.XtraReports.UI.XRShape();
             this.xrLabel54 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel53 = new DevExpress.XtraReports.UI.XRLabel();
@@ -153,8 +155,6 @@
             this.rowCount = new DevExpress.XtraReports.UI.CalculatedField();
             this.TaskHeading = new DevExpress.XtraReports.UI.CalculatedField();
             this.taskPendingDays = new DevExpress.XtraReports.UI.CalculatedField();
-            this.xrSubreport1 = new DevExpress.XtraReports.UI.XRSubreport();
-            this.xrSubreport2 = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrChart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(simpleDiagram1)).BeginInit();
@@ -213,6 +213,7 @@
             // 
             // xrLabel21
             // 
+            this.xrLabel21.CanGrow = false;
             this.xrLabel21.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'Days : \' + [taskPendingDays]")});
             this.xrLabel21.Font = new DevExpress.Drawing.DXFont("BAHnschrift", 8F, DevExpress.Drawing.DXFontStyle.Bold);
@@ -228,6 +229,7 @@
             this.xrLabel21.StylePriority.UseTextAlignment = false;
             this.xrLabel21.Text = "xrLabel19";
             this.xrLabel21.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrLabel21.TextFitMode = DevExpress.XtraReports.UI.TextFitMode.ShrinkAndGrow;
             // 
             // xrLabel41
             // 
@@ -965,6 +967,14 @@
             this.SubBand1.HeightF = 33F;
             this.SubBand1.Name = "SubBand1";
             // 
+            // xrSubreport1
+            // 
+            this.xrSubreport1.LocationFloat = new DevExpress.Utils.PointFloat(14.63821F, 10F);
+            this.xrSubreport1.Name = "xrSubreport1";
+            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("Task", this.Task));
+            this.xrSubreport1.ReportSource = new dxReports.Reports.UserTask.UserTaskSetup1();
+            this.xrSubreport1.SizeF = new System.Drawing.SizeF(734.4528F, 23F);
+            // 
             // SubBand2
             // 
             this.SubBand2.HeightF = 0F;
@@ -1390,6 +1400,14 @@
             this.xrLine3.SizeF = new System.Drawing.SizeF(744.4999F, 22.50002F);
             this.xrLine3.StylePriority.UseForeColor = false;
             // 
+            // xrSubreport2
+            // 
+            this.xrSubreport2.LocationFloat = new DevExpress.Utils.PointFloat(471.7254F, 47.83335F);
+            this.xrSubreport2.Name = "xrSubreport2";
+            this.xrSubreport2.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("Task", this.Task));
+            this.xrSubreport2.ReportSource = new dxReports.Reports.UserTask.Related_User();
+            this.xrSubreport2.SizeF = new System.Drawing.SizeF(268.5474F, 103.8333F);
+            // 
             // xrShape6
             // 
             this.xrShape6.BorderColor = System.Drawing.Color.Transparent;
@@ -1790,22 +1808,6 @@
             this.taskPendingDays.DataMember = "AD_UserTask_1";
             this.taskPendingDays.Expression = "DateDiffDay([taskDate], Today())";
             this.taskPendingDays.Name = "taskPendingDays";
-            // 
-            // xrSubreport1
-            // 
-            this.xrSubreport1.LocationFloat = new DevExpress.Utils.PointFloat(14.63821F, 10F);
-            this.xrSubreport1.Name = "xrSubreport1";
-            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("Task", this.Task));
-            this.xrSubreport1.ReportSource = new dxReports.Reports.UserTask.UserTaskSetup1();
-            this.xrSubreport1.SizeF = new System.Drawing.SizeF(734.4528F, 23F);
-            // 
-            // xrSubreport2
-            // 
-            this.xrSubreport2.LocationFloat = new DevExpress.Utils.PointFloat(471.7254F, 47.83335F);
-            this.xrSubreport2.Name = "xrSubreport2";
-            this.xrSubreport2.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("Task", this.Task));
-            this.xrSubreport2.ReportSource = new dxReports.Reports.UserTask.Related_User();
-            this.xrSubreport2.SizeF = new System.Drawing.SizeF(268.5474F, 103.8333F);
             // 
             // UserTask
             // 

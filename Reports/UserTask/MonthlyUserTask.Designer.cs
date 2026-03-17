@@ -153,11 +153,11 @@
             this.xrLabel9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[depName]")});
             this.xrLabel9.Font = new DevExpress.Drawing.DXFont("calibri", 9.75F);
-            this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(689.4452F, 66.77315F);
+            this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(689.4453F, 66.77316F);
             this.xrLabel9.Multiline = true;
             this.xrLabel9.Name = "xrLabel9";
             this.xrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel9.SizeF = new System.Drawing.SizeF(75.93207F, 16.22916F);
+            this.xrLabel9.SizeF = new System.Drawing.SizeF(83.74457F, 16.22916F);
             this.xrLabel9.StylePriority.UseBorderColor = false;
             this.xrLabel9.StylePriority.UseBorderDashStyle = false;
             this.xrLabel9.StylePriority.UseBorders = false;
@@ -258,11 +258,11 @@
             this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?ToDate")});
             this.xrLabel2.Font = new DevExpress.Drawing.DXFont("calibri", 9.75F);
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(689.4452F, 45.77314F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(689.4453F, 45.77314F);
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel2.SizeF = new System.Drawing.SizeF(75.93207F, 16.22917F);
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(83.74457F, 16.22917F);
             this.xrLabel2.StylePriority.UseBorderColor = false;
             this.xrLabel2.StylePriority.UseBorderDashStyle = false;
             this.xrLabel2.StylePriority.UseBorders = false;
@@ -280,11 +280,11 @@
             this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?FromDate")});
             this.xrLabel1.Font = new DevExpress.Drawing.DXFont("calibri", 9.75F);
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(689.445F, 24.77313F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(689.4451F, 24.77313F);
             this.xrLabel1.Multiline = true;
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(75.93201F, 16.22917F);
+            this.xrLabel1.SizeF = new System.Drawing.SizeF(83.74475F, 16.22917F);
             this.xrLabel1.StylePriority.UseBorderColor = false;
             this.xrLabel1.StylePriority.UseBorderDashStyle = false;
             this.xrLabel1.StylePriority.UseBorders = false;
