@@ -1607,8 +1607,7 @@
             // 
             this.xrSubreport2.LocationFloat = new DevExpress.Utils.PointFloat(0.7621872F, 79.99998F);
             this.xrSubreport2.Name = "xrSubreport2";
-            this.xrSubreport2.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("sr_TrnspName", null, "AMG_TRD_UAE_RPT_PURCHASE_ORDER.TrnspName"));
-            this.xrSubreport2.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("sr_TrnspCode", null, "AMG_TRD_UAE_RPT_PURCHASE_ORDER.TrnspCode"));
+            this.xrSubreport2.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("sr_DocEntry", null, "AMG_TRD_UAE_RPT_GOODS_RECEIPT_PO.DocEntry"));
             this.xrSubreport2.ReportSource = new dxReports.Reports.Purchase_Order.Purchase_Order_Additional_Expenses_Sub_Report();
             this.xrSubreport2.SizeF = new System.Drawing.SizeF(477.0703F, 51.40533F);
             // 

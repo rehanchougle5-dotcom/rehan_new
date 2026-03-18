@@ -463,7 +463,6 @@ namespace dxReports.Reports.AR_Invoice
             this.xrTableCell152 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrTableCell153 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrShape17 = new DevExpress.XtraReports.UI.XRShape();
-            this.sr_Bank_Details = new DevExpress.XtraReports.UI.XRSubreport();
             this.SubBand13 = new DevExpress.XtraReports.UI.SubBand();
             this.SubBand14 = new DevExpress.XtraReports.UI.SubBand();
             this.xrTable4 = new DevExpress.XtraReports.UI.XRTable();
@@ -486,6 +485,7 @@ namespace dxReports.Reports.AR_Invoice
             this.DocEntry = new DevExpress.XtraReports.Parameters.Parameter();
             this.isArabic = new DevExpress.XtraReports.Parameters.Parameter();
             this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.xrSubreport1 = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable18)).BeginInit();
@@ -4227,8 +4227,8 @@ namespace dxReports.Reports.AR_Invoice
             // SubBand17
             // 
             this.SubBand17.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.sr_Bank_Details});
-            this.SubBand17.HeightF = 90F;
+            this.xrSubreport1});
+            this.SubBand17.HeightF = 90.00002F;
             this.SubBand17.Name = "SubBand17";
             // 
             // xrTable19
@@ -6344,16 +6344,6 @@ namespace dxReports.Reports.AR_Invoice
             this.xrShape17.StylePriority.UseBorders = false;
             this.xrShape17.StylePriority.UseForeColor = false;
             // 
-            // sr_Bank_Details
-            // 
-            this.sr_Bank_Details.LocationFloat = new DevExpress.Utils.PointFloat(0.0004238552F, 0F);
-            this.sr_Bank_Details.Name = "sr_Bank_Details";
-            this.sr_Bank_Details.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("sr_Currency", null, "AMG_TRD_UAE_RPT_AR_INVOICE.DocCurr"));
-            this.sr_Bank_Details.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("sr_ReportCode", null, "AMG_TRD_UAE_RPT_AR_INVOICE.ReportCode"));
-            this.sr_Bank_Details.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("sr_ReportLanguage", null, "AMG_TRD_UAE_RPT_AR_INVOICE.ReportLanguage"));
-            this.sr_Bank_Details.ReportSource = new dxReports.Reports.Bank_Details.Bank_Details_2();
-            this.sr_Bank_Details.SizeF = new System.Drawing.SizeF(795.2411F, 89.99999F);
-            // 
             // SubBand13
             // 
             this.SubBand13.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
@@ -6565,6 +6555,16 @@ namespace dxReports.Reports.AR_Invoice
             this.sqlDataSource2.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
             storedProcQuery2});
             this.sqlDataSource2.ResultSchemaSerializable = resources.GetString("sqlDataSource2.ResultSchemaSerializable");
+            // 
+            // xrSubreport1
+            // 
+            this.xrSubreport1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrSubreport1.Name = "xrSubreport1";
+            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("sr_Currency", null, "AMG_TRD_UAE_RPT_AR_INVOICE.DocCurr"));
+            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("sr_ReportCode", null, "AMG_TRD_UAE_RPT_AR_INVOICE.ReportCode"));
+            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("sr_ReportLanguage", null, "AMG_TRD_UAE_RPT_AR_INVOICE.ReportLanguage"));
+            this.xrSubreport1.ReportSource = new dxReports.Reports.Bank_Details.Bank_Details_2();
+            this.xrSubreport1.SizeF = new System.Drawing.SizeF(819.0001F, 90.00002F);
             // 
             // AR_INVOICE_4
             // 
@@ -7027,7 +7027,7 @@ namespace dxReports.Reports.AR_Invoice
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell152;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell153;
         private DevExpress.XtraReports.UI.SubBand SubBand17;
-        private DevExpress.XtraReports.UI.XRSubreport sr_Bank_Details;
+        private DevExpress.XtraReports.UI.XRSubreport xrSubreport1;
         private DevExpress.XtraReports.UI.ReportFooterBand ReportFooter;
         private DevExpress.XtraReports.UI.SubBand SubBand13;
         private DevExpress.XtraReports.UI.XRTable xrTable4;
