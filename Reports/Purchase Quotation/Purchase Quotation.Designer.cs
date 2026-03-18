@@ -1682,7 +1682,7 @@
             // 
             this.SubBand5.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrSubreport3});
-            this.SubBand5.HeightF = 48.6553F;
+            this.SubBand5.HeightF = 48.65531F;
             this.SubBand5.Name = "SubBand5";
             // 
             // xrPageInfo2
@@ -1714,8 +1714,7 @@
             // 
             this.xrSubreport2.LocationFloat = new DevExpress.Utils.PointFloat(0.7622645F, 79.99998F);
             this.xrSubreport2.Name = "xrSubreport2";
-            this.xrSubreport2.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("sr_TrnspName", null, "AMG_TRD_UAE_RPT_PURCHASE_ORDER.TrnspName"));
-            this.xrSubreport2.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("sr_TrnspCode", null, "AMG_TRD_UAE_RPT_PURCHASE_ORDER.TrnspCode"));
+            this.xrSubreport2.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("sr_DocEntry", null, "AMG_TRD_UAE_RPT_PURCHASE_QUOTAION.PQT_DocEntry"));
             this.xrSubreport2.ReportSource = new dxReports.Reports.Purchase_Order.Purchase_Order_Additional_Expenses_Sub_Report();
             this.xrSubreport2.SizeF = new System.Drawing.SizeF(477.0703F, 51.40533F);
             // 
@@ -1734,7 +1733,7 @@
             // 
             this.xrSubreport5.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrSubreport5.Name = "xrSubreport5";
-            this.xrSubreport5.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("srDocEntry", this.DocEntry));
+            this.xrSubreport5.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("srDocEntry", null, "AMG_TRD_UAE_RPT_PURCHASE_QUOTAION.PQT_DocEntry"));
             this.xrSubreport5.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("srObjType", null, "AMG_TRD_UAE_RPT_PURCHASE_QUOTAION.ObjType"));
             this.xrSubreport5.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("srDraftEntry", null, "AMG_TRD_UAE_RPT_PURCHASE_QUOTAION.draftKey"));
             this.xrSubreport5.ReportSource = new dxReports.Reports.Standar_Approval___Sub_Report.Standar_Approval_Sub_Report();
@@ -1742,12 +1741,11 @@
             // 
             // xrSubreport3
             // 
-            this.xrSubreport3.GenerateOwnPages = true;
             this.xrSubreport3.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrSubreport3.Name = "xrSubreport3";
-            this.xrSubreport3.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("DocEntry", null, "AMG_TRD_UAE_RPT_PURCHASE_QUOTAION.PQT_BaseEntry"));
+            this.xrSubreport3.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("DocEntry", null, "AMG_TRD_UAE_RPT_PURCHASE_QUOTAION.PQT_LineDocEntry"));
             this.xrSubreport3.ReportSource = new dxReports.Reports.Purchase_Request.PURCHASE_REQUEST();
-            this.xrSubreport3.SizeF = new System.Drawing.SizeF(802F, 47.82049F);
+            this.xrSubreport3.SizeF = new System.Drawing.SizeF(801.9999F, 48.65531F);
             // 
             // Purchase_Quotation
             // 
@@ -1915,9 +1913,9 @@
         private DevExpress.XtraReports.UI.XRPageInfo xrPageInfo2;
         private DevExpress.XtraReports.UI.SubBand SubBand6;
         private DevExpress.XtraReports.UI.SubBand SubBand11;
-        private DevExpress.XtraReports.UI.XRSubreport xrSubreport3;
         private DevExpress.XtraReports.UI.PageFooterBand PageFooter;
         private DevExpress.XtraReports.UI.XRLabel xrLabel37;
         private DevExpress.XtraReports.UI.XRLabel xrLabel34;
+        private DevExpress.XtraReports.UI.XRSubreport xrSubreport3;
     }
 }

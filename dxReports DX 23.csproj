@@ -445,6 +445,12 @@
     <Compile Include="Reports\Item Launch\Item Launch.Designer.cs">
       <DependentUpon>Item Launch.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Maint Dept Stock Recived\Maint_Dpt_Stock_Receive.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Maint Dept Stock Recived\Maint_Dpt_Stock_Receive.Designer.cs">
+      <DependentUpon>Maint_Dpt_Stock_Receive.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Outgoing Payment Draft\Outgoing_Payment_Draft.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -631,6 +637,12 @@
     </Compile>
     <Compile Include="Reports\Sales_Order\AR_SO_7.Designer.cs">
       <DependentUpon>AR_SO_7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Sales_Order\Sales_Order_Draft.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Sales_Order\Sales_Order_Draft.Designer.cs">
+      <DependentUpon>Sales_Order_Draft.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\Sales_Quotation\SQ_1.cs">
       <SubType>Component</SubType>
@@ -1061,6 +1073,9 @@
     <EmbeddedResource Include="Reports\Item Launch\Item Launch.resx">
       <DependentUpon>Item Launch.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Maint Dept Stock Recived\Maint_Dpt_Stock_Receive.resx">
+      <DependentUpon>Maint_Dpt_Stock_Receive.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Outgoing Payment Draft\Outgoing_Payment_Draft.resx">
       <DependentUpon>Outgoing_Payment_Draft.cs</DependentUpon>
     </EmbeddedResource>
@@ -1153,6 +1168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Sales_Order\AR_SO_7.resx">
       <DependentUpon>AR_SO_7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Sales_Order\Sales_Order_Draft.resx">
+      <DependentUpon>Sales_Order_Draft.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Sales_Quotation\SQ_1.resx">
       <DependentUpon>SQ_1.cs</DependentUpon>
