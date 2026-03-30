@@ -257,7 +257,7 @@
             this.sqlDataSource1});
             this.DataMember = "Rpt_ChequePrint";
             this.DataSource = this.sqlDataSource1;
-            this.FilterString = "[bankCode] = \'Commercial Bank\' And [company] = \'QTR\'";
+            this.FilterString = "[bankCode] = \'Commercial Bank\' And [company] = \'QAT\'";
             this.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
             this.Margins = new DevExpress.Drawing.DXMargins(0F, 11F, 11.66667F, 19.16667F);
             this.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 10, 10, 100F);

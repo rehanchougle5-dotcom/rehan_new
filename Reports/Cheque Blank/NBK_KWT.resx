@@ -120,4 +120,34 @@
   <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlJwdF9DaGVxdWVQcmludCI+PEZpZWxkIE5hbWU9ImNoZWNrUHJpbnRJZCIgVHlwZT0iSW50NjQiIC8+PEZpZWxkIE5hbWU9ImNvbXBhbnkiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iY291bnRyeUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iYmFua0NvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iYmFua05hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iY2hlY2tObyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJjaGVja0Ftb3VudCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iY2hlY2tEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iYnBOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InJlbWFya3MiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icHJpbnRlZEJ5IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InByaW50ZWREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iY2hlY2tTdGF0dXMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iYW1vdW50SW5Xb3JkcyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJBbW91bnRMaW5lMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJBbW91bnRMaW5lMiIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
+  <data name="Amount_Line_1.Expression" xml:space="preserve">
+    <value>Upper(Iif(Len([amountInWords]) &gt; 45, 
+Iif(Substring([amountInWords], 55, 1) = ' ', Substring([amountInWords], 0, 55), 
+Iif(Substring([amountInWords], 54, 1) = ' ', Substring([amountInWords], 0, 54), 
+Iif(Substring([amountInWords], 53, 1) = ' ', Substring([amountInWords], 0, 53), 
+Iif(Substring([amountInWords], 52, 1) = ' ', Substring([amountInWords], 0, 52), 
+Iif(Substring([amountInWords], 51, 1) = ' ', Substring([amountInWords], 0, 51), 
+Iif(Substring([amountInWords], 50, 1) = ' ', Substring([amountInWords], 0, 50), 
+Iif(Substring([amountInWords], 49, 1) = ' ', Substring([amountInWords], 0, 49), 
+Iif(Substring([amountInWords], 48, 1) = ' ', Substring([amountInWords], 0, 48), 
+Iif(Substring([amountInWords], 47, 1) = ' ', Substring([amountInWords], 0, 47), 
+Iif(Substring([amountInWords], 46, 1) = ' ', Substring([amountInWords], 0, 46), 
+Iif(Substring([amountInWords], 45, 1) = ' ', Substring([amountInWords], 0, 45), 
+Substring([amountInWords], 0, 44)))))))))))), [amountInWords]))</value>
+  </data>
+  <data name="Amount_Line_2.Expression" xml:space="preserve">
+    <value>Upper(Iif(Len([amountInWords]) &gt; 45, 
+Iif(Substring([amountInWords], 55, 1) = ' ', Trim(Substring([amountInWords], 55, Len([amountInWords]) - 55)), 
+Iif(Substring([amountInWords], 54, 1) = ' ', Trim(Substring([amountInWords], 54, Len([amountInWords]) - 54)), 
+Iif(Substring([amountInWords], 53, 1) = ' ', Trim(Substring([amountInWords], 53, Len([amountInWords]) - 53)), 
+Iif(Substring([amountInWords], 52, 1) = ' ', Trim(Substring([amountInWords], 52, Len([amountInWords]) - 52)), 
+Iif(Substring([amountInWords], 51, 1) = ' ', Trim(Substring([amountInWords], 51, Len([amountInWords]) - 51)), 
+Iif(Substring([amountInWords], 50, 1) = ' ', Trim(Substring([amountInWords], 50, Len([amountInWords]) - 50)), 
+Iif(Substring([amountInWords], 49, 1) = ' ', Trim(Substring([amountInWords], 49, Len([amountInWords]) - 49)), 
+Iif(Substring([amountInWords], 48, 1) = ' ', Trim(Substring([amountInWords], 48, Len([amountInWords]) - 48)), 
+Iif(Substring([amountInWords], 47, 1) = ' ', Trim(Substring([amountInWords], 47, Len([amountInWords]) - 47)), 
+Iif(Substring([amountInWords], 46, 1) = ' ', Trim(Substring([amountInWords], 46, Len([amountInWords]) - 46)), 
+Iif(Substring([amountInWords], 45, 1) = ' ', Trim(Substring([amountInWords], 45, Len([amountInWords]) - 45)), 
+Trim(Substring([amountInWords], 44, Len([amountInWords]) - 44))))))))))))), ''))</value>
+  </data>
 </root>
