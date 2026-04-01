@@ -133,26 +133,40 @@ Substring(FormatString('{0:ddMMyyyy}', [checkDate]),7,1)
     <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxWaWV3IE5hbWU9IlJwdF9DaGVxdWVQcmludCI+PEZpZWxkIE5hbWU9ImNoZWNrUHJpbnRJZCIgVHlwZT0iSW50NjQiIC8+PEZpZWxkIE5hbWU9ImNvbXBhbnkiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iY291bnRyeUNvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iYmFua0NvZGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iYmFua05hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iY2hlY2tObyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJjaGVja0Ftb3VudCIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iY2hlY2tEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iYnBOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InJlbWFya3MiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0icHJpbnRlZEJ5IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9InByaW50ZWREYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iY2hlY2tTdGF0dXMiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iYW1vdW50SW5Xb3JkcyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJBbW91bnRMaW5lMSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJBbW91bnRMaW5lMiIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
   </data>
   <data name="amount_Line_1.Expression" xml:space="preserve">
-    <value>Upper(Iif(Len([amountInWords]) &gt; 30, Iif(Substring([amountInWords], 29, 1) = ' ', Substring([amountInWords], 0, 29), Iif(Substring([amountInWords], 28, 1) = ' ', Substring([amountInWords], 0, 28), Iif(Substring([amountInWords], 27, 1) = ' ', Substring([amountInWords], 0, 27), Iif(Substring([amountInWords], 26, 1) = ' ', Substring([amountInWords], 0, 26), Iif(Substring([amountInWords], 25, 1) = ' ', Substring([amountInWords], 0, 25), Iif(Substring([amountInWords], 24, 1) = ' ', Substring([amountInWords], 0, 24), Iif(Substring([amountInWords], 23, 1) = ' ', Substring([amountInWords], 0, 23), Substring([amountInWords], 0, 22)))))))), [amountInWords]))</value>
+    <value>Upper(Iif(Len([amountInWords]) &gt; 34, 
+Iif(Substring([amountInWords], 34, 1) = ' ', Substring([amountInWords], 0, 34), 
+Iif(Substring([amountInWords], 33, 1) = ' ', Substring([amountInWords], 0, 33), 
+Iif(Substring([amountInWords], 32, 1) = ' ', Substring([amountInWords], 0, 32), 
+Iif(Substring([amountInWords], 31, 1) = ' ', Substring([amountInWords], 0, 31), 
+Iif(Substring([amountInWords], 30, 1) = ' ', Substring([amountInWords], 0, 30), 
+Iif(Substring([amountInWords], 29, 1) = ' ', Substring([amountInWords], 0, 29), 
+Iif(Substring([amountInWords], 28, 1) = ' ', Substring([amountInWords], 0, 28), 
+Substring([amountInWords], 0, 27)))))))), [amountInWords]))</value>
   </data>
   <data name="amount_Line_2.Expression" xml:space="preserve">
-    <value>Upper(Iif(Len(Replace([amountInWords], ' Only', '')) &gt; 23, 
-  Iif(Substring(Replace([amountInWords], ' Only', ''), 31, 1) = ' ', 
-    Trim(Substring(Replace([amountInWords], ' Only', ''), 32, Len(Replace([amountInWords], ' Only', '')) - 32)), 
-  Iif(Substring(Replace([amountInWords], ' Only', ''), 30, 1) = ' ', 
-    Trim(Substring(Replace([amountInWords], ' Only', ''), 31, Len(Replace([amountInWords], ' Only', '')) - 31)), 
-  Iif(Substring(Replace([amountInWords], ' Only', ''), 29, 1) = ' ', 
-    Trim(Substring(Replace([amountInWords], ' Only', ''), 30, Len(Replace([amountInWords], ' Only', '')) - 30)), 
-  Iif(Substring(Replace([amountInWords], ' Only', ''), 28, 1) = ' ', 
-    Trim(Substring(Replace([amountInWords], ' Only', ''), 29, Len(Replace([amountInWords], ' Only', '')) - 29)), 
-  Iif(Substring(Replace([amountInWords], ' Only', ''), 27, 1) = ' ', 
-    Trim(Substring(Replace([amountInWords], ' Only', ''), 28, Len(Replace([amountInWords], ' Only', '')) - 28)), 
-  Iif(Substring(Replace([amountInWords], ' Only', ''), 26, 1) = ' ', 
-    Trim(Substring(Replace([amountInWords], ' Only', ''), 27, Len(Replace([amountInWords], ' Only', '')) - 27)), 
-  Trim(Substring(Replace([amountInWords], ' Only', ''), 25, Len(Replace([amountInWords], ' Only', '')) - 24)))))))), 
+    <value>Upper(Iif(Len([amountInWords]) &gt; 34, 
+Iif(Substring([amountInWords], 34, 1) = ' ', 
+  Iif(Substring([amountInWords], 78, 1) = ' ', Trim(Substring([amountInWords], 35, 43)), 
+  Iif(Substring([amountInWords], 77, 1) = ' ', Trim(Substring([amountInWords], 35, 42)), 
+  Iif(Substring([amountInWords], 76, 1) = ' ', Trim(Substring([amountInWords], 35, 41)), 
+  Iif(Substring([amountInWords], 75, 1) = ' ', Trim(Substring([amountInWords], 35, 40)), 
+  Iif(Substring([amountInWords], 74, 1) = ' ', Trim(Substring([amountInWords], 35, 39)), 
+  Iif(Substring([amountInWords], 73, 1) = ' ', Trim(Substring([amountInWords], 35, 38)), 
+  Trim(Substring([amountInWords], 35, 37)))))))),
+Iif(Substring([amountInWords], 33, 1) = ' ', 
+  Iif(Substring([amountInWords], 77, 1) = ' ', Trim(Substring([amountInWords], 34, 43)), 
+  Trim(Substring([amountInWords], 34, 37))),
+Trim(Substring([amountInWords], 33, 37)))),
 ''))</value>
   </data>
   <data name="amount_Line_3.Expression" xml:space="preserve">
-    <value>Upper(Iif(Len([amountInWords]) &gt; 74, Iif(Substring([amountInWords], 74, 1) = ' ', Trim(Substring([amountInWords], 75, Len([amountInWords]) - 75)), Iif(Substring([amountInWords], 73, 1) = ' ', Trim(Substring([amountInWords], 74, Len([amountInWords]) - 74)), Iif(Substring([amountInWords], 72, 1) = ' ', Trim(Substring([amountInWords], 73, Len([amountInWords]) - 73)), Iif(Substring([amountInWords], 71, 1) = ' ', Trim(Substring([amountInWords], 72, Len([amountInWords]) - 72)), Iif(Substring([amountInWords], 70, 1) = ' ', Trim(Substring([amountInWords], 71, Len([amountInWords]) - 71)), Trim(Substring([amountInWords], 70, Len([amountInWords]) - 70))))))), ''))</value>
+    <value>Upper(Iif(Len([amountInWords]) &gt; 78, 
+Iif(Substring([amountInWords], 78, 1) = ' ', Trim(Substring([amountInWords], 79, Len([amountInWords]) - 79)), 
+Iif(Substring([amountInWords], 77, 1) = ' ', Trim(Substring([amountInWords], 78, Len([amountInWords]) - 78)), 
+Iif(Substring([amountInWords], 76, 1) = ' ', Trim(Substring([amountInWords], 77, Len([amountInWords]) - 77)), 
+Iif(Substring([amountInWords], 75, 1) = ' ', Trim(Substring([amountInWords], 76, Len([amountInWords]) - 76)), 
+Iif(Substring([amountInWords], 74, 1) = ' ', Trim(Substring([amountInWords], 75, Len([amountInWords]) - 75)), 
+Iif(Substring([amountInWords], 73, 1) = ' ', Trim(Substring([amountInWords], 74, Len([amountInWords]) - 74)), 
+Trim(Substring([amountInWords], 73, Len([amountInWords]) - 73)))))))), ''))</value>
   </data>
 </root>
