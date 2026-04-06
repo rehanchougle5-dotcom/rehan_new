@@ -33,5 +33,14 @@ namespace dxReports.Properties {
                 return ((string)(this["PowerBIConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Transparent")]
+        public global::System.Drawing.Color backcolor {
+            get {
+                return ((global::System.Drawing.Color)(this["backcolor"]));
+            }
+        }
     }
 }
