@@ -6,9 +6,9 @@ using System.Drawing;
 
 namespace dxReports.Reports.Packing_List
 {
-    public partial class Printing_List_Lanscape : DevExpress.XtraReports.UI.XtraReport
+    public partial class Packing_List_Lanscape : DevExpress.XtraReports.UI.XtraReport
     {
-        public Printing_List_Lanscape()
+        public Packing_List_Lanscape()
         {
             InitializeComponent();
         }
