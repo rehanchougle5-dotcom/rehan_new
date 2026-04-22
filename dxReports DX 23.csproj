@@ -541,6 +541,18 @@
     <Compile Include="Reports\Purchase Order\Purchase_Order_Approvals_Sub_Report_2.Designer.cs">
       <DependentUpon>Purchase_Order_Approvals_Sub_Report_2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Purchase Order\Purchase_Order_Details.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Purchase Order\Purchase_Order_Details.Designer.cs">
+      <DependentUpon>Purchase_Order_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Purchase Order\Purchase_Order_Printing.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Purchase Order\Purchase_Order_Printing.Designer.cs">
+      <DependentUpon>Purchase_Order_Printing.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Purchase Order\PURCHASE_ORDER_TAX_DETAILS_SUB_REPORT.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1132,6 +1144,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Purchase Order\Purchase_Order_Approvals_Sub_Report_2.resx">
       <DependentUpon>Purchase_Order_Approvals_Sub_Report_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Purchase Order\Purchase_Order_Details.resx">
+      <DependentUpon>Purchase_Order_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Purchase Order\Purchase_Order_Printing.resx">
+      <DependentUpon>Purchase_Order_Printing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Purchase Order\PURCHASE_ORDER_TAX_DETAILS_SUB_REPORT.resx">
       <DependentUpon>PURCHASE_ORDER_TAX_DETAILS_SUB_REPORT.cs</DependentUpon>
