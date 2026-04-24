@@ -1,6 +1,6 @@
 ﻿namespace dxReports.Reports.Cheque_Blank
 {
-    partial class CB_QTR
+    partial class ENBD_NEW
     {
         /// <summary>
         /// Required designer variable.
@@ -40,16 +40,18 @@
             DevExpress.DataAccess.Sql.QueryParameter queryParameter8 = new DevExpress.DataAccess.Sql.QueryParameter();
             DevExpress.DataAccess.Sql.QueryParameter queryParameter9 = new DevExpress.DataAccess.Sql.QueryParameter();
             DevExpress.DataAccess.Sql.QueryParameter queryParameter10 = new DevExpress.DataAccess.Sql.QueryParameter();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CB_QTR));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ENBD_NEW));
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
+            this.xrLabel7 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel3 = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel4 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel2 = new DevExpress.XtraReports.UI.XRLabel();
-            this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.AmountLineOne = new DevExpress.XtraReports.UI.CalculatedField();
+            this.AmountLineTwo = new DevExpress.XtraReports.UI.CalculatedField();
             this.checkNo = new DevExpress.XtraReports.Parameters.Parameter();
             this.checkDate = new DevExpress.XtraReports.Parameters.Parameter();
             this.bpName = new DevExpress.XtraReports.Parameters.Parameter();
@@ -58,7 +60,7 @@
             this.countryCode = new DevExpress.XtraReports.Parameters.Parameter();
             this.bankCode = new DevExpress.XtraReports.Parameters.Parameter();
             this.remarks = new DevExpress.XtraReports.Parameters.Parameter();
-            this.company = new DevExpress.XtraReports.Parameters.Parameter();
+            this.comapny = new DevExpress.XtraReports.Parameters.Parameter();
             this.userId = new DevExpress.XtraReports.Parameters.Parameter();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
@@ -69,88 +71,91 @@
             // 
             // BottomMargin
             // 
-            this.BottomMargin.HeightF = 10F;
+            this.BottomMargin.HeightF = 14.24608F;
             this.BottomMargin.Name = "BottomMargin";
             // 
             // Detail
             // 
             this.Detail.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel7,
             this.xrLabel5,
-            this.xrLabel4,
             this.xrLabel3,
-            this.xrLabel2,
-            this.xrLabel1});
-            this.Detail.HeightF = 326.1111F;
+            this.xrLabel4,
+            this.xrLabel2});
+            this.Detail.HeightF = 338.6508F;
             this.Detail.Name = "Detail";
+            // 
+            // xrLabel7
+            // 
+            this.xrLabel7.CanShrink = true;
+            this.xrLabel7.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Upper([AmountLine2])")});
+            this.xrLabel7.Font = new DevExpress.Drawing.DXFont("Arial", 10F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.xrLabel7.LocationFloat = new DevExpress.Utils.PointFloat(12.77771F, 177.5714F);
+            this.xrLabel7.Multiline = true;
+            this.xrLabel7.Name = "xrLabel7";
+            this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel7.SizeF = new System.Drawing.SizeF(509.2064F, 28.23808F);
+            this.xrLabel7.StylePriority.UseFont = false;
+            this.xrLabel7.StylePriority.UseTextAlignment = false;
+            this.xrLabel7.Text = "xrLabel7";
+            this.xrLabel7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
             // xrLabel5
             // 
             this.xrLabel5.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[checkAmount]")});
-            this.xrLabel5.Font = new DevExpress.Drawing.DXFont("Arial", 11F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(511.993F, 121.8333F);
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Upper([AmountLine1])")});
+            this.xrLabel5.Font = new DevExpress.Drawing.DXFont("Arial", 10F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(57.42065F, 140.1666F);
             this.xrLabel5.Multiline = true;
             this.xrLabel5.Name = "xrLabel5";
             this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel5.SizeF = new System.Drawing.SizeF(127.7777F, 23F);
+            this.xrLabel5.SizeF = new System.Drawing.SizeF(426.4681F, 30.1429F);
             this.xrLabel5.StylePriority.UseFont = false;
-            this.xrLabel5.StylePriority.UseTextAlignment = false;
             this.xrLabel5.Text = "xrLabel5";
-            this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrLabel5.TextFormatString = "{0:N}";
-            // 
-            // xrLabel4
-            // 
-            this.xrLabel4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Upper([AmountLine2])")});
-            this.xrLabel4.Font = new DevExpress.Drawing.DXFont("Arial", 10F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(45.68748F, 153.9166F);
-            this.xrLabel4.Multiline = true;
-            this.xrLabel4.Name = "xrLabel4";
-            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel4.SizeF = new System.Drawing.SizeF(441.0415F, 23F);
-            this.xrLabel4.StylePriority.UseFont = false;
-            this.xrLabel4.Text = "xrLabel4";
             // 
             // xrLabel3
             // 
             this.xrLabel3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Upper([AmountLine1])")});
-            this.xrLabel3.Font = new DevExpress.Drawing.DXFont("Arial", 10F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(45.89576F, 116.4166F);
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[checkAmount]")});
+            this.xrLabel3.Font = new DevExpress.Drawing.DXFont("Arial", 11F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(539.7624F, 171.2619F);
             this.xrLabel3.Multiline = true;
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel3.SizeF = new System.Drawing.SizeF(441.0415F, 23F);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(184.762F, 32.28569F);
             this.xrLabel3.StylePriority.UseFont = false;
+            this.xrLabel3.StylePriority.UseTextAlignment = false;
             this.xrLabel3.Text = "xrLabel3";
+            this.xrLabel3.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrLabel3.TextFormatString = "{0:N}";
+            // 
+            // xrLabel4
+            // 
+            this.xrLabel4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[checkDate]")});
+            this.xrLabel4.Font = new DevExpress.Drawing.DXFont("Arial", 10F, DevExpress.Drawing.DXFontStyle.Bold);
+            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(464.4448F, 60.11905F);
+            this.xrLabel4.Multiline = true;
+            this.xrLabel4.Name = "xrLabel4";
+            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel4.SizeF = new System.Drawing.SizeF(181.2701F, 25.02378F);
+            this.xrLabel4.StylePriority.UseFont = false;
+            this.xrLabel4.Text = "xrLabel4";
+            this.xrLabel4.TextFormatString = "{0:dd-MM-yyy}";
             // 
             // xrLabel2
             // 
             this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Upper([bpName])")});
             this.xrLabel2.Font = new DevExpress.Drawing.DXFont("Arial", 10F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(87.007F, 80.0625F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(74.20634F, 100.619F);
             this.xrLabel2.Multiline = true;
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel2.SizeF = new System.Drawing.SizeF(546.611F, 23F);
+            this.xrLabel2.SizeF = new System.Drawing.SizeF(543.0157F, 28.59525F);
             this.xrLabel2.StylePriority.UseFont = false;
             this.xrLabel2.Text = "xrLabel2";
-            // 
-            // xrLabel1
-            // 
-            this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[checkDate]")});
-            this.xrLabel1.Font = new DevExpress.Drawing.DXFont("Arial", 10F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(513.5555F, 45.0278F);
-            this.xrLabel1.Multiline = true;
-            this.xrLabel1.Name = "xrLabel1";
-            this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel1.SizeF = new System.Drawing.SizeF(122.6667F, 22.99999F);
-            this.xrLabel1.StylePriority.UseFont = false;
-            this.xrLabel1.Text = "xrLabel1";
-            this.xrLabel1.TextFormatString = "{0:dd-MM-yyy}";
             // 
             // sqlDataSource1
             // 
@@ -183,7 +188,7 @@
             queryParameter8.Value = new DevExpress.DataAccess.Expression("?remarks", typeof(string));
             queryParameter9.Name = "@company";
             queryParameter9.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter9.Value = new DevExpress.DataAccess.Expression("?company", typeof(string));
+            queryParameter9.Value = new DevExpress.DataAccess.Expression("?comapny", typeof(string));
             queryParameter10.Name = "@userId";
             queryParameter10.Type = typeof(DevExpress.DataAccess.Expression);
             queryParameter10.Value = new DevExpress.DataAccess.Expression("?userId", typeof(string));
@@ -203,18 +208,33 @@
             storedProcQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
+            // AmountLineOne
+            // 
+            this.AmountLineOne.DataMember = "Rpt_ChequePrint";
+            this.AmountLineOne.Expression = "Iif(Len([amountInWords]) > 50,\n    Substring([amountInWords], 0, 50),\n    [amount" +
+    "InWords]\n)\n";
+            this.AmountLineOne.Name = "AmountLineOne";
+            // 
+            // AmountLineTwo
+            // 
+            this.AmountLineTwo.DataMember = "Rpt_ChequePrint";
+            this.AmountLineTwo.Expression = "Iif(Len([amountInWords]) > 50,\n    Substring([amountInWords], 50),\n    \'\'\n)\n";
+            this.AmountLineTwo.Name = "AmountLineTwo";
+            // 
             // checkNo
             // 
+            this.checkNo.Description = "checkNo";
             this.checkNo.Name = "checkNo";
             // 
             // checkDate
             // 
+            this.checkDate.Description = "checkDate";
             this.checkDate.Name = "checkDate";
             this.checkDate.Type = typeof(System.DateTime);
-            this.checkDate.ValueInfo = "1753-01-01";
             // 
             // bpName
             // 
+            this.bpName.Description = "bpName";
             this.bpName.Name = "bpName";
             // 
             // checkAmount
@@ -225,44 +245,53 @@
             // 
             // bankName
             // 
+            this.bankName.Description = "bankName";
             this.bankName.Name = "bankName";
             // 
             // countryCode
             // 
+            this.countryCode.Description = "countryCode";
             this.countryCode.Name = "countryCode";
             // 
             // bankCode
             // 
+            this.bankCode.Description = "bankCode";
             this.bankCode.Name = "bankCode";
             // 
             // remarks
             // 
+            this.remarks.Description = "remarks";
             this.remarks.Name = "remarks";
             // 
-            // company
+            // comapny
             // 
-            this.company.Name = "company";
+            this.comapny.Description = "comapny";
+            this.comapny.Name = "comapny";
             // 
             // userId
             // 
+            this.userId.Description = "userId";
             this.userId.Name = "userId";
             // 
-            // CB_QTR
+            // ENBD_NEW
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
             this.TopMargin,
             this.BottomMargin,
             this.Detail});
+            this.CalculatedFields.AddRange(new DevExpress.XtraReports.UI.CalculatedField[] {
+            this.AmountLineOne,
+            this.AmountLineTwo});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.sqlDataSource1});
             this.DataMember = "Rpt_ChequePrint";
             this.DataSource = this.sqlDataSource1;
-            this.FilterString = "[bankCode] = \'Commercial Bank\' And [company] = \'QAT\'";
+            this.FilterString = "[bankCode] = \'ENBD-AMP\'";
             this.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
-            this.Margins = new DevExpress.Drawing.DXMargins(10F, 10F, 10F, 10F);
+            this.Margins = new DevExpress.Drawing.DXMargins(5F, 5F, 10F, 14.24608F);
             this.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 10, 10, 100F);
-            this.PageHeight = 320;
-            this.PageWidth = 690;
+            this.PageHeight = 380;
+            this.PageWidth = 760;
             this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.Custom;
             this.ParameterPanelLayoutItems.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.checkNo, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
@@ -273,7 +302,7 @@
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.countryCode, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.bankCode, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.remarks, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.company, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.comapny, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.userId, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.checkNo,
@@ -284,9 +313,12 @@
             this.countryCode,
             this.bankCode,
             this.remarks,
-            this.company,
+            this.comapny,
             this.userId});
             this.Version = "23.1";
+            this.Watermark.ImageSource = new DevExpress.XtraPrinting.Drawing.ImageSource("img", resources.GetString("ENBD_NEW.Watermark.ImageSource"));
+            this.Watermark.ImageTransparency = 255;
+            this.Watermark.ImageViewMode = DevExpress.XtraPrinting.Drawing.ImageViewMode.Stretch;
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
 
         }
@@ -296,12 +328,14 @@
         private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
         private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
         private DevExpress.XtraReports.UI.DetailBand Detail;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel7;
         private DevExpress.XtraReports.UI.XRLabel xrLabel5;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel4;
         private DevExpress.XtraReports.UI.XRLabel xrLabel3;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel4;
         private DevExpress.XtraReports.UI.XRLabel xrLabel2;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel1;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
+        private DevExpress.XtraReports.UI.CalculatedField AmountLineOne;
+        private DevExpress.XtraReports.UI.CalculatedField AmountLineTwo;
         private DevExpress.XtraReports.Parameters.Parameter checkNo;
         private DevExpress.XtraReports.Parameters.Parameter checkDate;
         private DevExpress.XtraReports.Parameters.Parameter bpName;
@@ -310,7 +344,7 @@
         private DevExpress.XtraReports.Parameters.Parameter countryCode;
         private DevExpress.XtraReports.Parameters.Parameter bankCode;
         private DevExpress.XtraReports.Parameters.Parameter remarks;
-        private DevExpress.XtraReports.Parameters.Parameter company;
+        private DevExpress.XtraReports.Parameters.Parameter comapny;
         private DevExpress.XtraReports.Parameters.Parameter userId;
     }
 }

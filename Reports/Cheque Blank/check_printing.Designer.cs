@@ -44,27 +44,17 @@
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
-            this.checkNo = new DevExpress.XtraReports.Parameters.Parameter();
-            this.checkDate = new DevExpress.XtraReports.Parameters.Parameter();
-            this.bpName = new DevExpress.XtraReports.Parameters.Parameter();
-            this.checkAmount = new DevExpress.XtraReports.Parameters.Parameter();
-            this.bankName = new DevExpress.XtraReports.Parameters.Parameter();
-            this.countryCode = new DevExpress.XtraReports.Parameters.Parameter();
-            this.bankCode = new DevExpress.XtraReports.Parameters.Parameter();
-            this.remarks = new DevExpress.XtraReports.Parameters.Parameter();
-            this.userId = new DevExpress.XtraReports.Parameters.Parameter();
-            this.company = new DevExpress.XtraReports.Parameters.Parameter();
+            this.xrSubreport1 = new DevExpress.XtraReports.UI.XRSubreport();
             this.SubBand1 = new DevExpress.XtraReports.UI.SubBand();
             this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
             this.SubBand3 = new DevExpress.XtraReports.UI.SubBand();
             this.SubBand4 = new DevExpress.XtraReports.UI.SubBand();
             this.SubBand5 = new DevExpress.XtraReports.UI.SubBand();
             this.SubBand6 = new DevExpress.XtraReports.UI.SubBand();
-            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.SubBand7 = new DevExpress.XtraReports.UI.SubBand();
             this.SubBand8 = new DevExpress.XtraReports.UI.SubBand();
             this.SubBand9 = new DevExpress.XtraReports.UI.SubBand();
-            this.xrSubreport1 = new DevExpress.XtraReports.UI.XRSubreport();
+            this.SubBand10 = new DevExpress.XtraReports.UI.SubBand();
             this.xrSubreport2 = new DevExpress.XtraReports.UI.XRSubreport();
             this.xrSubreport3 = new DevExpress.XtraReports.UI.XRSubreport();
             this.xrSubreport4 = new DevExpress.XtraReports.UI.XRSubreport();
@@ -74,8 +64,20 @@
             this.xrSubreport8 = new DevExpress.XtraReports.UI.XRSubreport();
             this.xrSubreport9 = new DevExpress.XtraReports.UI.XRSubreport();
             this.xrSubreport10 = new DevExpress.XtraReports.UI.XRSubreport();
-            this.SubBand10 = new DevExpress.XtraReports.UI.SubBand();
             this.xrSubreport11 = new DevExpress.XtraReports.UI.XRSubreport();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.checkNo = new DevExpress.XtraReports.Parameters.Parameter();
+            this.checkDate = new DevExpress.XtraReports.Parameters.Parameter();
+            this.bpName = new DevExpress.XtraReports.Parameters.Parameter();
+            this.checkAmount = new DevExpress.XtraReports.Parameters.Parameter();
+            this.bankName = new DevExpress.XtraReports.Parameters.Parameter();
+            this.countryCode = new DevExpress.XtraReports.Parameters.Parameter();
+            this.bankCode = new DevExpress.XtraReports.Parameters.Parameter();
+            this.remarks = new DevExpress.XtraReports.Parameters.Parameter();
+            this.company = new DevExpress.XtraReports.Parameters.Parameter();
+            this.userId = new DevExpress.XtraReports.Parameters.Parameter();
+            this.SubBand11 = new DevExpress.XtraReports.UI.SubBand();
+            this.xrSubreport12 = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -104,50 +106,29 @@
             this.SubBand7,
             this.SubBand8,
             this.SubBand9,
-            this.SubBand10});
+            this.SubBand10,
+            this.SubBand11});
             // 
-            // checkNo
+            // xrSubreport1
             // 
-            this.checkNo.Name = "checkNo";
-            // 
-            // checkDate
-            // 
-            this.checkDate.Name = "checkDate";
-            this.checkDate.Type = typeof(System.DateTime);
-            // 
-            // bpName
-            // 
-            this.bpName.Name = "bpName";
-            // 
-            // checkAmount
-            // 
-            this.checkAmount.Name = "checkAmount";
-            this.checkAmount.Type = typeof(decimal);
-            this.checkAmount.ValueInfo = "0";
-            // 
-            // bankName
-            // 
-            this.bankName.Name = "bankName";
-            // 
-            // countryCode
-            // 
-            this.countryCode.Name = "countryCode";
-            // 
-            // bankCode
-            // 
-            this.bankCode.Name = "bankCode";
-            // 
-            // remarks
-            // 
-            this.remarks.Name = "remarks";
-            // 
-            // userId
-            // 
-            this.userId.Name = "userId";
-            // 
-            // company
-            // 
-            this.company.Name = "company";
+            this.xrSubreport1.CanShrink = true;
+            this.xrSubreport1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?bankCode == \'ADCB\'")});
+            this.xrSubreport1.GenerateOwnPages = true;
+            this.xrSubreport1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrSubreport1.Name = "xrSubreport1";
+            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("checkNo", this.checkNo));
+            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("checkDate", this.checkDate));
+            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("bpName", this.bpName));
+            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("checkAmount", this.checkAmount));
+            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("bankName", this.bankName));
+            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("countryCode", this.countryCode));
+            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("bankCode", this.bankCode));
+            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("remarks", this.remarks));
+            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("userId", this.userId));
+            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("company", this.company));
+            this.xrSubreport1.ReportSource = new dxReports.Reports.Cheque_Blank.ADCB();
+            this.xrSubreport1.SizeF = new System.Drawing.SizeF(810F, 390F);
             // 
             // SubBand1
             // 
@@ -191,57 +172,6 @@
             this.SubBand6.HeightF = 350F;
             this.SubBand6.Name = "SubBand6";
             // 
-            // sqlDataSource1
-            // 
-            this.sqlDataSource1.ConnectionName = "PowerBI";
-            this.sqlDataSource1.Name = "sqlDataSource1";
-            storedProcQuery1.Name = "Rpt_ChequePrint";
-            queryParameter1.Name = "@checkNo";
-            queryParameter1.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter1.Value = new DevExpress.DataAccess.Expression("?checkNo", typeof(string));
-            queryParameter2.Name = "@checkDate";
-            queryParameter2.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter2.Value = new DevExpress.DataAccess.Expression("?checkDate", typeof(System.DateTime));
-            queryParameter3.Name = "@bpName";
-            queryParameter3.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter3.Value = new DevExpress.DataAccess.Expression("?bpName", typeof(string));
-            queryParameter4.Name = "@checkAmount";
-            queryParameter4.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter4.Value = new DevExpress.DataAccess.Expression("?checkAmount", typeof(decimal));
-            queryParameter5.Name = "@bankName";
-            queryParameter5.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter5.Value = new DevExpress.DataAccess.Expression("?bankName", typeof(string));
-            queryParameter6.Name = "@countryCode";
-            queryParameter6.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter6.Value = new DevExpress.DataAccess.Expression("?countryCode", typeof(string));
-            queryParameter7.Name = "@bankCode";
-            queryParameter7.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter7.Value = new DevExpress.DataAccess.Expression("?bankCode", typeof(string));
-            queryParameter8.Name = "@remarks";
-            queryParameter8.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter8.Value = new DevExpress.DataAccess.Expression("?remarks", typeof(string));
-            queryParameter9.Name = "@company";
-            queryParameter9.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter9.Value = new DevExpress.DataAccess.Expression("?company", typeof(string));
-            queryParameter10.Name = "@userId";
-            queryParameter10.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter10.Value = new DevExpress.DataAccess.Expression("?userId", typeof(string));
-            storedProcQuery1.Parameters.AddRange(new DevExpress.DataAccess.Sql.QueryParameter[] {
-            queryParameter1,
-            queryParameter2,
-            queryParameter3,
-            queryParameter4,
-            queryParameter5,
-            queryParameter6,
-            queryParameter7,
-            queryParameter8,
-            queryParameter9,
-            queryParameter10});
-            storedProcQuery1.StoredProcName = "Rpt_ChequePrint";
-            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            storedProcQuery1});
-            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
-            // 
             // SubBand7
             // 
             this.SubBand7.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
@@ -263,26 +193,13 @@
             this.SubBand9.HeightF = 360F;
             this.SubBand9.Name = "SubBand9";
             // 
-            // xrSubreport1
+            // SubBand10
             // 
-            this.xrSubreport1.CanShrink = true;
-            this.xrSubreport1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?bankCode == \'ADCB\'")});
-            this.xrSubreport1.GenerateOwnPages = true;
-            this.xrSubreport1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
-            this.xrSubreport1.Name = "xrSubreport1";
-            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("checkNo", this.checkNo));
-            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("checkDate", this.checkDate));
-            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("bpName", this.bpName));
-            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("checkAmount", this.checkAmount));
-            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("bankName", this.bankName));
-            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("countryCode", this.countryCode));
-            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("bankCode", this.bankCode));
-            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("remarks", this.remarks));
-            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("userId", this.userId));
-            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("company", this.company));
-            this.xrSubreport1.ReportSource = new dxReports.Reports.Cheque_Blank.ADCB();
-            this.xrSubreport1.SizeF = new System.Drawing.SizeF(810F, 390F);
+            this.SubBand10.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrSubreport11});
+            this.SubBand10.HeightF = 320F;
+            this.SubBand10.KeepTogether = true;
+            this.SubBand10.Name = "SubBand10";
             // 
             // xrSubreport2
             // 
@@ -473,20 +390,13 @@
             this.xrSubreport10.ReportSource = new dxReports.Reports.Cheque_Blank.BMC_OMAN();
             this.xrSubreport10.SizeF = new System.Drawing.SizeF(810F, 360F);
             // 
-            // SubBand10
-            // 
-            this.SubBand10.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
-            this.xrSubreport11});
-            this.SubBand10.HeightF = 330F;
-            this.SubBand10.Name = "SubBand10";
-            // 
             // xrSubreport11
             // 
             this.xrSubreport11.CanShrink = true;
             this.xrSubreport11.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?bankCode == \'Commercial Bank\'")});
             this.xrSubreport11.GenerateOwnPages = true;
-            this.xrSubreport11.LocationFloat = new DevExpress.Utils.PointFloat(0F, 10F);
+            this.xrSubreport11.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrSubreport11.Name = "xrSubreport11";
             this.xrSubreport11.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("checkNo", this.checkNo));
             this.xrSubreport11.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("checkDate", this.checkDate));
@@ -500,6 +410,127 @@
             this.xrSubreport11.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("userId", this.userId));
             this.xrSubreport11.ReportSource = new dxReports.Reports.Cheque_Blank.CB_QTR();
             this.xrSubreport11.SizeF = new System.Drawing.SizeF(810F, 320F);
+            // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.ConnectionName = "PowerBI";
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            storedProcQuery1.Name = "Rpt_ChequePrint";
+            queryParameter1.Name = "@checkNo";
+            queryParameter1.Type = typeof(DevExpress.DataAccess.Expression);
+            queryParameter1.Value = new DevExpress.DataAccess.Expression("?checkNo", typeof(string));
+            queryParameter2.Name = "@checkDate";
+            queryParameter2.Type = typeof(DevExpress.DataAccess.Expression);
+            queryParameter2.Value = new DevExpress.DataAccess.Expression("?checkDate", typeof(System.DateTime));
+            queryParameter3.Name = "@bpName";
+            queryParameter3.Type = typeof(DevExpress.DataAccess.Expression);
+            queryParameter3.Value = new DevExpress.DataAccess.Expression("?bpName", typeof(string));
+            queryParameter4.Name = "@checkAmount";
+            queryParameter4.Type = typeof(DevExpress.DataAccess.Expression);
+            queryParameter4.Value = new DevExpress.DataAccess.Expression("?checkAmount", typeof(decimal));
+            queryParameter5.Name = "@bankName";
+            queryParameter5.Type = typeof(DevExpress.DataAccess.Expression);
+            queryParameter5.Value = new DevExpress.DataAccess.Expression("?bankName", typeof(string));
+            queryParameter6.Name = "@countryCode";
+            queryParameter6.Type = typeof(DevExpress.DataAccess.Expression);
+            queryParameter6.Value = new DevExpress.DataAccess.Expression("?countryCode", typeof(string));
+            queryParameter7.Name = "@bankCode";
+            queryParameter7.Type = typeof(DevExpress.DataAccess.Expression);
+            queryParameter7.Value = new DevExpress.DataAccess.Expression("?bankCode", typeof(string));
+            queryParameter8.Name = "@remarks";
+            queryParameter8.Type = typeof(DevExpress.DataAccess.Expression);
+            queryParameter8.Value = new DevExpress.DataAccess.Expression("?remarks", typeof(string));
+            queryParameter9.Name = "@company";
+            queryParameter9.Type = typeof(DevExpress.DataAccess.Expression);
+            queryParameter9.Value = new DevExpress.DataAccess.Expression("?company", typeof(string));
+            queryParameter10.Name = "@userId";
+            queryParameter10.Type = typeof(DevExpress.DataAccess.Expression);
+            queryParameter10.Value = new DevExpress.DataAccess.Expression("?userId", typeof(string));
+            storedProcQuery1.Parameters.AddRange(new DevExpress.DataAccess.Sql.QueryParameter[] {
+            queryParameter1,
+            queryParameter2,
+            queryParameter3,
+            queryParameter4,
+            queryParameter5,
+            queryParameter6,
+            queryParameter7,
+            queryParameter8,
+            queryParameter9,
+            queryParameter10});
+            storedProcQuery1.StoredProcName = "Rpt_ChequePrint";
+            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            storedProcQuery1});
+            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
+            // 
+            // checkNo
+            // 
+            this.checkNo.Name = "checkNo";
+            // 
+            // checkDate
+            // 
+            this.checkDate.Name = "checkDate";
+            this.checkDate.Type = typeof(System.DateTime);
+            // 
+            // bpName
+            // 
+            this.bpName.Name = "bpName";
+            // 
+            // checkAmount
+            // 
+            this.checkAmount.Name = "checkAmount";
+            this.checkAmount.Type = typeof(decimal);
+            this.checkAmount.ValueInfo = "0";
+            // 
+            // bankName
+            // 
+            this.bankName.Name = "bankName";
+            // 
+            // countryCode
+            // 
+            this.countryCode.Name = "countryCode";
+            // 
+            // bankCode
+            // 
+            this.bankCode.Name = "bankCode";
+            // 
+            // remarks
+            // 
+            this.remarks.Name = "remarks";
+            // 
+            // company
+            // 
+            this.company.Name = "company";
+            // 
+            // userId
+            // 
+            this.userId.Name = "userId";
+            // 
+            // SubBand11
+            // 
+            this.SubBand11.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrSubreport12});
+            this.SubBand11.HeightF = 400F;
+            this.SubBand11.Name = "SubBand11";
+            // 
+            // xrSubreport12
+            // 
+            this.xrSubreport12.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "?bankCode == \'ENBD-AMP\'\n")});
+            this.xrSubreport12.GenerateOwnPages = true;
+            this.xrSubreport12.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
+            this.xrSubreport12.Name = "xrSubreport12";
+            this.xrSubreport12.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("checkNo", this.checkNo));
+            this.xrSubreport12.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("checkDate", this.checkDate));
+            this.xrSubreport12.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("bpName", this.bpName));
+            this.xrSubreport12.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("checkAmount", this.checkAmount));
+            this.xrSubreport12.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("bankName", this.bankName));
+            this.xrSubreport12.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("countryCode", this.countryCode));
+            this.xrSubreport12.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("bankCode", this.bankCode));
+            this.xrSubreport12.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("remarks", this.remarks));
+            this.xrSubreport12.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("comapny", this.company));
+            this.xrSubreport12.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("userId", this.userId));
+            this.xrSubreport12.ReportSource = new dxReports.Reports.Cheque_Blank.ENBD_NEW();
+            this.xrSubreport12.SizeF = new System.Drawing.SizeF(810F, 400F);
             // 
             // check_printing
             // 
@@ -555,8 +586,8 @@
         private DevExpress.XtraReports.Parameters.Parameter countryCode;
         private DevExpress.XtraReports.Parameters.Parameter bankCode;
         private DevExpress.XtraReports.Parameters.Parameter remarks;
-        private DevExpress.XtraReports.Parameters.Parameter company;
         private DevExpress.XtraReports.Parameters.Parameter userId;
+        private DevExpress.XtraReports.Parameters.Parameter company;
         private DevExpress.XtraReports.UI.SubBand SubBand1;
         private DevExpress.XtraReports.UI.XRSubreport xrSubreport2;
         private DevExpress.XtraReports.UI.SubBand SubBand2;
@@ -565,7 +596,6 @@
         private DevExpress.XtraReports.UI.XRSubreport xrSubreport4;
         private DevExpress.XtraReports.UI.SubBand SubBand4;
         private DevExpress.XtraReports.UI.XRSubreport xrSubreport5;
-        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private DevExpress.XtraReports.UI.SubBand SubBand5;
         private DevExpress.XtraReports.UI.XRSubreport xrSubreport6;
         private DevExpress.XtraReports.UI.SubBand SubBand6;
@@ -578,5 +608,8 @@
         private DevExpress.XtraReports.UI.XRSubreport xrSubreport10;
         private DevExpress.XtraReports.UI.SubBand SubBand10;
         private DevExpress.XtraReports.UI.XRSubreport xrSubreport11;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
+        private DevExpress.XtraReports.UI.SubBand SubBand11;
+        private DevExpress.XtraReports.UI.XRSubreport xrSubreport12;
     }
 }

@@ -271,6 +271,12 @@
     <Compile Include="Reports\Cheque Blank\emiratesNBDCheque.Designer.cs">
       <DependentUpon>emiratesNBDCheque.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Cheque Blank\ENBD_NEW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\ENBD_NEW.Designer.cs">
+      <DependentUpon>ENBD_NEW.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Cheque Blank\NBK_KWT.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1009,6 +1015,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Cheque Blank\emiratesNBDCheque.resx">
       <DependentUpon>emiratesNBDCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Cheque Blank\ENBD_NEW.resx">
+      <DependentUpon>ENBD_NEW.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Cheque Blank\NBK_KWT.resx">
       <DependentUpon>NBK_KWT.cs</DependentUpon>
