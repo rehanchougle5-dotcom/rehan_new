@@ -116,6 +116,7 @@
             this.xrLabel6.StylePriority.UseTextAlignment = false;
             this.xrLabel6.Text = "xrLabel6";
             this.xrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrLabel6.TextFormatString = "{0:N0}";
             // 
             // xrLabel4
             // 
@@ -274,7 +275,7 @@
             // checkamountBF
             // 
             this.checkamountBF.DataMember = "Rpt_ChequePrint";
-            this.checkamountBF.Expression = "ToStr(Floor([checkAmount]))";
+            this.checkamountBF.Expression = "FormatString(\'{0:#,##0}\', Floor([checkAmount]))";
             this.checkamountBF.Name = "checkamountBF";
             // 
             // checkAmountAF
