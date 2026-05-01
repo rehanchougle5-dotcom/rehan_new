@@ -523,6 +523,12 @@
     <Compile Include="Reports\Promotion List\Promotion_List.Designer.cs">
       <DependentUpon>Promotion_List.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Promotion List\Promotion_List_1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Promotion List\Promotion_List_1.Designer.cs">
+      <DependentUpon>Promotion_List_1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Promotion List\Prom_List.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1153,6 +1159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Promotion List\Promotion_List.resx">
       <DependentUpon>Promotion_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Promotion List\Promotion_List_1.resx">
+      <DependentUpon>Promotion_List_1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Promotion List\Prom_List.resx">
       <DependentUpon>Prom_List.cs</DependentUpon>
