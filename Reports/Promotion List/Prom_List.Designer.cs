@@ -155,6 +155,7 @@
             // 
             // ReportHeader
             // 
+            this.ReportHeader.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.ReportHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrTable2,
             this.xrLine10,
@@ -205,6 +206,7 @@
             this.xrShape1});
             this.ReportHeader.HeightF = 356.6161F;
             this.ReportHeader.Name = "ReportHeader";
+            this.ReportHeader.StylePriority.UseBorders = false;
             // 
             // xrShape1
             // 
@@ -954,7 +956,7 @@
             this.xrLine4.LineWidth = 3F;
             this.xrLine4.LocationFloat = new DevExpress.Utils.PointFloat(0F, 0F);
             this.xrLine4.Name = "xrLine4";
-            this.xrLine4.SizeF = new System.Drawing.SizeF(770F, 3.739988F);
+            this.xrLine4.SizeF = new System.Drawing.SizeF(770F, 3.73999F);
             this.xrLine4.StylePriority.UseBorderWidth = false;
             // 
             // xrLine5
