@@ -97,7 +97,7 @@
             this.xrLabel5.StylePriority.UseTextAlignment = false;
             this.xrLabel5.Text = "xrLabel5";
             this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrLabel5.TextFormatString = "{0:N}";
+            this.xrLabel5.TextFormatString = "{0:n3}";
             // 
             // xrLabel4
             // 
@@ -158,6 +158,7 @@
             // 
             // checkDate
             // 
+            this.checkDate.AllowNull = true;
             this.checkDate.Name = "checkDate";
             this.checkDate.Type = typeof(System.DateTime);
             this.checkDate.ValueInfo = "1753-01-01";

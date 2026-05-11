@@ -209,6 +209,7 @@
             // 
             // checkDate
             // 
+            this.checkDate.AllowNull = true;
             this.checkDate.Name = "checkDate";
             this.checkDate.Type = typeof(System.DateTime);
             this.checkDate.ValueInfo = "1753-01-01";

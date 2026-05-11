@@ -178,6 +178,7 @@
             // 
             // checkDate
             // 
+            this.checkDate.AllowNull = true;
             this.checkDate.Name = "checkDate";
             this.checkDate.Type = typeof(System.DateTime);
             this.checkDate.ValueInfo = "1753-01-01";
@@ -281,7 +282,7 @@
             // checkAmountAF
             // 
             this.checkAmountAF.DataMember = "Rpt_ChequePrint";
-            this.checkAmountAF.Expression = "FormatString(\'{0:00}\', ([checkAmount] - Floor([checkAmount])) * 100)";
+            this.checkAmountAF.Expression = "FormatString(\'{0:000}\', ([checkAmount] - Floor([checkAmount])) * 1000)";
             this.checkAmountAF.Name = "checkAmountAF";
             // 
             // BMC_OMAN

@@ -156,7 +156,7 @@
             // 
             // TopMargin
             // 
-            this.TopMargin.HeightF = 16.66667F;
+            this.TopMargin.HeightF = 9.166667F;
             this.TopMargin.Name = "TopMargin";
             // 
             // BottomMargin
@@ -238,7 +238,7 @@
             this.xrTableCell6.Multiline = true;
             this.xrTableCell6.Name = "xrTableCell6";
             this.xrTableCell6.StylePriority.UseTextAlignment = false;
-            this.xrTableCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrTableCell6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell6.Weight = 1.0772731305833376D;
             // 
             // xrTableCell7
@@ -250,21 +250,21 @@
             this.xrTableCell7.Name = "xrTableCell7";
             this.xrTableCell7.StylePriority.UseTextAlignment = false;
             this.xrTableCell7.Text = "xrTableCell7";
-            this.xrTableCell7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrTableCell7.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell7.TextFormatString = "{0:0}";
-            this.xrTableCell7.Weight = 0.98242096406839075D;
+            this.xrTableCell7.Weight = 0.63901868055130773D;
             // 
             // xrTableCell8
             // 
             this.xrTableCell8.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[SalesQtyPerPackage]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[PerPieceItem]")});
             this.xrTableCell8.Multiline = true;
             this.xrTableCell8.Name = "xrTableCell8";
             this.xrTableCell8.StylePriority.UseTextAlignment = false;
             this.xrTableCell8.Text = "xrTableCell8";
             this.xrTableCell8.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell8.TextFormatString = "{0:0}";
-            this.xrTableCell8.Weight = 0.70558628520987665D;
+            this.xrTableCell8.Weight = 0.61521573044812738D;
             // 
             // xrTableCell9
             // 
@@ -279,7 +279,7 @@
             this.xrTableCell9.Text = "xrTableCell9";
             this.xrTableCell9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell9.TextFormatString = "{0:0}";
-            this.xrTableCell9.Weight = 0.67855004629331472D;
+            this.xrTableCell9.Weight = 0.72373548914514274D;
             // 
             // xrTableCell10
             // 
@@ -290,25 +290,27 @@
             this.xrTableCell10.StylePriority.UseTextAlignment = false;
             this.xrTableCell10.Text = "xrTableCell10";
             this.xrTableCell10.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell10.Weight = 0.52058420911877756D;
+            this.xrTableCell10.Weight = 0.5748063930519689D;
             // 
             // xrTableCell11
             // 
             this.xrTableCell11.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[Qty]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif([PerPieceItem] == null or [PerPieceItem] == 0,\n  [Packing],\n  Iif([NoOfCarton" +
+                    "s] == null, null,\n    ToDecimal([NoOfCartons]) * ToDecimal([PerPieceItem])\n  )\n)" +
+                    "\n")});
             this.xrTableCell11.Multiline = true;
             this.xrTableCell11.Name = "xrTableCell11";
             this.xrTableCell11.StylePriority.UseTextAlignment = false;
             this.xrTableCell11.Text = "xrTableCell11";
             this.xrTableCell11.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell11.TextFormatString = "{0:0}";
-            this.xrTableCell11.Weight = 0.55228575061413876D;
+            this.xrTableCell11.Weight = 0.88665096210795158D;
             // 
             // xrTableCell27
             // 
             this.xrTableCell27.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(IsNull([PR_Length]) Or [PR_Length] = 0, \'-\', ToStr(ToInt([PR_Length])) + \' \' " +
-                    "+ [PR_LengthUnit])")});
+                    "+ [PR_LengthUnit])\n")});
             this.xrTableCell27.Multiline = true;
             this.xrTableCell27.Name = "xrTableCell27";
             this.xrTableCell27.StylePriority.UseTextAlignment = false;
@@ -321,7 +323,7 @@
             // 
             this.xrTableCell28.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(IsNull([PR_Width]) Or [PR_Width] = 0, \'-\', ToStr(ToInt([PR_Width])) + \' \' + [" +
-                    "PR_WidthUnit])")});
+                    "PR_WidthUnit])\n")});
             this.xrTableCell28.Multiline = true;
             this.xrTableCell28.Name = "xrTableCell28";
             this.xrTableCell28.StylePriority.UseTextAlignment = false;
@@ -334,7 +336,7 @@
             // 
             this.xrTableCell29.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(IsNull([PR_Height]) Or [PR_Height] = 0, \'-\', ToStr(ToInt([PR_Height])) + \' \' " +
-                    "+ [PR_HeightUnit])")});
+                    "+ [PR_HeightUnit])\n")});
             this.xrTableCell29.Multiline = true;
             this.xrTableCell29.Name = "xrTableCell29";
             this.xrTableCell29.StylePriority.UseTextAlignment = false;
@@ -346,7 +348,8 @@
             // xrTableCell30
             // 
             this.xrTableCell30.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "ToStr(Round([PR_Weight] / [Qty], 0)) + \' \' + [PR_WeightUnit]\n")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(IsNull([PR_Weight]) Or [PR_Weight] = 0, \'-\', ToStr(ToInt([PR_Weight])) + \' \' " +
+                    "+ [PR_WeightUnit])")});
             this.xrTableCell30.Multiline = true;
             this.xrTableCell30.Name = "xrTableCell30";
             this.xrTableCell30.StylePriority.UseTextAlignment = false;
@@ -356,8 +359,7 @@
             // xrTableCell31
             // 
             this.xrTableCell31.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Iif(IsNull([PR_Weight]) Or [PR_Weight] = 0, \'-\', ToStr(ToInt([PR_Weight])) + \' \' " +
-                    "+ [PR_WeightUnit])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", resources.GetString("xrTableCell31.ExpressionBindings"))});
             this.xrTableCell31.Multiline = true;
             this.xrTableCell31.Name = "xrTableCell31";
             this.xrTableCell31.StylePriority.UseTextAlignment = false;
@@ -962,7 +964,7 @@
             // 
             this.SubBand1.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
             this.xrLine2});
-            this.SubBand1.HeightF = 19.96859F;
+            this.SubBand1.HeightF = 17.88993F;
             this.SubBand1.Name = "SubBand1";
             // 
             // xrLine2
@@ -1049,7 +1051,7 @@
             this.xrTableCell13.StylePriority.UsePadding = false;
             this.xrTableCell13.StylePriority.UseTextAlignment = false;
             this.xrTableCell13.Text = "Bar/EAN code";
-            this.xrTableCell13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrTableCell13.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell13.Weight = 1.2454477597972193D;
             // 
             // xrTableCell104
@@ -1058,8 +1060,8 @@
             this.xrTableCell104.Name = "xrTableCell104";
             this.xrTableCell104.StylePriority.UseTextAlignment = false;
             this.xrTableCell104.Text = "Batch #";
-            this.xrTableCell104.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell104.Weight = 1.1357920925062295D;
+            this.xrTableCell104.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.xrTableCell104.Weight = 0.73878014344528553D;
             // 
             // xrTableCell105
             // 
@@ -1068,7 +1070,7 @@
             this.xrTableCell105.StylePriority.UseTextAlignment = false;
             this.xrTableCell105.Text = "Packing";
             this.xrTableCell105.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell105.Weight = 0.815737878615001D;
+            this.xrTableCell105.Weight = 0.71126175471565434D;
             // 
             // xrTableCell106
             // 
@@ -1077,7 +1079,7 @@
             this.xrTableCell106.StylePriority.UseTextAlignment = false;
             this.xrTableCell106.Text = "No. of Ctns";
             this.xrTableCell106.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell106.Weight = 0.784478197849812D;
+            this.xrTableCell106.Weight = 0.83671465763600716D;
             // 
             // xrTableCell108
             // 
@@ -1086,7 +1088,7 @@
             this.xrTableCell108.StylePriority.UseTextAlignment = false;
             this.xrTableCell108.Text = "UoM";
             this.xrTableCell108.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell108.Weight = 0.60185565056128087D;
+            this.xrTableCell108.Weight = 0.66454108577201165D;
             // 
             // xrTableCell110
             // 
@@ -1095,7 +1097,7 @@
             this.xrTableCell110.StylePriority.UseTextAlignment = false;
             this.xrTableCell110.Text = "Qty.";
             this.xrTableCell110.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell110.Weight = 0.63850241540972075D;
+            this.xrTableCell110.Weight = 1.0250685933730856D;
             // 
             // xrTableCell22
             // 
@@ -1192,7 +1194,7 @@
             this.xrTableCell15.StylePriority.UseTextAlignment = false;
             this.xrTableCell15.Text = "Total Quantity";
             this.xrTableCell15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell15.Weight = 2.2763665462638949D;
+            this.xrTableCell15.Weight = 2.1329276701505844D;
             // 
             // xrTableCell4
             // 
@@ -1207,7 +1209,7 @@
             this.xrTableCell4.Summary = xrSummary1;
             this.xrTableCell4.Text = "xrTableCell4";
             this.xrTableCell4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell4.Weight = 0.224381661992728D;
+            this.xrTableCell4.Weight = 0.23932269632821082D;
             // 
             // xrTableCell12
             // 
@@ -1222,7 +1224,7 @@
             this.xrTableCell12.Summary = xrSummary2;
             this.xrTableCell12.Text = "xrTableCell12";
             this.xrTableCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell12.Weight = 0.17214692222391323D;
+            this.xrTableCell12.Weight = 0.19007686381483607D;
             // 
             // xrTableCell14
             // 
@@ -1238,7 +1240,7 @@
             this.xrTableCell14.Text = "xrTableCell14";
             this.xrTableCell14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.xrTableCell14.TextFormatString = "{0:0}";
-            this.xrTableCell14.Weight = 0.1826295475000925D;
+            this.xrTableCell14.Weight = 0.29319744768699751D;
             // 
             // xrTableCell32
             // 
@@ -1527,7 +1529,7 @@
             // 
             this.DocEntry.Name = "DocEntry";
             this.DocEntry.Type = typeof(int);
-            this.DocEntry.ValueInfo = "128276";
+            this.DocEntry.ValueInfo = "72660";
             // 
             // xrControlStyle1
             // 
@@ -1559,7 +1561,7 @@
             this.DataMember = "AMG_TRD_UAE_RPT_PACKING_LIST";
             this.DataSource = this.sqlDataSource1;
             this.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
-            this.Margins = new DevExpress.Drawing.DXMargins(20F, 30F, 16.66667F, 100F);
+            this.Margins = new DevExpress.Drawing.DXMargins(20F, 30F, 9.166667F, 100F);
             this.PageHeight = 827;
             this.PageWidth = 1169;
             this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.Custom;
