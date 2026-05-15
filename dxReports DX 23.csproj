@@ -493,6 +493,12 @@
     <Compile Include="Reports\Packing List\packing_List.Designer.cs">
       <DependentUpon>packing_List.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Packing List\Picking_List_Landscape.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Packing List\Picking_List_Landscape.Designer.cs">
+      <DependentUpon>Picking_List_Landscape.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Payment Voucher\Payment_Voucher_1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1102,6 +1108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Packing List\packing_List.resx">
       <DependentUpon>packing_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Packing List\Picking_List_Landscape.resx">
+      <DependentUpon>Picking_List_Landscape.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Payment Voucher\Payment_Voucher_1.resx">
       <DependentUpon>Payment_Voucher_1.cs</DependentUpon>
