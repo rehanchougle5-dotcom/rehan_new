@@ -642,18 +642,17 @@
             // 
             this.ToDate.Name = "ToDate";
             this.ToDate.Type = typeof(System.DateTime);
-            this.ToDate.ValueInfo = "2025-08-09";
+            this.ToDate.ValueInfo = "2026-05-22";
             // 
             // Department
             // 
             this.Department.Name = "Department";
-            this.Department.ValueInfo = "it";
             // 
             // FromDate
             // 
             this.FromDate.Name = "FromDate";
             this.FromDate.Type = typeof(System.DateTime);
-            this.FromDate.ValueInfo = "2025-08-01";
+            this.FromDate.ValueInfo = "2026-05-22";
             // 
             // sqlDataSource1
             // 
@@ -696,12 +695,13 @@
             this.sqlDataSource1});
             this.DataMember = "RPT_GetProjecttaskSummarry";
             this.DataSource = this.sqlDataSource1;
-            this.FilterString = "[TaskDate] >= ?FromDate And [TaskDate] <= ?ToDate And [DepartmentName] = ?Departm" +
-    "ent And (?AssignTo Is Null Or ?AssignTo = \'\' Or [AssignTo] = ?AssignTo)";
             this.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
             this.Margins = new DevExpress.Drawing.DXMargins(30F, 29F, 0F, 1.190476F);
             this.ParameterPanelLayoutItems.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.FromDate, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.FromDate, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.ToDate, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.Department, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.AssignTo, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.FromDate,
             this.ToDate,

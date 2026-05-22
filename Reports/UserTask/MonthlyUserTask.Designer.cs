@@ -37,8 +37,6 @@
             DevExpress.DataAccess.Sql.QueryParameter queryParameter2 = new DevExpress.DataAccess.Sql.QueryParameter();
             DevExpress.DataAccess.Sql.QueryParameter queryParameter3 = new DevExpress.DataAccess.Sql.QueryParameter();
             DevExpress.DataAccess.Sql.QueryParameter queryParameter4 = new DevExpress.DataAccess.Sql.QueryParameter();
-            this.FromDate = new DevExpress.XtraReports.Parameters.Parameter();
-            this.ToDate = new DevExpress.XtraReports.Parameters.Parameter();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
@@ -60,9 +58,9 @@
             this.xrTableCell4 = new DevExpress.XtraReports.UI.XRTableCell();
             this.xrShape1 = new DevExpress.XtraReports.UI.XRShape();
             this.SubBand3 = new DevExpress.XtraReports.UI.SubBand();
-            this.DeptName = new DevExpress.XtraReports.Parameters.Parameter();
-            this.AssingTo = new DevExpress.XtraReports.Parameters.Parameter();
+            this.xrSubreport1 = new DevExpress.XtraReports.UI.XRSubreport();
             this.SubBand2 = new DevExpress.XtraReports.UI.SubBand();
+            this.xrSubreport2 = new DevExpress.XtraReports.UI.XRSubreport();
             this.xrLabel15 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrShape2 = new DevExpress.XtraReports.UI.XRShape();
             this.xrTable2 = new DevExpress.XtraReports.UI.XRTable();
@@ -94,25 +92,15 @@
             this.GroupHeader2 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.GroupHeader3 = new DevExpress.XtraReports.UI.GroupHeaderBand();
             this.GroupHeader4 = new DevExpress.XtraReports.UI.GroupHeaderBand();
+            this.fromDate = new DevExpress.XtraReports.Parameters.Parameter();
+            this.toDate = new DevExpress.XtraReports.Parameters.Parameter();
+            this.depName = new DevExpress.XtraReports.Parameters.Parameter();
+            this.assignTo = new DevExpress.XtraReports.Parameters.Parameter();
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
-            this.xrSubreport1 = new DevExpress.XtraReports.UI.XRSubreport();
-            this.xrSubreport2 = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
-            // 
-            // FromDate
-            // 
-            this.FromDate.Name = "FromDate";
-            this.FromDate.Type = typeof(System.DateTime);
-            this.FromDate.ValueInfo = "2025-09-01";
-            // 
-            // ToDate
-            // 
-            this.ToDate.Name = "ToDate";
-            this.ToDate.Type = typeof(System.DateTime);
-            this.ToDate.ValueInfo = "2025-09-09";
             // 
             // TopMargin
             // 
@@ -151,7 +139,7 @@
             this.xrLabel9.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dash;
             this.xrLabel9.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel9.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[depName]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?DeptName")});
             this.xrLabel9.Font = new DevExpress.Drawing.DXFont("calibri", 9.75F);
             this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(689.4453F, 66.77316F);
             this.xrLabel9.Multiline = true;
@@ -256,7 +244,7 @@
             this.xrLabel2.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dash;
             this.xrLabel2.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?ToDate")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?toDate")});
             this.xrLabel2.Font = new DevExpress.Drawing.DXFont("calibri", 9.75F);
             this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(689.4453F, 45.77314F);
             this.xrLabel2.Multiline = true;
@@ -278,7 +266,7 @@
             this.xrLabel1.BorderDashStyle = DevExpress.XtraPrinting.BorderDashStyle.Dash;
             this.xrLabel1.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?FromDate")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "?fromDate")});
             this.xrLabel1.Font = new DevExpress.Drawing.DXFont("calibri", 9.75F);
             this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(689.4451F, 24.77313F);
             this.xrLabel1.Multiline = true;
@@ -313,13 +301,13 @@
             // 
             // xrTable3
             // 
-            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(83.39788F, 20.60645F);
+            this.xrTable3.LocationFloat = new DevExpress.Utils.PointFloat(83.39783F, 20.60645F);
             this.xrTable3.Name = "xrTable3";
             this.xrTable3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 96F);
             this.xrTable3.Rows.AddRange(new DevExpress.XtraReports.UI.XRTableRow[] {
             this.xrTableRow5,
             this.xrTableRow6});
-            this.xrTable3.SizeF = new System.Drawing.SizeF(441.6019F, 69.99999F);
+            this.xrTable3.SizeF = new System.Drawing.SizeF(507.4352F, 70F);
             // 
             // xrTableRow5
             // 
@@ -377,17 +365,16 @@
             this.SubBand3.HeightF = 63.18008F;
             this.SubBand3.Name = "SubBand3";
             // 
-            // DeptName
+            // xrSubreport1
             // 
-            this.DeptName.Description = "Deparment";
-            this.DeptName.Name = "DeptName";
-            this.DeptName.ValueInfo = "it";
-            // 
-            // AssingTo
-            // 
-            this.AssingTo.Description = "AssingTo";
-            this.AssingTo.Name = "AssingTo";
-            this.AssingTo.ValueInfo = "it.farhan.ahmed";
+            this.xrSubreport1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 12.5F);
+            this.xrSubreport1.Name = "xrSubreport1";
+            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("FromDate", this.fromDate));
+            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("ToDate", this.toDate));
+            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("DeptName", this.depName));
+            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("AssignTo", this.assignTo));
+            this.xrSubreport1.ReportSource = new dxReports.Reports.UserTask.UserSummary();
+            this.xrSubreport1.SizeF = new System.Drawing.SizeF(790.0001F, 37.49988F);
             // 
             // SubBand2
             // 
@@ -395,6 +382,17 @@
             this.xrSubreport2});
             this.SubBand2.HeightF = 63.1758F;
             this.SubBand2.Name = "SubBand2";
+            // 
+            // xrSubreport2
+            // 
+            this.xrSubreport2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 12.5F);
+            this.xrSubreport2.Name = "xrSubreport2";
+            this.xrSubreport2.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("FromDate", this.fromDate));
+            this.xrSubreport2.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("ToDate", this.toDate));
+            this.xrSubreport2.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("Department", this.depName));
+            this.xrSubreport2.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("AssignTo", this.assignTo));
+            this.xrSubreport2.ReportSource = new dxReports.Reports.UserTask.submarryByProject();
+            this.xrSubreport2.SizeF = new System.Drawing.SizeF(790F, 38.10812F);
             // 
             // xrLabel15
             // 
@@ -854,6 +852,26 @@
             this.GroupHeader4.HeightF = 23F;
             this.GroupHeader4.Name = "GroupHeader4";
             // 
+            // fromDate
+            // 
+            this.fromDate.Name = "fromDate";
+            this.fromDate.Type = typeof(System.DateTime);
+            this.fromDate.ValueInfo = "1753-01-01";
+            // 
+            // toDate
+            // 
+            this.toDate.Name = "toDate";
+            this.toDate.Type = typeof(System.DateTime);
+            this.toDate.ValueInfo = "1753-01-01";
+            // 
+            // depName
+            // 
+            this.depName.Name = "depName";
+            // 
+            // assignTo
+            // 
+            this.assignTo.Name = "assignTo";
+            // 
             // sqlDataSource1
             // 
             this.sqlDataSource1.ConnectionName = "PowerBI";
@@ -861,16 +879,16 @@
             storedProcQuery1.Name = "RPT_Monthly_tUserTasks";
             queryParameter1.Name = "@FromDate";
             queryParameter1.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter1.Value = new DevExpress.DataAccess.Expression("?FromDate", typeof(System.DateTime));
+            queryParameter1.Value = new DevExpress.DataAccess.Expression("?fromDate", typeof(System.DateTime));
             queryParameter2.Name = "@ToDate";
             queryParameter2.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter2.Value = new DevExpress.DataAccess.Expression("?ToDate", typeof(System.DateTime));
+            queryParameter2.Value = new DevExpress.DataAccess.Expression("?toDate", typeof(System.DateTime));
             queryParameter3.Name = "@DeptName";
             queryParameter3.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter3.Value = new DevExpress.DataAccess.Expression("?DeptName", typeof(string));
+            queryParameter3.Value = new DevExpress.DataAccess.Expression("?depName", typeof(string));
             queryParameter4.Name = "@AssignTo";
             queryParameter4.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter4.Value = new DevExpress.DataAccess.Expression("?AssingTo", typeof(string));
+            queryParameter4.Value = new DevExpress.DataAccess.Expression("?assignTo", typeof(string));
             storedProcQuery1.Parameters.AddRange(new DevExpress.DataAccess.Sql.QueryParameter[] {
             queryParameter1,
             queryParameter2,
@@ -880,28 +898,6 @@
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
             storedProcQuery1});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
-            // 
-            // xrSubreport1
-            // 
-            this.xrSubreport1.LocationFloat = new DevExpress.Utils.PointFloat(0F, 12.5F);
-            this.xrSubreport1.Name = "xrSubreport1";
-            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("FromDate", this.FromDate));
-            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("ToDate", this.ToDate));
-            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("DeptName", this.DeptName));
-            this.xrSubreport1.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("AssignTo", this.AssingTo));
-            this.xrSubreport1.ReportSource = new dxReports.Reports.UserTask.UserSummary();
-            this.xrSubreport1.SizeF = new System.Drawing.SizeF(790.0001F, 37.49988F);
-            // 
-            // xrSubreport2
-            // 
-            this.xrSubreport2.LocationFloat = new DevExpress.Utils.PointFloat(0F, 12.5F);
-            this.xrSubreport2.Name = "xrSubreport2";
-            this.xrSubreport2.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("FromDate", this.FromDate));
-            this.xrSubreport2.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("ToDate", this.ToDate));
-            this.xrSubreport2.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("Department", this.DeptName));
-            this.xrSubreport2.ParameterBindings.Add(new DevExpress.XtraReports.UI.ParameterBinding("AssignTo", this.AssingTo));
-            this.xrSubreport2.ReportSource = new dxReports.Reports.UserTask.submarryByProject();
-            this.xrSubreport2.SizeF = new System.Drawing.SizeF(790F, 38.10812F);
             // 
             // MonthlyUserTask
             // 
@@ -920,20 +916,13 @@
             this.sqlDataSource1});
             this.DataMember = "RPT_Monthly_tUserTasks";
             this.DataSource = this.sqlDataSource1;
-            this.FilterString = "[taskDate] >= ?FromDate And [taskDate] <= ?ToDate And [depName] = ?DeptName And (" +
-    "?AssingTo Is Null Or ?AssingTo = \'\' Or [assignTo] = ?AssingTo)";
             this.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
             this.Margins = new DevExpress.Drawing.DXMargins(29F, 30F, 0F, 100F);
-            this.ParameterPanelLayoutItems.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.FromDate, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.ToDate, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.DeptName, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.AssingTo, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
-            this.FromDate,
-            this.ToDate,
-            this.DeptName,
-            this.AssingTo});
+            this.fromDate,
+            this.toDate,
+            this.depName,
+            this.assignTo});
             this.StyleSheet.AddRange(new DevExpress.XtraReports.UI.XRControlStyle[] {
             this.Title,
             this.DetailCaption1,
@@ -953,9 +942,6 @@
         }
 
         #endregion
-
-        private DevExpress.XtraReports.Parameters.Parameter FromDate;
-        private DevExpress.XtraReports.Parameters.Parameter ToDate;
         private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
         private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
@@ -982,13 +968,11 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel7;
         private DevExpress.XtraReports.UI.XRLabel xrLabel8;
         private DevExpress.XtraReports.UI.XRSubreport xrSubreport1;
-        private DevExpress.XtraReports.Parameters.Parameter DeptName;
         private DevExpress.XtraReports.UI.XRSubreport xrSubreport2;
         private DevExpress.XtraReports.UI.SubBand SubBand3;
         private DevExpress.XtraReports.UI.SubBand SubBand2;
         private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader1;
         private DevExpress.XtraReports.UI.XRLabel xrLabel13;
-        private DevExpress.XtraReports.Parameters.Parameter AssingTo;
         private DevExpress.XtraReports.UI.CalculatedField Dayslapsed;
         private DevExpress.XtraReports.UI.XRShape xrShape1;
         private DevExpress.XtraReports.UI.XRLabel xrLabel15;
@@ -1013,6 +997,10 @@
         private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader2;
         private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader3;
         private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader4;
+        private DevExpress.XtraReports.Parameters.Parameter fromDate;
+        private DevExpress.XtraReports.Parameters.Parameter toDate;
+        private DevExpress.XtraReports.Parameters.Parameter depName;
+        private DevExpress.XtraReports.Parameters.Parameter assignTo;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
     }
 }
