@@ -878,6 +878,12 @@
     <Compile Include="Reports\UserTask\submarryByProject.Designer.cs">
       <DependentUpon>submarryByProject.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\UserTask\summaryByCategory.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\UserTask\summaryByCategory.Designer.cs">
+      <DependentUpon>summaryByCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\UserTask\TaskReport1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1336,6 +1342,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\UserTask\submarryByProject.resx">
       <DependentUpon>submarryByProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\UserTask\summaryByCategory.resx">
+      <DependentUpon>summaryByCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\UserTask\TaskReport1.resx">
       <DependentUpon>TaskReport1.cs</DependentUpon>
