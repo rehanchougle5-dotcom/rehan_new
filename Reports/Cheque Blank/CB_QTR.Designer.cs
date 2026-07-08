@@ -104,12 +104,13 @@
             this.xrLabel4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Upper([AmountLine2])")});
             this.xrLabel4.Font = new DevExpress.Drawing.DXFont("Arial", 10F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(45.68748F, 153.9166F);
+            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(34.64579F, 151.5555F);
             this.xrLabel4.Multiline = true;
             this.xrLabel4.Name = "xrLabel4";
-            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel4.SizeF = new System.Drawing.SizeF(441.0415F, 23F);
+            this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(1, 2, 0, 0, 100F);
+            this.xrLabel4.SizeF = new System.Drawing.SizeF(441.0415F, 24.66667F);
             this.xrLabel4.StylePriority.UseFont = false;
+            this.xrLabel4.StylePriority.UsePadding = false;
             this.xrLabel4.Text = "xrLabel4";
             // 
             // xrLabel3
@@ -117,12 +118,13 @@
             this.xrLabel3.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "Upper([AmountLine1])")});
             this.xrLabel3.Font = new DevExpress.Drawing.DXFont("Arial", 10F, DevExpress.Drawing.DXFontStyle.Bold);
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(45.89576F, 116.4166F);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(34.64579F, 111.8333F);
             this.xrLabel3.Multiline = true;
             this.xrLabel3.Name = "xrLabel3";
-            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel3.SizeF = new System.Drawing.SizeF(441.0415F, 23F);
+            this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(1, 2, 0, 0, 100F);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(441.0415F, 25.50001F);
             this.xrLabel3.StylePriority.UseFont = false;
+            this.xrLabel3.StylePriority.UsePadding = false;
             this.xrLabel3.Text = "xrLabel3";
             // 
             // xrLabel2

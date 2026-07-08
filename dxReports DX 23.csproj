@@ -379,6 +379,12 @@
     <Compile Include="Reports\Customer Statement\Customer_Statement_2.Designer.cs">
       <DependentUpon>Customer_Statement_2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Customer Statement\Customer_Statement_New.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Customer Statement\Customer_Statement_New.Designer.cs">
+      <DependentUpon>Customer_Statement_New.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Delivery Order\Delivery_Order.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1094,6 +1100,9 @@
     <EmbeddedResource Include="Reports\Customer Statement\Customer_Statement_2.resx">
       <DependentUpon>Customer_Statement_2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Customer Statement\Customer_Statement_New.resx">
+      <DependentUpon>Customer_Statement_New.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Delivery Order\Delivery_Order.resx">
       <DependentUpon>Delivery_Order.cs</DependentUpon>
     </EmbeddedResource>
@@ -1491,6 +1500,7 @@
     <None Include="Resources\ticket.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Reports\NewFolder1\" />
     <Folder Include="Resources\Commercial_License\" />
   </ItemGroup>
   <ItemGroup>
