@@ -92,7 +92,6 @@ namespace dxReports.Reports.Bank_Details
             this.rpt_ReportLanguage = new DevExpress.XtraReports.UI.CalculatedField();
             this.sr_Currency = new DevExpress.XtraReports.Parameters.Parameter();
             this.sr_ReportCode = new DevExpress.XtraReports.Parameters.Parameter();
-            this.sr_ReportLanguage = new DevExpress.XtraReports.Parameters.Parameter();
             this.sqlDataSource2 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).BeginInit();
@@ -773,13 +772,6 @@ namespace dxReports.Reports.Bank_Details
             this.sr_ReportCode.Name = "sr_ReportCode";
             this.sr_ReportCode.Visible = false;
             // 
-            // sr_ReportLanguage
-            // 
-            this.sr_ReportLanguage.Description = "Report Language";
-            this.sr_ReportLanguage.Name = "sr_ReportLanguage";
-            this.sr_ReportLanguage.ValueInfo = "EN";
-            this.sr_ReportLanguage.Visible = false;
-            // 
             // sqlDataSource2
             // 
             this.sqlDataSource2.ConnectionName = "Far_hana";
@@ -839,8 +831,7 @@ namespace dxReports.Reports.Bank_Details
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.sr_ReportCode, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.sr_Currency,
-            this.sr_ReportCode,
-            this.sr_ReportLanguage});
+            this.sr_ReportCode});
             this.Version = "23.2";
             ((System.ComponentModel.ISupportInitialize)(this.xrTable1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable2)).EndInit();
@@ -876,7 +867,6 @@ namespace dxReports.Reports.Bank_Details
         private DevExpress.XtraReports.UI.CalculatedField rpt_ReportLanguage;
         private DevExpress.XtraReports.Parameters.Parameter sr_Currency;
         private DevExpress.XtraReports.Parameters.Parameter sr_ReportCode;
-        private DevExpress.XtraReports.Parameters.Parameter sr_ReportLanguage;
         private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource2;
         private DevExpress.XtraReports.UI.SubBand SubBand1;
         private DevExpress.XtraReports.UI.XRLine xrLine3;
