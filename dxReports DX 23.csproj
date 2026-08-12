@@ -343,6 +343,12 @@
     <Compile Include="Reports\Coupon_Printing\Coupon_Printing_2_2.Designer.cs">
       <DependentUpon>Coupon_Printing_2_2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Coupon_Printing\Coupon_printing_A4.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Coupon_Printing\Coupon_printing_A4.Designer.cs">
+      <DependentUpon>Coupon_printing_A4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Coupon_Printing\Coupon_Printing_Guid.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -390,6 +396,12 @@
     </Compile>
     <Compile Include="Reports\Delivery Order\Delivery_Order.Designer.cs">
       <DependentUpon>Delivery_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DIscount Details\Coupon_Discount.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DIscount Details\Coupon_Discount.Designer.cs">
+      <DependentUpon>Coupon_Discount.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\E-Commerce\E_COMMERCE_AR_INVOICE_2.cs">
       <SubType>Component</SubType>
@@ -1082,6 +1094,9 @@
     <EmbeddedResource Include="Reports\Coupon_Printing\Coupon_Printing_2_2.resx">
       <DependentUpon>Coupon_Printing_2_2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Coupon_Printing\Coupon_printing_A4.resx">
+      <DependentUpon>Coupon_printing_A4.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Coupon_Printing\Coupon_Printing_Guid.resx">
       <DependentUpon>Coupon_Printing_Guid.cs</DependentUpon>
     </EmbeddedResource>
@@ -1105,6 +1120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Delivery Order\Delivery_Order.resx">
       <DependentUpon>Delivery_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DIscount Details\Coupon_Discount.resx">
+      <DependentUpon>Coupon_Discount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\E-Commerce\E_COMMERCE_AR_INVOICE_2.resx">
       <DependentUpon>E_COMMERCE_AR_INVOICE_2.cs</DependentUpon>
@@ -1500,7 +1518,6 @@
     <None Include="Resources\ticket.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Reports\NewFolder1\" />
     <Folder Include="Resources\Commercial_License\" />
   </ItemGroup>
   <ItemGroup>
