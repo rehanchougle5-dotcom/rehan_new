@@ -10,5 +10,8 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=smartviewdbs.itserver.biz,5003;Initial Catalog=PowerBI;Persist Security Info=True;User ID=FAR;Password=M@g#1265;TrustServerCertificate=True</Value>
     </Setting>
+    <Setting Name="backcolor" Type="System.Drawing.Color" Scope="Application">
+      <Value Profile="(Default)">Transparent</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

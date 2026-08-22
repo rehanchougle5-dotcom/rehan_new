@@ -151,7 +151,7 @@
             this.xrLabel9.Multiline = true;
             this.xrLabel9.Name = "xrLabel9";
             this.xrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel9.SizeF = new System.Drawing.SizeF(246.5851F, 45.24799F);
+            this.xrLabel9.SizeF = new System.Drawing.SizeF(306.0576F, 45.24796F);
             this.xrLabel9.StylePriority.UseBorders = false;
             this.xrLabel9.StylePriority.UseFont = false;
             this.xrLabel9.StylePriority.UseTextAlignment = false;
@@ -168,7 +168,7 @@
             this.xrLabel8.Multiline = true;
             this.xrLabel8.Name = "xrLabel8";
             this.xrLabel8.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel8.SizeF = new System.Drawing.SizeF(246.5848F, 45.24786F);
+            this.xrLabel8.SizeF = new System.Drawing.SizeF(306.0573F, 45.24786F);
             this.xrLabel8.StylePriority.UseBorders = false;
             this.xrLabel8.StylePriority.UseFont = false;
             this.xrLabel8.StylePriority.UseTextAlignment = false;
@@ -186,7 +186,7 @@
             this.xrLabel7.Multiline = true;
             this.xrLabel7.Name = "xrLabel7";
             this.xrLabel7.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel7.SizeF = new System.Drawing.SizeF(246.5847F, 45.248F);
+            this.xrLabel7.SizeF = new System.Drawing.SizeF(306.0571F, 45.24803F);
             this.xrLabel7.StylePriority.UseBorders = false;
             this.xrLabel7.StylePriority.UseFont = false;
             this.xrLabel7.StylePriority.UseTextAlignment = false;
@@ -203,7 +203,7 @@
             this.xrLabel3.Multiline = true;
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel3.SizeF = new System.Drawing.SizeF(246.5847F, 45.24805F);
+            this.xrLabel3.SizeF = new System.Drawing.SizeF(306.0571F, 45.24806F);
             this.xrLabel3.StylePriority.UseBorders = false;
             this.xrLabel3.StylePriority.UseFont = false;
             this.xrLabel3.StylePriority.UseTextAlignment = false;
@@ -227,11 +227,11 @@
             this.xrBarCode2.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrBarCode2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[itemCode] + \'-\' + [batchNo]")});
-            this.xrBarCode2.LocationFloat = new DevExpress.Utils.PointFloat(406.3822F, 179.2809F);
+            this.xrBarCode2.LocationFloat = new DevExpress.Utils.PointFloat(444.7155F, 206.8882F);
             this.xrBarCode2.Name = "xrBarCode2";
             this.xrBarCode2.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 5, 5, 100F);
             this.xrBarCode2.ShowText = false;
-            this.xrBarCode2.SizeF = new System.Drawing.SizeF(179.6829F, 180.992F);
+            this.xrBarCode2.SizeF = new System.Drawing.SizeF(118.0162F, 120.992F);
             this.xrBarCode2.StylePriority.UseBorders = false;
             this.xrBarCode2.StylePriority.UsePadding = false;
             qrCodeGenerator1.CompactionMode = DevExpress.XtraPrinting.BarCode.QRCodeCompactionMode.Byte;
@@ -247,10 +247,10 @@
             this.xrBarCode1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[barCode]")});
             this.xrBarCode1.Font = new DevExpress.Drawing.DXFont("Arial", 10F);
-            this.xrBarCode1.LocationFloat = new DevExpress.Utils.PointFloat(129.1537F, 5.000021F);
+            this.xrBarCode1.LocationFloat = new DevExpress.Utils.PointFloat(318.3204F, 19.16668F);
             this.xrBarCode1.Name = "xrBarCode1";
             this.xrBarCode1.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
-            this.xrBarCode1.SizeF = new System.Drawing.SizeF(456.9114F, 82.7578F);
+            this.xrBarCode1.SizeF = new System.Drawing.SizeF(244.4112F, 58.59112F);
             this.xrBarCode1.StylePriority.UseBorders = false;
             this.xrBarCode1.StylePriority.UseFont = false;
             this.xrBarCode1.StylePriority.UseTextAlignment = false;

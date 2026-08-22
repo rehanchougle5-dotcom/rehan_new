@@ -271,6 +271,12 @@
     <Compile Include="Reports\Cheque Blank\emiratesNBDCheque.Designer.cs">
       <DependentUpon>emiratesNBDCheque.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Cheque Blank\ENBD_NEW.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Cheque Blank\ENBD_NEW.Designer.cs">
+      <DependentUpon>ENBD_NEW.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Cheque Blank\NBK_KWT.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -337,6 +343,12 @@
     <Compile Include="Reports\Coupon_Printing\Coupon_Printing_2_2.Designer.cs">
       <DependentUpon>Coupon_Printing_2_2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Coupon_Printing\Coupon_printing_A4.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Coupon_Printing\Coupon_printing_A4.Designer.cs">
+      <DependentUpon>Coupon_printing_A4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Coupon_Printing\Coupon_Printing_Guid.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -373,11 +385,23 @@
     <Compile Include="Reports\Customer Statement\Customer_Statement_2.Designer.cs">
       <DependentUpon>Customer_Statement_2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Customer Statement\Customer_Statement_New.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Customer Statement\Customer_Statement_New.Designer.cs">
+      <DependentUpon>Customer_Statement_New.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Delivery Order\Delivery_Order.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reports\Delivery Order\Delivery_Order.Designer.cs">
       <DependentUpon>Delivery_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DIscount Details\Coupon_Discount.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DIscount Details\Coupon_Discount.Designer.cs">
+      <DependentUpon>Coupon_Discount.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\E-Commerce\E_COMMERCE_AR_INVOICE_2.cs">
       <SubType>Component</SubType>
@@ -493,12 +517,6 @@
     <Compile Include="Reports\Packing List\packing_List.Designer.cs">
       <DependentUpon>packing_List.cs</DependentUpon>
     </Compile>
-    <Compile Include="Reports\Packing List\Picking_List_Landscape.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\Packing List\Picking_List_Landscape.Designer.cs">
-      <DependentUpon>Picking_List_Landscape.cs</DependentUpon>
-    </Compile>
     <Compile Include="Reports\Payment Voucher\Payment_Voucher_1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -510,6 +528,24 @@
     </Compile>
     <Compile Include="Reports\PickList\Pick_List.Designer.cs">
       <DependentUpon>Pick_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Promotion List\Promotion_List.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Promotion List\Promotion_List.Designer.cs">
+      <DependentUpon>Promotion_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Promotion List\Promotion_List_1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Promotion List\Promotion_List_1.Designer.cs">
+      <DependentUpon>Promotion_List_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Promotion List\Prom_List.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Promotion List\Prom_List.Designer.cs">
+      <DependentUpon>Prom_List.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\Purchase Order Drafts\Purchase_Order_Draft.cs">
       <SubType>Component</SubType>
@@ -540,6 +576,18 @@
     </Compile>
     <Compile Include="Reports\Purchase Order\Purchase_Order_Approvals_Sub_Report_2.Designer.cs">
       <DependentUpon>Purchase_Order_Approvals_Sub_Report_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Purchase Order\Purchase_Order_Details.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Purchase Order\Purchase_Order_Details.Designer.cs">
+      <DependentUpon>Purchase_Order_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Purchase Order\Purchase_Order_Printing.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Purchase Order\Purchase_Order_Printing.Designer.cs">
+      <DependentUpon>Purchase_Order_Printing.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\Purchase Order\PURCHASE_ORDER_TAX_DETAILS_SUB_REPORT.cs">
       <SubType>Component</SubType>
@@ -842,6 +890,12 @@
     <Compile Include="Reports\UserTask\submarryByProject.Designer.cs">
       <DependentUpon>submarryByProject.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\UserTask\summaryByCategory.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\UserTask\summaryByCategory.Designer.cs">
+      <DependentUpon>summaryByCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\UserTask\TaskReport1.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -998,6 +1052,9 @@
     <EmbeddedResource Include="Reports\Cheque Blank\emiratesNBDCheque.resx">
       <DependentUpon>emiratesNBDCheque.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Cheque Blank\ENBD_NEW.resx">
+      <DependentUpon>ENBD_NEW.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Cheque Blank\NBK_KWT.resx">
       <DependentUpon>NBK_KWT.cs</DependentUpon>
     </EmbeddedResource>
@@ -1031,6 +1088,9 @@
     <EmbeddedResource Include="Reports\Coupon_Printing\Coupon_Printing_2_2.resx">
       <DependentUpon>Coupon_Printing_2_2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Coupon_Printing\Coupon_printing_A4.resx">
+      <DependentUpon>Coupon_printing_A4.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Coupon_Printing\Coupon_Printing_Guid.resx">
       <DependentUpon>Coupon_Printing_Guid.cs</DependentUpon>
     </EmbeddedResource>
@@ -1049,8 +1109,14 @@
     <EmbeddedResource Include="Reports\Customer Statement\Customer_Statement_2.resx">
       <DependentUpon>Customer_Statement_2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Customer Statement\Customer_Statement_New.resx">
+      <DependentUpon>Customer_Statement_New.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Delivery Order\Delivery_Order.resx">
       <DependentUpon>Delivery_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\DIscount Details\Coupon_Discount.resx">
+      <DependentUpon>Coupon_Discount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\E-Commerce\E_COMMERCE_AR_INVOICE_2.resx">
       <DependentUpon>E_COMMERCE_AR_INVOICE_2.cs</DependentUpon>
@@ -1109,14 +1175,20 @@
     <EmbeddedResource Include="Reports\Packing List\packing_List.resx">
       <DependentUpon>packing_List.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reports\Packing List\Picking_List_Landscape.resx">
-      <DependentUpon>Picking_List_Landscape.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Payment Voucher\Payment_Voucher_1.resx">
       <DependentUpon>Payment_Voucher_1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\PickList\Pick_List.resx">
       <DependentUpon>Pick_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Promotion List\Promotion_List.resx">
+      <DependentUpon>Promotion_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Promotion List\Promotion_List_1.resx">
+      <DependentUpon>Promotion_List_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Promotion List\Prom_List.resx">
+      <DependentUpon>Prom_List.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Purchase Order Drafts\Purchase_Order_Draft.resx">
       <DependentUpon>Purchase_Order_Draft.cs</DependentUpon>
@@ -1132,6 +1204,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Purchase Order\Purchase_Order_Approvals_Sub_Report_2.resx">
       <DependentUpon>Purchase_Order_Approvals_Sub_Report_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Purchase Order\Purchase_Order_Details.resx">
+      <DependentUpon>Purchase_Order_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Purchase Order\Purchase_Order_Printing.resx">
+      <DependentUpon>Purchase_Order_Printing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Purchase Order\PURCHASE_ORDER_TAX_DETAILS_SUB_REPORT.resx">
       <DependentUpon>PURCHASE_ORDER_TAX_DETAILS_SUB_REPORT.cs</DependentUpon>
@@ -1282,6 +1360,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\UserTask\submarryByProject.resx">
       <DependentUpon>submarryByProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\UserTask\summaryByCategory.resx">
+      <DependentUpon>summaryByCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\UserTask\TaskReport1.resx">
       <DependentUpon>TaskReport1.cs</DependentUpon>

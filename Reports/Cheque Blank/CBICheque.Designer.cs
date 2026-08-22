@@ -206,6 +206,7 @@
             // 
             // checkDate
             // 
+            this.checkDate.AllowNull = true;
             this.checkDate.Description = "checkDate";
             this.checkDate.Name = "checkDate";
             this.checkDate.Type = typeof(System.DateTime);
