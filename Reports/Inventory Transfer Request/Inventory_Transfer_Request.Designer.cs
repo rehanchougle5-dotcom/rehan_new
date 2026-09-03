@@ -142,6 +142,8 @@ namespace dxReports.Reports.Inventory_Transfer_Request
             this.rpt_HeadingBasedOnDocType_EN = new DevExpress.XtraReports.UI.CalculatedField();
             this.DocEntry = new DevExpress.XtraReports.Parameters.Parameter();
             this.sortBy = new DevExpress.XtraReports.Parameters.Parameter();
+            this.xrTableCell21 = new DevExpress.XtraReports.UI.XRTableCell();
+            this.xrTableCell25 = new DevExpress.XtraReports.UI.XRTableCell();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrTable8)).BeginInit();
@@ -237,6 +239,7 @@ namespace dxReports.Reports.Inventory_Transfer_Request
             // 
             this.xrTableRow5.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.xrTableCell19,
+            this.xrTableCell25,
             this.xrTableCell20,
             this.xrTableCell22,
             this.xrTableCell23,
@@ -267,7 +270,7 @@ namespace dxReports.Reports.Inventory_Transfer_Request
             this.xrTableCell20.StylePriority.UseTextAlignment = false;
             this.xrTableCell20.Text = "Item Code";
             this.xrTableCell20.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell20.Weight = 0.8782285813909626D;
+            this.xrTableCell20.Weight = 0.6246262586694562D;
             // 
             // xrTableCell22
             // 
@@ -278,7 +281,7 @@ namespace dxReports.Reports.Inventory_Transfer_Request
             this.xrTableCell22.StylePriority.UseTextAlignment = false;
             this.xrTableCell22.Text = "Batch #";
             this.xrTableCell22.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell22.Weight = 0.80410867422023924D;
+            this.xrTableCell22.Weight = 0.61994024575260887D;
             // 
             // xrTableCell23
             // 
@@ -289,7 +292,7 @@ namespace dxReports.Reports.Inventory_Transfer_Request
             this.xrTableCell23.StylePriority.UseTextAlignment = false;
             this.xrTableCell23.Text = "Description";
             this.xrTableCell23.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell23.Weight = 2.4771297314267D;
+            this.xrTableCell23.Weight = 2.4069708862541392D;
             // 
             // xrTableCell24
             // 
@@ -300,7 +303,7 @@ namespace dxReports.Reports.Inventory_Transfer_Request
             this.xrTableCell24.StylePriority.UseTextAlignment = false;
             this.xrTableCell24.Text = "UoM";
             this.xrTableCell24.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell24.Weight = 0.576450410913179D;
+            this.xrTableCell24.Weight = 0.4744342003119858D;
             // 
             // xrTableCell26
             // 
@@ -312,7 +315,7 @@ namespace dxReports.Reports.Inventory_Transfer_Request
             this.xrTableCell26.Text = "Quantity";
             this.xrTableCell26.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
             this.xrTableCell26.TextFormatString = "{0:N0}";
-            this.xrTableCell26.Weight = 1D;
+            this.xrTableCell26.Weight = 0.77420475597772276D;
             // 
             // SubBand5
             // 
@@ -955,6 +958,7 @@ namespace dxReports.Reports.Inventory_Transfer_Request
             // 
             this.xrTableRow4.Cells.AddRange(new DevExpress.XtraReports.UI.XRTableCell[] {
             this.xrTableCell10,
+            this.xrTableCell21,
             this.xrTableCell12,
             this.xrTableCell14,
             this.xrTableCell15,
@@ -979,7 +983,7 @@ namespace dxReports.Reports.Inventory_Transfer_Request
             this.xrTableCell12.StylePriority.UseTextAlignment = false;
             this.xrTableCell12.Text = "Item Code";
             this.xrTableCell12.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell12.Weight = 0.8782285813909626D;
+            this.xrTableCell12.Weight = 0.62462677745239914D;
             // 
             // xrTableCell14
             // 
@@ -988,7 +992,7 @@ namespace dxReports.Reports.Inventory_Transfer_Request
             this.xrTableCell14.StylePriority.UseTextAlignment = false;
             this.xrTableCell14.Text = "Batch #";
             this.xrTableCell14.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell14.Weight = 0.80410867422023924D;
+            this.xrTableCell14.Weight = 0.61994019583491933D;
             // 
             // xrTableCell15
             // 
@@ -997,7 +1001,7 @@ namespace dxReports.Reports.Inventory_Transfer_Request
             this.xrTableCell15.StylePriority.UseTextAlignment = false;
             this.xrTableCell15.Text = "Description";
             this.xrTableCell15.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrTableCell15.Weight = 2.4771297314267D;
+            this.xrTableCell15.Weight = 2.4069709761808751D;
             // 
             // xrTableCell16
             // 
@@ -1006,7 +1010,7 @@ namespace dxReports.Reports.Inventory_Transfer_Request
             this.xrTableCell16.StylePriority.UseTextAlignment = false;
             this.xrTableCell16.Text = "UoM";
             this.xrTableCell16.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.xrTableCell16.Weight = 0.576450410913179D;
+            this.xrTableCell16.Weight = 0.47443614686659291D;
             // 
             // xrTableCell18
             // 
@@ -1015,7 +1019,7 @@ namespace dxReports.Reports.Inventory_Transfer_Request
             this.xrTableCell18.StylePriority.UseTextAlignment = false;
             this.xrTableCell18.Text = "Quantity";
             this.xrTableCell18.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleRight;
-            this.xrTableCell18.Weight = 1D;
+            this.xrTableCell18.Weight = 0.77420177984650784D;
             // 
             // xrLine2
             // 
@@ -1340,6 +1344,26 @@ namespace dxReports.Reports.Inventory_Transfer_Request
             // 
             this.sortBy.Name = "sortBy";
             // 
+            // xrTableCell21
+            // 
+            this.xrTableCell21.Multiline = true;
+            this.xrTableCell21.Name = "xrTableCell21";
+            this.xrTableCell21.StylePriority.UseTextAlignment = false;
+            this.xrTableCell21.Text = "Item Category";
+            this.xrTableCell21.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrTableCell21.Weight = 1.0998241238187059D;
+            // 
+            // xrTableCell25
+            // 
+            this.xrTableCell25.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[UAE_ItemCategory]")});
+            this.xrTableCell25.Multiline = true;
+            this.xrTableCell25.Name = "xrTableCell25";
+            this.xrTableCell25.StylePriority.UseTextAlignment = false;
+            this.xrTableCell25.Text = "xrTableCell25";
+            this.xrTableCell25.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
+            this.xrTableCell25.Weight = 1.0998237093282517D;
+            // 
             // Inventory_Transfer_Request
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -1392,6 +1416,7 @@ namespace dxReports.Reports.Inventory_Transfer_Request
         private DevExpress.XtraReports.UI.XRTable xrTable3;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow5;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell19;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell25;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell20;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell22;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell23;
@@ -1454,6 +1479,7 @@ namespace dxReports.Reports.Inventory_Transfer_Request
         private DevExpress.XtraReports.UI.XRTable xrTable2;
         private DevExpress.XtraReports.UI.XRTableRow xrTableRow4;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell10;
+        private DevExpress.XtraReports.UI.XRTableCell xrTableCell21;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell12;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell14;
         private DevExpress.XtraReports.UI.XRTableCell xrTableCell15;

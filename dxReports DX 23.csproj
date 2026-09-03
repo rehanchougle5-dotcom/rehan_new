@@ -121,6 +121,24 @@
     <Compile Include="Reports\Actual Vs Target\Actual_VS_Target.Designer.cs">
       <DependentUpon>Actual_VS_Target.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Administrator\leasing_contracts.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Administrator\leasing_contracts.Designer.cs">
+      <DependentUpon>leasing_contracts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Administrator\Leasing_Contract_Expense.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Administrator\Leasing_Contract_Expense.Designer.cs">
+      <DependentUpon>Leasing_Contract_Expense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Administrator\Leasing_Contract_Rent_Details.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Administrator\Leasing_Contract_Rent_Details.Designer.cs">
+      <DependentUpon>Leasing_Contract_Rent_Details.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\AP Credit Memo\AP_Credit_Notes.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -975,6 +993,15 @@
     </Compile>
     <EmbeddedResource Include="Reports\Actual Vs Target\Actual_VS_Target.resx">
       <DependentUpon>Actual_VS_Target.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Administrator\leasing_contracts.resx">
+      <DependentUpon>leasing_contracts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Administrator\Leasing_Contract_Expense.resx">
+      <DependentUpon>Leasing_Contract_Expense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Administrator\Leasing_Contract_Rent_Details.resx">
+      <DependentUpon>Leasing_Contract_Rent_Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\AP Credit Memo\AP_Credit_Notes.resx">
       <DependentUpon>AP_Credit_Notes.cs</DependentUpon>
