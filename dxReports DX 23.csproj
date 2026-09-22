@@ -127,6 +127,12 @@
     <Compile Include="Reports\Administrator\leasing_contracts.Designer.cs">
       <DependentUpon>leasing_contracts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Administrator\leasing_contract_1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Administrator\leasing_contract_1.Designer.cs">
+      <DependentUpon>leasing_contract_1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Administrator\Leasing_Contract_Expense.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -138,6 +144,12 @@
     </Compile>
     <Compile Include="Reports\Administrator\Leasing_Contract_Rent_Details.Designer.cs">
       <DependentUpon>Leasing_Contract_Rent_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Administrator\Payment_Schedule.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Administrator\Payment_Schedule.Designer.cs">
+      <DependentUpon>Payment_Schedule.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\AP Credit Memo\AP_Credit_Notes.cs">
       <SubType>Component</SubType>
@@ -997,11 +1009,17 @@
     <EmbeddedResource Include="Reports\Administrator\leasing_contracts.resx">
       <DependentUpon>leasing_contracts.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Administrator\leasing_contract_1.resx">
+      <DependentUpon>leasing_contract_1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Administrator\Leasing_Contract_Expense.resx">
       <DependentUpon>Leasing_Contract_Expense.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Administrator\Leasing_Contract_Rent_Details.resx">
       <DependentUpon>Leasing_Contract_Rent_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Administrator\Payment_Schedule.resx">
+      <DependentUpon>Payment_Schedule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\AP Credit Memo\AP_Credit_Notes.resx">
       <DependentUpon>AP_Credit_Notes.cs</DependentUpon>

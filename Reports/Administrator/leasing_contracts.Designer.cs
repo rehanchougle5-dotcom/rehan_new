@@ -29,16 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(leasing_contracts));
+            DevExpress.XtraPrinting.Shape.ShapeRectangle shapeRectangle1 = new DevExpress.XtraPrinting.Shape.ShapeRectangle();
+            DevExpress.XtraPrinting.Shape.ShapeRectangle shapeRectangle2 = new DevExpress.XtraPrinting.Shape.ShapeRectangle();
             DevExpress.DataAccess.Sql.StoredProcQuery storedProcQuery1 = new DevExpress.DataAccess.Sql.StoredProcQuery();
             DevExpress.DataAccess.Sql.QueryParameter queryParameter1 = new DevExpress.DataAccess.Sql.QueryParameter();
             DevExpress.DataAccess.Sql.QueryParameter queryParameter2 = new DevExpress.DataAccess.Sql.QueryParameter();
             DevExpress.DataAccess.Sql.QueryParameter queryParameter3 = new DevExpress.DataAccess.Sql.QueryParameter();
             DevExpress.DataAccess.Sql.QueryParameter queryParameter4 = new DevExpress.DataAccess.Sql.QueryParameter();
             DevExpress.DataAccess.Sql.QueryParameter queryParameter5 = new DevExpress.DataAccess.Sql.QueryParameter();
-            DevExpress.DataAccess.Sql.QueryParameter queryParameter6 = new DevExpress.DataAccess.Sql.QueryParameter();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(leasing_contracts));
-            DevExpress.XtraPrinting.Shape.ShapeRectangle shapeRectangle1 = new DevExpress.XtraPrinting.Shape.ShapeRectangle();
-            DevExpress.XtraPrinting.Shape.ShapeRectangle shapeRectangle2 = new DevExpress.XtraPrinting.Shape.ShapeRectangle();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
@@ -47,8 +46,6 @@
             this.propertyId = new DevExpress.XtraReports.Parameters.Parameter();
             this.dateFrom = new DevExpress.XtraReports.Parameters.Parameter();
             this.dateTo = new DevExpress.XtraReports.Parameters.Parameter();
-            this.activeOnly = new DevExpress.XtraReports.Parameters.Parameter();
-            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
             this.ReportHeader = new DevExpress.XtraReports.UI.ReportHeaderBand();
             this.SubBand4 = new DevExpress.XtraReports.UI.SubBand();
             this.SubBand8 = new DevExpress.XtraReports.UI.SubBand();
@@ -81,7 +78,6 @@
             this.xrLabel35 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel30 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrPictureBox1 = new DevExpress.XtraReports.UI.XRPictureBox();
-            this.xrLabel27 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel23 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLine1 = new DevExpress.XtraReports.UI.XRLine();
             this.xrPictureBox4 = new DevExpress.XtraReports.UI.XRPictureBox();
@@ -120,6 +116,8 @@
             this.SubBand14 = new DevExpress.XtraReports.UI.SubBand();
             this.SubBand15 = new DevExpress.XtraReports.UI.SubBand();
             this.SubBand16 = new DevExpress.XtraReports.UI.SubBand();
+            this.sqlDataSource1 = new DevExpress.DataAccess.Sql.SqlDataSource(this.components);
+            this.xrLabel27 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrSubreport1 = new DevExpress.XtraReports.UI.XRSubreport();
             this.xrSubreport2 = new DevExpress.XtraReports.UI.XRSubreport();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
@@ -152,65 +150,24 @@
             // 
             this.dmRenewalId.Name = "dmRenewalId";
             this.dmRenewalId.Type = typeof(int);
-            this.dmRenewalId.ValueInfo = "5025007";
+            this.dmRenewalId.ValueInfo = "5025015";
             // 
             // propertyId
             // 
             this.propertyId.Name = "propertyId";
-            this.propertyId.ValueInfo = "50S016";
+            this.propertyId.ValueInfo = "50S026";
             // 
             // dateFrom
             // 
             this.dateFrom.Name = "dateFrom";
             this.dateFrom.Type = typeof(System.DateTime);
-            this.dateFrom.ValueInfo = "2024-12-22";
+            this.dateFrom.ValueInfo = "2025-10-31";
             // 
             // dateTo
             // 
             this.dateTo.Name = "dateTo";
             this.dateTo.Type = typeof(System.DateTime);
-            this.dateTo.ValueInfo = "2026-12-21";
-            // 
-            // activeOnly
-            // 
-            this.activeOnly.Name = "activeOnly";
-            this.activeOnly.Type = typeof(bool);
-            this.activeOnly.ValueInfo = "True";
-            // 
-            // sqlDataSource1
-            // 
-            this.sqlDataSource1.ConnectionName = "PowerBI";
-            this.sqlDataSource1.Name = "sqlDataSource1";
-            storedProcQuery1.Name = "RPT_LeasingContractSummary";
-            queryParameter1.Name = "@company";
-            queryParameter1.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter1.Value = new DevExpress.DataAccess.Expression("?company", typeof(string));
-            queryParameter2.Name = "@dmRenewalId";
-            queryParameter2.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter2.Value = new DevExpress.DataAccess.Expression("?dmRenewalId", typeof(int));
-            queryParameter3.Name = "@propertyId";
-            queryParameter3.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter3.Value = new DevExpress.DataAccess.Expression("?propertyId", typeof(string));
-            queryParameter4.Name = "@dateFrom";
-            queryParameter4.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter4.Value = new DevExpress.DataAccess.Expression("?dateFrom", typeof(System.DateTime));
-            queryParameter5.Name = "@dateTo";
-            queryParameter5.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter5.Value = new DevExpress.DataAccess.Expression("?dateTo", typeof(System.DateTime));
-            queryParameter6.Name = "@activeOnly";
-            queryParameter6.Type = typeof(DevExpress.DataAccess.Expression);
-            queryParameter6.Value = new DevExpress.DataAccess.Expression("?activeOnly", typeof(bool));
-            storedProcQuery1.Parameters.AddRange(new DevExpress.DataAccess.Sql.QueryParameter[] {
-            queryParameter1,
-            queryParameter2,
-            queryParameter3,
-            queryParameter4,
-            queryParameter5,
-            queryParameter6});
-            storedProcQuery1.StoredProcName = "RPT.LeasingContractSummary";
-            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            storedProcQuery1});
-            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
+            this.dateTo.ValueInfo = "2029-10-30";
             // 
             // ReportHeader
             // 
@@ -626,26 +583,6 @@
             this.xrPictureBox1.SizeF = new System.Drawing.SizeF(45F, 55F);
             this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
             this.xrPictureBox1.StylePriority.UseBackColor = false;
-            // 
-            // xrLabel27
-            // 
-            this.xrLabel27.BackColor = System.Drawing.Color.Transparent;
-            this.xrLabel27.Dpi = 254F;
-            this.xrLabel27.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[contractNo]")});
-            this.xrLabel27.Font = new DevExpress.Drawing.DXFont("calibri", 9.75F);
-            this.xrLabel27.ForeColor = System.Drawing.Color.White;
-            this.xrLabel27.LocationFloat = new DevExpress.Utils.PointFloat(56.82373F, 350.455F);
-            this.xrLabel27.Multiline = true;
-            this.xrLabel27.Name = "xrLabel27";
-            this.xrLabel27.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
-            this.xrLabel27.SizeF = new System.Drawing.SizeF(373.4626F, 58.41998F);
-            this.xrLabel27.StylePriority.UseBackColor = false;
-            this.xrLabel27.StylePriority.UseFont = false;
-            this.xrLabel27.StylePriority.UseForeColor = false;
-            this.xrLabel27.StylePriority.UseTextAlignment = false;
-            this.xrLabel27.Text = "xrLabel27";
-            this.xrLabel27.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
             // xrLabel23
             // 
@@ -1090,6 +1027,7 @@
             // PageHeader
             // 
             this.PageHeader.Controls.AddRange(new DevExpress.XtraReports.UI.XRControl[] {
+            this.xrLabel27,
             this.xrLabel15,
             this.xrLabel18,
             this.xrLabel19,
@@ -1110,7 +1048,6 @@
             this.xrLabel35,
             this.xrLabel30,
             this.xrPictureBox1,
-            this.xrLabel27,
             this.xrLabel23,
             this.xrLine1,
             this.xrPictureBox4,
@@ -1201,6 +1138,51 @@
             this.SubBand16.HeightF = 58.42F;
             this.SubBand16.Name = "SubBand16";
             // 
+            // sqlDataSource1
+            // 
+            this.sqlDataSource1.ConnectionName = "PowerBI";
+            this.sqlDataSource1.Name = "sqlDataSource1";
+            storedProcQuery1.Name = "RPT_LeasingContractSummary";
+            queryParameter1.Name = "@company";
+            queryParameter1.Type = typeof(DevExpress.DataAccess.Expression);
+            queryParameter1.Value = new DevExpress.DataAccess.Expression("?company", typeof(string));
+            queryParameter2.Name = "@dmRenewalId";
+            queryParameter2.Type = typeof(DevExpress.DataAccess.Expression);
+            queryParameter2.Value = new DevExpress.DataAccess.Expression("?dmRenewalId", typeof(string));
+            queryParameter3.Name = "@propertyId";
+            queryParameter3.Type = typeof(DevExpress.DataAccess.Expression);
+            queryParameter3.Value = new DevExpress.DataAccess.Expression("?propertyId", typeof(string));
+            queryParameter4.Name = "@dateFrom";
+            queryParameter4.Type = typeof(DevExpress.DataAccess.Expression);
+            queryParameter4.Value = new DevExpress.DataAccess.Expression("?dateFrom", typeof(System.DateTime));
+            queryParameter5.Name = "@dateTo";
+            queryParameter5.Type = typeof(DevExpress.DataAccess.Expression);
+            queryParameter5.Value = new DevExpress.DataAccess.Expression("?dateTo", typeof(System.DateTime));
+            storedProcQuery1.Parameters.AddRange(new DevExpress.DataAccess.Sql.QueryParameter[] {
+            queryParameter1,
+            queryParameter2,
+            queryParameter3,
+            queryParameter4,
+            queryParameter5});
+            storedProcQuery1.StoredProcName = "RPT.LeasingContractSummary";
+            this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
+            storedProcQuery1});
+            this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
+            // 
+            // xrLabel27
+            // 
+            this.xrLabel27.Dpi = 254F;
+            this.xrLabel27.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "[contractNo]")});
+            this.xrLabel27.ForeColor = System.Drawing.Color.White;
+            this.xrLabel27.LocationFloat = new DevExpress.Utils.PointFloat(125.7592F, 350.4543F);
+            this.xrLabel27.Multiline = true;
+            this.xrLabel27.Name = "xrLabel27";
+            this.xrLabel27.Padding = new DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254F);
+            this.xrLabel27.SizeF = new System.Drawing.SizeF(254F, 58.42F);
+            this.xrLabel27.StylePriority.UseForeColor = false;
+            this.xrLabel27.Text = "xrLabel27";
+            // 
             // xrSubreport1
             // 
             this.xrSubreport1.Dpi = 254F;
@@ -1243,15 +1225,13 @@
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.dmRenewalId, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.propertyId, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
             new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.dateFrom, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.dateTo, DevExpress.XtraReports.Parameters.Orientation.Horizontal),
-            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.activeOnly, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.dateTo, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.company,
             this.dmRenewalId,
             this.propertyId,
             this.dateFrom,
-            this.dateTo,
-            this.activeOnly});
+            this.dateTo});
             this.ReportUnit = DevExpress.XtraReports.UI.ReportUnit.TenthsOfAMillimeter;
             this.SnapGridSize = 25F;
             this.Version = "23.1";
@@ -1269,8 +1249,6 @@
         private DevExpress.XtraReports.Parameters.Parameter propertyId;
         private DevExpress.XtraReports.Parameters.Parameter dateFrom;
         private DevExpress.XtraReports.Parameters.Parameter dateTo;
-        private DevExpress.XtraReports.Parameters.Parameter activeOnly;
-        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
         private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
         private DevExpress.XtraReports.UI.XRLabel xrLabel1;
         private DevExpress.XtraReports.UI.XRPictureBox xrPictureBox4;
@@ -1309,7 +1287,6 @@
         private DevExpress.XtraReports.UI.XRLabel xrLabel35;
         private DevExpress.XtraReports.UI.XRLabel xrLabel36;
         private DevExpress.XtraReports.UI.XRLabel xrLabel37;
-        private DevExpress.XtraReports.UI.XRLabel xrLabel27;
         private DevExpress.XtraReports.UI.SubBand SubBand1;
         private DevExpress.XtraReports.UI.XRSubreport xrSubreport1;
         private DevExpress.XtraReports.UI.SubBand SubBand2;
@@ -1344,5 +1321,7 @@
         private DevExpress.XtraReports.UI.SubBand SubBand14;
         private DevExpress.XtraReports.UI.SubBand SubBand15;
         private DevExpress.XtraReports.UI.SubBand SubBand16;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
+        private DevExpress.XtraReports.UI.XRLabel xrLabel27;
     }
 }
