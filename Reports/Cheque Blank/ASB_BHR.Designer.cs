@@ -64,6 +64,8 @@
             this.amount_Line_1 = new DevExpress.XtraReports.UI.CalculatedField();
             this.amount_Line_2 = new DevExpress.XtraReports.UI.CalculatedField();
             this.amount_Line_3 = new DevExpress.XtraReports.UI.CalculatedField();
+            this.rest1 = new DevExpress.XtraReports.UI.CalculatedField();
+            this.rest2 = new DevExpress.XtraReports.UI.CalculatedField();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // TopMargin
@@ -141,7 +143,7 @@
             this.xrLabel5.StylePriority.UseTextAlignment = false;
             this.xrLabel5.Text = "xrLabel5";
             this.xrLabel5.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
-            this.xrLabel5.TextFormatString = "{0:N}";
+            this.xrLabel5.TextFormatString = "{0:N3}";
             // 
             // xrLabel2
             // 
@@ -285,6 +287,18 @@
             this.amount_Line_3.Expression = resources.GetString("amount_Line_3.Expression");
             this.amount_Line_3.Name = "amount_Line_3";
             // 
+            // rest1
+            // 
+            this.rest1.DataMember = "Rpt_ChequePrint";
+            this.rest1.Expression = "Trim(Substring([amountInWords], Len([amount_Line_1])))";
+            this.rest1.Name = "rest1";
+            // 
+            // rest2
+            // 
+            this.rest2.DataMember = "Rpt_ChequePrint";
+            this.rest2.Expression = "Trim(Substring([rest1], Len([amount_Line_2])))";
+            this.rest2.Name = "rest2";
+            // 
             // ASB_BHR
             // 
             this.Bands.AddRange(new DevExpress.XtraReports.UI.Band[] {
@@ -294,7 +308,9 @@
             this.CalculatedFields.AddRange(new DevExpress.XtraReports.UI.CalculatedField[] {
             this.amount_Line_1,
             this.amount_Line_2,
-            this.amount_Line_3});
+            this.amount_Line_3,
+            this.rest1,
+            this.rest2});
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.sqlDataSource1});
             this.DataMember = "Rpt_ChequePrint";
@@ -358,5 +374,7 @@
         private DevExpress.XtraReports.UI.CalculatedField amount_Line_2;
         private DevExpress.XtraReports.UI.CalculatedField amount_Line_3;
         private DevExpress.XtraReports.UI.XRLabel xrLabel4;
+        private DevExpress.XtraReports.UI.CalculatedField rest1;
+        private DevExpress.XtraReports.UI.CalculatedField rest2;
     }
 }

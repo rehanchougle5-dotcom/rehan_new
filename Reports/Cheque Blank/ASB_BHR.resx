@@ -144,20 +144,15 @@ Iif(Substring([amountInWords], 28, 1) = ' ', Substring([amountInWords], 0, 28),
 Substring([amountInWords], 0, 27)))))))), [amountInWords]))</value>
   </data>
   <data name="amount_Line_2.Expression" xml:space="preserve">
-    <value>Upper(Iif(Len([amountInWords]) &gt; 34, 
-Iif(Substring([amountInWords], 34, 1) = ' ', 
-  Iif(Substring([amountInWords], 78, 1) = ' ', Trim(Substring([amountInWords], 35, 43)), 
-  Iif(Substring([amountInWords], 77, 1) = ' ', Trim(Substring([amountInWords], 35, 42)), 
-  Iif(Substring([amountInWords], 76, 1) = ' ', Trim(Substring([amountInWords], 35, 41)), 
-  Iif(Substring([amountInWords], 75, 1) = ' ', Trim(Substring([amountInWords], 35, 40)), 
-  Iif(Substring([amountInWords], 74, 1) = ' ', Trim(Substring([amountInWords], 35, 39)), 
-  Iif(Substring([amountInWords], 73, 1) = ' ', Trim(Substring([amountInWords], 35, 38)), 
-  Trim(Substring([amountInWords], 35, 37)))))))),
-Iif(Substring([amountInWords], 33, 1) = ' ', 
-  Iif(Substring([amountInWords], 77, 1) = ' ', Trim(Substring([amountInWords], 34, 43)), 
-  Trim(Substring([amountInWords], 34, 37))),
-Trim(Substring([amountInWords], 33, 37)))),
-''))</value>
+    <value>Upper(Iif(Len([rest1]) &gt; 43,
+Iif(Substring([rest1], 43, 1) = ' ', Substring([rest1], 0, 43),
+Iif(Substring([rest1], 42, 1) = ' ', Substring([rest1], 0, 42),
+Iif(Substring([rest1], 41, 1) = ' ', Substring([rest1], 0, 41),
+Iif(Substring([rest1], 40, 1) = ' ', Substring([rest1], 0, 40),
+Iif(Substring([rest1], 39, 1) = ' ', Substring([rest1], 0, 39),
+Iif(Substring([rest1], 38, 1) = ' ', Substring([rest1], 0, 38),
+Iif(Substring([rest1], 37, 1) = ' ', Substring([rest1], 0, 37),
+Substring([rest1], 0, 36)))))))), [rest1]))</value>
   </data>
   <data name="amount_Line_3.Expression" xml:space="preserve">
     <value>Upper(Iif(Len([amountInWords]) &gt; 78, 
