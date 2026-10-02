@@ -154,14 +154,4 @@ Iif(Substring([rest1], 38, 1) = ' ', Substring([rest1], 0, 38),
 Iif(Substring([rest1], 37, 1) = ' ', Substring([rest1], 0, 37),
 Substring([rest1], 0, 36)))))))), [rest1]))</value>
   </data>
-  <data name="amount_Line_3.Expression" xml:space="preserve">
-    <value>Upper(Iif(Len([amountInWords]) &gt; 78, 
-Iif(Substring([amountInWords], 78, 1) = ' ', Trim(Substring([amountInWords], 79, Len([amountInWords]) - 79)), 
-Iif(Substring([amountInWords], 77, 1) = ' ', Trim(Substring([amountInWords], 78, Len([amountInWords]) - 78)), 
-Iif(Substring([amountInWords], 76, 1) = ' ', Trim(Substring([amountInWords], 77, Len([amountInWords]) - 77)), 
-Iif(Substring([amountInWords], 75, 1) = ' ', Trim(Substring([amountInWords], 76, Len([amountInWords]) - 76)), 
-Iif(Substring([amountInWords], 74, 1) = ' ', Trim(Substring([amountInWords], 75, Len([amountInWords]) - 75)), 
-Iif(Substring([amountInWords], 73, 1) = ' ', Trim(Substring([amountInWords], 74, Len([amountInWords]) - 74)), 
-Trim(Substring([amountInWords], 73, Len([amountInWords]) - 73)))))))), ''))</value>
-  </data>
 </root>

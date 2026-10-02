@@ -284,7 +284,7 @@
             // amount_Line_3
             // 
             this.amount_Line_3.DataMember = "Rpt_ChequePrint";
-            this.amount_Line_3.Expression = resources.GetString("amount_Line_3.Expression");
+            this.amount_Line_3.Expression = "Upper([rest2])";
             this.amount_Line_3.Name = "amount_Line_3";
             // 
             // rest1
