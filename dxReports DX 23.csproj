@@ -81,6 +81,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -439,6 +440,12 @@
     <Compile Include="Reports\E-Commerce\E_COMMERCE_AR_INVOICE_2.Designer.cs">
       <DependentUpon>E_COMMERCE_AR_INVOICE_2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Goods Issue\Goods_Issue.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Goods Issue\Goods_Issue.Designer.cs">
+      <DependentUpon>Goods_Issue.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Goods Receipt PO\Goods_Receipt_PO.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -456,6 +463,12 @@
     </Compile>
     <Compile Include="Reports\Goods Receipt PO\Goods_Reciept_PO_3.Designer.cs">
       <DependentUpon>Goods_Reciept_PO_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Goods Receipt\Goods_Receipt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Goods Receipt\Goods_Receipt.Designer.cs">
+      <DependentUpon>Goods_Receipt.cs</DependentUpon>
     </Compile>
     <Compile Include="Reports\Incoming Payments\Incoming_Payments.cs">
       <SubType>Component</SubType>
@@ -1166,6 +1179,9 @@
     <EmbeddedResource Include="Reports\E-Commerce\E_COMMERCE_AR_INVOICE_2.resx">
       <DependentUpon>E_COMMERCE_AR_INVOICE_2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Goods Issue\Goods_Issue.resx">
+      <DependentUpon>Goods_Issue.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Goods Receipt PO\Goods_Receipt_PO.resx">
       <DependentUpon>Goods_Receipt_PO.cs</DependentUpon>
     </EmbeddedResource>
@@ -1174,6 +1190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Goods Receipt PO\Goods_Reciept_PO_3.resx">
       <DependentUpon>Goods_Reciept_PO_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Goods Receipt\Goods_Receipt.resx">
+      <DependentUpon>Goods_Receipt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Incoming Payments\Incoming_Payments.resx">
       <DependentUpon>Incoming_Payments.cs</DependentUpon>
