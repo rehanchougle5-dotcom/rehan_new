@@ -434,6 +434,12 @@
     <Compile Include="Reports\Customer Statement\Customer_Statement_New.Designer.cs">
       <DependentUpon>Customer_Statement_New.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Daily Sales Summarry\Daily_Sales_performance.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Daily Sales Summarry\Daily_Sales_performance.Designer.cs">
+      <DependentUpon>Daily_Sales_performance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Delivery Order\Delivery_Order.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -957,6 +963,12 @@
     <Compile Include="Reports\UserTask\TaskReport1.Designer.cs">
       <DependentUpon>TaskReport1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\UserTask\test.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\UserTask\test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\UserTask\UserSummary.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1187,6 +1199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Customer Statement\Customer_Statement_New.resx">
       <DependentUpon>Customer_Statement_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Daily Sales Summarry\Daily_Sales_performance.resx">
+      <DependentUpon>Daily_Sales_performance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Delivery Order\Delivery_Order.resx">
       <DependentUpon>Delivery_Order.cs</DependentUpon>
@@ -1448,6 +1463,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\UserTask\TaskReport1.resx">
       <DependentUpon>TaskReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\UserTask\test.resx">
+      <DependentUpon>test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\UserTask\UserSummary.resx">
       <DependentUpon>UserSummary.cs</DependentUpon>
