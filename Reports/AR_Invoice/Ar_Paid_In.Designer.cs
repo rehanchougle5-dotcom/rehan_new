@@ -210,6 +210,8 @@
             this.PageHeight = 250;
             this.PageWidth = 260;
             this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.Custom;
+            this.ParameterPanelLayoutItems.AddRange(new DevExpress.XtraReports.Parameters.ParameterPanelLayoutItem[] {
+            new DevExpress.XtraReports.Parameters.ParameterLayoutItem(this.DocEntry, DevExpress.XtraReports.Parameters.Orientation.Horizontal)});
             this.Parameters.AddRange(new DevExpress.XtraReports.Parameters.Parameter[] {
             this.DocEntry});
             this.Version = "23.1";
