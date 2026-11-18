@@ -419,7 +419,7 @@
             // xrLabel4
             // 
             this.xrLabel4.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'Tel: \' + Iif(Contains([DatabaseName], \'KSA\'), [CompanyPhone], [WhsMobile])")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", resources.GetString("xrLabel4.ExpressionBindings"))});
             this.xrLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(63)))), ((int)(((byte)(88)))));
             this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(85.09237F, 79.93919F);
             this.xrLabel4.Multiline = true;
@@ -445,8 +445,7 @@
             // xrLabel2
             // 
             this.xrLabel2.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'Address: \' + Iif(Contains([DatabaseName], \'KSA\'), [CompanyAddress], [WhsAddress]" +
-                    ")")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'Address: \' + Iif([CompanyRegion] = \'KSA\', [CompanyAddress], [WhsAddress])")});
             this.xrLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(63)))), ((int)(((byte)(88)))));
             this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(85.09237F, 39.77252F);
             this.xrLabel2.Multiline = true;
@@ -1435,9 +1434,9 @@
             // 
             this.xrPictureBox1.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
             new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "ImageSource", "[FileContnt]")});
-            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(354.5018F, 36.4143F);
+            this.xrPictureBox1.LocationFloat = new DevExpress.Utils.PointFloat(309.2359F, 10F);
             this.xrPictureBox1.Name = "xrPictureBox1";
-            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(100F, 100F);
+            this.xrPictureBox1.SizeF = new System.Drawing.SizeF(175.8565F, 147.1352F);
             this.xrPictureBox1.Sizing = DevExpress.XtraPrinting.ImageSizeMode.ZoomImage;
             // 
             // xrSubreport1
@@ -1454,13 +1453,15 @@
             // 
             this.DocEntry.Name = "DocEntry";
             this.DocEntry.Type = typeof(int);
-            this.DocEntry.ValueInfo = "4537438";
+            this.DocEntry.ValueInfo = "0";
             // 
             // xrLabel34
             // 
             this.xrLabel34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(225)))), ((int)(((byte)(227)))));
             this.xrLabel34.Borders = DevExpress.XtraPrinting.BorderSide.Left;
             this.xrLabel34.BorderWidth = 2F;
+            this.xrLabel34.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Visible", "[HasIncomingPayment] = 1\n")});
             this.xrLabel34.Font = new DevExpress.Drawing.DXFont("Arial 9 Bold", 8.25F, DevExpress.Drawing.DXFontStyle.Bold);
             this.xrLabel34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(63)))), ((int)(((byte)(88)))));
             this.xrLabel34.LocationFloat = new DevExpress.Utils.PointFloat(20.83354F, 10F);
