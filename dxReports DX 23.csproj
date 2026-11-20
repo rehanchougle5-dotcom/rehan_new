@@ -224,6 +224,18 @@
     <Compile Include="Reports\AR_Invoice\Ar_Paid_In.Designer.cs">
       <DependentUpon>Ar_Paid_In.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\AR_Invoice\AR_Reciept.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\AR_Invoice\AR_Reciept.Designer.cs">
+      <DependentUpon>AR_Reciept.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\AR_Invoice\AR_Reciept_pay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\AR_Invoice\AR_Reciept_pay.Designer.cs">
+      <DependentUpon>AR_Reciept_pay.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Asset_Barcode\Asset_Barcode.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1099,6 +1111,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\AR_Invoice\Ar_Paid_In.resx">
       <DependentUpon>Ar_Paid_In.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AR_Invoice\AR_Reciept.resx">
+      <DependentUpon>AR_Reciept.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AR_Invoice\AR_Reciept_pay.resx">
+      <DependentUpon>AR_Reciept_pay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Asset_Barcode\Asset_Barcode.resx">
       <DependentUpon>Asset_Barcode.cs</DependentUpon>
