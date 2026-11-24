@@ -494,6 +494,36 @@
     <Compile Include="Reports\Goods Receipt\Goods_Receipt.Designer.cs">
       <DependentUpon>Goods_Receipt.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\Goods Returns\AdditionalItemDetails.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Goods Returns\AdditionalItemDetails.Designer.cs">
+      <DependentUpon>AdditionalItemDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Goods Returns\BatchSub.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Goods Returns\BatchSub.Designer.cs">
+      <DependentUpon>BatchSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Goods Returns\FreeTextAndPicture.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Goods Returns\FreeTextAndPicture.Designer.cs">
+      <DependentUpon>FreeTextAndPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Goods Returns\Goods_Returns.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Goods Returns\Goods_Returns.Designer.cs">
+      <DependentUpon>Goods_Returns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Goods Returns\SNSub.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Goods Returns\SNSub.Designer.cs">
+      <DependentUpon>SNSub.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Incoming Payments\Incoming_Payments.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -903,6 +933,12 @@
     <Compile Include="Reports\Task Status Report\Task_Status_Report_2.Designer.cs">
       <DependentUpon>Task_Status_Report_2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reports\TEST\PriceChange.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\TEST\PriceChange.Designer.cs">
+      <DependentUpon>PriceChange.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reports\TEST\test report.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -1236,6 +1272,21 @@
     <EmbeddedResource Include="Reports\Goods Receipt\Goods_Receipt.resx">
       <DependentUpon>Goods_Receipt.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Goods Returns\AdditionalItemDetails.resx">
+      <DependentUpon>AdditionalItemDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Goods Returns\BatchSub.resx">
+      <DependentUpon>BatchSub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Goods Returns\FreeTextAndPicture.resx">
+      <DependentUpon>FreeTextAndPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Goods Returns\Goods_Returns.resx">
+      <DependentUpon>Goods_Returns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Goods Returns\SNSub.resx">
+      <DependentUpon>SNSub.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Incoming Payments\Incoming_Payments.resx">
       <DependentUpon>Incoming_Payments.cs</DependentUpon>
     </EmbeddedResource>
@@ -1439,6 +1490,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\Task Status Report\Task_Status_Report_2.resx">
       <DependentUpon>Task_Status_Report_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\TEST\PriceChange.resx">
+      <DependentUpon>PriceChange.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\TEST\test report.resx">
       <DependentUpon>test report.cs</DependentUpon>
