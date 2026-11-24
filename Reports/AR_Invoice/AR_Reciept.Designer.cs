@@ -301,7 +301,7 @@
             // xrLabel6
             // 
             this.xrLabel6.ExpressionBindings.AddRange(new DevExpress.XtraReports.UI.ExpressionBinding[] {
-            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'CR # : \' + [CR_Number]")});
+            new DevExpress.XtraReports.UI.ExpressionBinding("BeforePrint", "Text", "\'CR # : \' + [U_CR_Number]")});
             this.xrLabel6.Font = new DevExpress.Drawing.DXFont("Arial", 8F);
             this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(0F, 18.8333F);
             this.xrLabel6.Multiline = true;
@@ -1126,8 +1126,8 @@
             this.ComponentStorage.AddRange(new System.ComponentModel.IComponent[] {
             this.sqlDataSource1,
             this.sqlDataSource2});
-            this.DataMember = "AMG_TRD_UAE_RPT_AR_INVOICE_PAID";
-            this.DataSource = this.sqlDataSource1;
+            this.DataMember = "AMG_TRD_KSA_RPT_AR_INVOICE_PAID";
+            this.DataSource = this.sqlDataSource2;
             this.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
             this.Margins = new DevExpress.Drawing.DXMargins(0F, 0F, 5F, 0F);
             this.PageHeight = 1500;
