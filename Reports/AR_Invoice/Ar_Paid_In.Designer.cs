@@ -206,7 +206,7 @@
             this.DataMember = "AMG_TRD_UAE_RPT_AR_INV_PAYMENT_IN1";
             this.DataSource = this.sqlDataSource1;
             this.Font = new DevExpress.Drawing.DXFont("Arial", 9.75F);
-            this.Margins = new DevExpress.Drawing.DXMargins(11F, 11F, 6.666667F, 0F);
+            this.Margins = new DevExpress.Drawing.DXMargins(10F, 10F, 6.666667F, 0F);
             this.PageHeight = 250;
             this.PageWidth = 260;
             this.PaperKind = DevExpress.Drawing.Printing.DXPaperKind.Custom;
